@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilentEye</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <section class="sticky top-0 w-full left-0 bg-white z-40">
+        <!-- Desktop Navigation Menu  -->
+        <div class="bg-white flex items-center px-3 py-4 sticky top-0 w-full left-0">
+            <div class="max-w-[1328px] mx-auto w-full flex items-center justify-between gap-2">
+
+                <!-- Links  -->
+                <ul class="hidden lg:flex items-center flex-1">
+                    <!-- Home Link  -->
+                    <li>
+                        <a href="/"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-black-100 transition duration-200 hover:text-secondary">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- Features Link  -->
+                    <li><a href="/features"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-black-100 transition duration-200 hover:text-secondary">Features</a>
+                    </li>
+
+                    <!-- Pricing Link  -->
+                    <li><a href="/pricing"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-black-100 transition duration-200 hover:text-secondary">Pricing</a>
+                    </li>
+
+                    <!-- Reviews Link  -->
+                    <li><a href="/reviews"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-black-100 transition duration-200 hover:text-secondary">Reviews</a>
+                    </li>
+
+                    <!-- Contact Link  -->
+                    <li><a href="/contact"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-black-100 transition duration-200 hover:text-secondary">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Toggle Btn  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="./assets/toggle-icon.svg" alt="toggle-icon" class="w-6 h-6 cursor-pointer"
+                        id="toggleMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="/">
+                    <img src="./assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge, Login & Try Demo btns  -->
+
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="./assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <a href="/login"
+                        class="text-center border border-gray-100 bg-white px-5 py-[10px] rounded-lg text-xl font-medium text-black-100 btnsDropShadows hidden lg:flex leading-[22px]">Login</a>
+
+                    <button id="tryDemoBtnDesktop"
+                        class="text-center bg-primary px-5 py-[10px] rounded-lg text-xl font-medium text-white btnsDropShadows hidden lg:flex items-center leading-[22px]">
+                        Try Demo
+                    </button>
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-gray-100 px-4 py-[7px] rounded-lg text-xl font-medium text-primary btnsDropShadow flex lg:hidden items-centers leading-[22px]">Demo</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu"
+            class="fixed top-0 left-0 w-full h-full bg-white lg:hidden flex-col items-center hidden z-40">
+            <div class="flex items-center justify-between gap-2 py-4 px-3 w-full border-b border-gray-100">
+
+                <!-- Close Toggle Btns  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="./assets/close-toggle.svg" alt="close-icon" class="w-6 h-6 cursor-pointer" id="closeMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="/">
+                    <img src="./assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge  & Demo btns  -->
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="./assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-gray-100 px-4 py-[7px] rounded-lg text-xl font-medium text-primary btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links  -->
+            <ul class="w-full flex flex-col">
+
+                <!-- Home Link  -->
+                <li class="w-full border-b border-gray-100 border-opacity-50 py-4 px-5">
+                    <a href="/" class="nav-link text-xl font-medium text-primary">Home</a>
+                </li>
+
+                <!-- Features Link  -->
+                <li class="w-full border-b border-gray-100 border-opacity-50 py-4 px-5">
+                    <a href="/features" class="nav-link text-xl font-medium text-primary">Features</a>
+                </li>
+
+                <!-- Pricing Link  -->
+                <li class="w-full border-b border-gray-100 border-opacity-50 py-4 px-5">
+                    <a href="/pricing" class="nav-link text-xl font-medium text-primary">Pricing</a>
+                </li>
+
+                <!-- Reviews Link  -->
+                <li class="w-full border-b border-gray-100 border-opacity-50 py-4 px-5">
+                    <a href="/reviews" class="nav-link text-xl font-medium text-primary">Reviews</a>
+                </li>
+
+                <!-- Contact Link  -->
+                <li class="w-full border-b border-gray-100 border-opacity-50 py-4 px-5">
+                    <a href="/contact" class="nav-link text-xl font-medium text-primary">Contact</a>
+                </li>
+
+                <!-- Try Demo popup btn  -->
+                <li class="w-full border-b border-gray-100 border-opacity-50 py-4 px-5">
+                    <a href="/contact" class="text-xl font-medium text-primary flex items-center gap-4">
+                        <img src="./assets/demo.svg" alt="demo">
+                        Try Demo
+                    </a>
+                </li>
+
+                <!-- Login Link  -->
+                <li class="w-full border-b border-gray-100 border-opacity-50 py-4 px-5">
+                    <a href="/logn" class="nav-link text-xl font-medium text-primary flex items-center gap-4">
+                        <img src="./assets/login.svg" alt="login icon">
+                        Login</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Try Demo Popup  -->
+        <div id="tryDemoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div
+                class="bg-white btnsDropShadows max-w-[600px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-gray-100 flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">Fill Detail to View Demo</h2>
+
+                    <button id="closePopupBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-gray-100">
+                        <img src="./assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div class="p-4 flex flex-col gap-3">
+                    <label for="your id" class="text-base font-semibold leading-[17.6px] text-black-200">
+                        Your Mail ID
+                    </label>
+
+                    <input type="text" placeholder="Enter Your Email Address Here"
+                        class="py-3 px-4 bg-gray-100 bg-opacity-[1%] rounded-lg outline-none border border-gray-100 btnsDropShadows text-base font-medium text-black-200">
+                </div>
+
+                <div class="p-4 flex items-center gap-4">
+                    <button id="cancelBtn"
+                        class="py-[10px] px-3 rounded-lg border border-gray-100 btnsDropShadows text-lg font-medium text-center text-black-100">
+                        Cancel
+                    </button>
+
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-secondary btnsDropShadows text-lg font-semibold text-center text-white flex-1">View
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Features Section  -->
+
+    <section>
+
+        <!-- Title  -->
+        <div class="py-4 md:py-8 md:border-b border-gray-200 text-center">
+            <h2
+                class="mb-2 text-dark text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                Even more Great Features
+            </h2>
+
+        </div>
+
+        <!-- Features 01  -->
+        <div class="py-5 md:py-10 px-4 border-b border-gray-200">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-start items-start gap-4 md:gap-6 order-2 md:order-1">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-black-100">
+                        Device Control and Locking
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-black-100">
+                        Device Lock Controller enables
+                        device management for credit providers. Your provider can remotely restrict access to your
+                        device if you don't make payments. If your device is restricted, basic functionality, such
+                        as emergency calling and access to settings, will still be available.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/block-internet-connection.svg" alt="Block Internet Connection"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    Block Internet Connection
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Prevents internet access on the target device.
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/block-mobile-network.svg" alt="Block Mobile Network" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    Block Mobile Network
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Disables mobile network connectivity.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/unlock-devices.svg" alt="Remotely Lock or Unlock Device"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    Remotely Lock or Unlock Device
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Securely control device access.
+                                </p>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-2">
+                    <img src="./assets/device-control-and-locking.png" alt="Device Control and Locking">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Features 02  -->
+        <div class="py-5 md:py-10 px-4 border-b border-gray-200">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-start items-start gap-4 md:gap-6 order-2">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-black-100">
+                        Real-Time Monitoring
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-black-100">
+                        Real-time monitoring is the delivery of continuously updated data about systems, processes or
+                        events. Such monitoring provides information streaming at zero or low latency, so there is
+                        minimal delay between data collection and analysis.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/screen-sharing.svg" alt="Real-Time Screen Sharing" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    Real-Time Screen Sharing
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Collaborate instantly with live screen sharing
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/recored-live-screen.svg"
+                                alt="Record Live Screen and Screenshot Anonymously" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    Record Live Screen and Screenshot Anonymously
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Capture screen activity discreetly
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/live-microphone.svg"
+                                alt="Live Microphone Access for Listening to Surroundings" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    Live Microphone Access for Listening to Surroundings
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Listen to the device's surroundings in real-time
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/gps-tracking.svg" alt="GPS-Free Real-Time Tracking" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    GPS-Free Real-Time Tracking
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Track device location without GPS
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/jps-position.svg" alt="GPS Position History" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    GPS Position History
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Access historical GPS location data
+                                </p>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1">
+                    <img src="./assets/real-time-monitoring.png" alt="Real-Time Monitoring">
+                </div>
+            </div>
+        </div>
+
+        <!-- Features 03  -->
+        <div class="py-5 md:py-10 px-4">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-start items-start gap-4 md:gap-6 order-2 md:order-1">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-black-100">
+                        Communication Control
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-black-100">
+                        A communication controller manages data input and output to a host computer or computer network.
+                        The units may be complex front-end mainframe interfaces or simpler devices such as multiplexors,
+                        bridges, and routers.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/record-all-calls.svg" alt="Record All Calls, Including Unsupported Devices" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    Record All Calls, Including Unsupported Devices
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Prevents internet access on the target device.
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/block-contacts.svg"
+                                alt="Block Unwanted Contacts" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    Block Unwanted Contacts
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Prevent unwanted communications
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/remote-call-control.svg"
+                                alt="Remote Call Control" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    Remote Call Control
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Dial or Disconnect: Manage calls remotely
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="./assets/sms-control.svg" alt="SMS Control" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-dark">
+                                    SMS Control
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-dark">
+                                    Send, Receive, and Read Messages Secretly: Monitor text messages discreetly
+                                </p>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-2">
+                    <img src="./assets/communication-control.png" alt="Communication Control">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="border-b border-gray-200 py-5 md:py-10 flex items-center justify-center">
+            <a href="/features" class="py-3 md:py-4 px-3 md:px-6 border border-gray-200 rounded-lg text-center btnshadow3 text-base md:text-[19px] font-bold text-dark tracking-[-0.17px]">View More Features</a>
+        </div>
+    </section>
+
+
+
+    <!-- Communication Monitoring for Various Apps Section -->
+    <section class="py-5 md:py-10 px-4">
+        <h2
+            class="mb-2 text-dark text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+            Communication Monitoring for Various Apps
+        </h2>
+        <p
+            class="opacity-60 mb-5 md:mb-10 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-black-200">
+            Monitor 20+ popular apps and social media platforms
+        </p>
+
+        <div class="max-w-[1208px] mx-auto w-full flex items-center flex-wrap justify-between gap-5 md:gap-10">
+            <img src="./assets/1.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/2.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/3.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/4.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/5.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/6.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/7.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/8.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/9.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/10.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/11.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/12.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/13.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/14.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/15.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/16.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/17.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/18.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/19.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/20.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/21.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/22.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/23.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="./assets/24.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+        </div>
+    </section>
+
+
+
+
+    <!-- About Our Platform  -->
+    <section class="bg-[#E9EBFF] py-5 md:py-10">
+        <h2
+            class="mb-10 text-dark text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+            About Our Platform
+        </h2>
+
+        <ul class="flex justify-between max-w-[1400px] mx-auto w-full gap-3  no-scrollbar overflow-x-auto">
+            <li
+                class="pl-4 w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="./assets/star.svg" alt="star" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-black-200 text-center mb-1">
+                        Rated 4.9 / 5</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-black-200 text-center opacity-60">
+                        80963+ Ratings</p>
+                </div>
+            </li>
+
+            <li
+                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="./assets/guarantee-logo.svg" alt="Hassle-Free Refund Guarantee" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-black-200 text-center mb-1">
+                        30-Day</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-black-200 text-center opacity-60">
+                        Hassle-Free Refund Guarantee</p>
+                </div>
+            </li>
+
+            <li
+                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="./assets/solution-icon.svg" alt="Excellence in Surveillance Solutions" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-black-200 text-center mb-1">
+                        12 Years</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-black-200 text-center opacity-60">
+                        of Excellence in Surveillance Solutions</p>
+                </div>
+            </li>
+
+            <li
+                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="./assets/satisfied-users.svg" alt="Number of Satisfied Users" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-black-200 text-center mb-1">
+                        15 Million</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-black-200 text-center opacity-60">
+                        Number of
+                        Satisfied Users</p>
+                </div>
+            </li>
+
+            <li
+                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="./assets/support.svg" alt="Premium Support" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-black-200 text-center mb-1">
+                        24/7</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-black-200 text-center opacity-60">
+                        Premium Support</p>
+                </div>
+            </li>
+
+            <li
+                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="./assets/anonymous.svg" alt="Anonymous" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-black-200 text-center mb-1">
+                        100% Anonymous</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-black-200 text-center opacity-60">
+                        Operate anonymously No identification required</p>
+                </div>
+            </li>
+
+            <li
+                class="mr-4 w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="./assets/powerful.svg" alt="Powerful" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-black-200 text-center mb-1">
+                        Powerful</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-black-200 text-center opacity-60">
+                        Live Control Panel</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+
+    <!-- Awards & Recognitions Section  -->
+    <section class="py-5 md:py-12 border-b px-4 border-gray-200">
+        <div class="max-w-[1280px] w-full mx-auto">
+            <h2
+                class="mb-3 text-dark text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                Awards & Recognitions
+            </h2>
+            <p
+                class="opacity-60 mb-6 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-black-200">
+                SilentEye has been recognized as one of the best MDM solutions out in the market today
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                <!-- Awards  -->
+                <div class="py-8 px-6 rounded-2xl bg-white border border-gray-200 boxshadow2">
+                    <div class="mb-4 md:mb-6 flex flex-col items-center justify-center gap-2">
+                        <h3
+                            class="text-black-200 text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                            Awards
+                        </h3>
+                        <p
+                            class="opacity-60 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-black-200">
+                            Award-Winning Customer Service
+                        </p>
+
+                    </div>
+
+                    <div class="grid grid-cols-4 md:grid-cols-6 gap-[10px] md:gap-7">
+                        <img src="./assets/award-1.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="./assets/award-2.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="./assets/award-3.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="./assets/award-4.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="./assets/award-5.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="./assets/award-6.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="./assets/award-7.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="./assets/award-8.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="./assets/award-9.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="./assets/award-10.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="./assets/award-11.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="./assets/award-12.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Company -->
+
+                <div class="py-8 px-6 rounded-2xl bg-white border border-gray-200 boxshadow2">
+                    <div class="mb-4 md:mb-6 flex flex-col items-center justify-center gap-2">
+                        <h3
+                            class="text-black-200 text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                            Trusted Company
+                        </h3>
+                        <p
+                            class="opacity-60 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-black-200">
+                            Trusted by Leading Brands in Industries
+                        </p>
+
+                    </div>
+
+                    <div class="grid grid-cols-3 md:grid-cols-4 gap-x-7 gap-y-3">
+                        <img src="./assets/company-1.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="./assets/company-2.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="./assets/company-3.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="./assets/company-4.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="./assets/company-5.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="./assets/company-6.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="./assets/company-7.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="./assets/company-8.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="./assets/company-9.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="./assets/company-10.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="./assets/company-11.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="./assets/company-12.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Without Us & With Us Section  -->
+    <section class="border-b border-gray-200 py-5 md:py-10">
+        <div class="flex items-center justify-center mb-5 gap-3">
+            <button
+                class="py-3 md:py-4 px-6 rounded-xl bg-white border border-gray-200 btnshadow3 text-center text-[19px] font-bold tracking-[-0.17px] text-dark">Without
+                Us</button>
+            <button
+                class="py-3 md:py-4 px-6 rounded-xl bg-black-300 btnshadow4 text-center text-[19px] font-bold tracking-[-0.17px] text-white">With
+                Us</button>
+        </div>
+
+        <ul class="flex overflow-x-auto gap-4 no-scrollbar">
+            <!-- 01.  -->
+            <li
+                class="ml-5 md:ml-10 min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden boxshadow1">
+                <img src="./assets/enhanced-productivity.png" alt="Enhanced Productivity"
+                    class="h-[168px] object-cover bg-center w-full">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">Enhanced Productivity</p>
+            </li>
+
+            <!-- 02.  -->
+            <li class="min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden">
+                <img src="./assets/business-security.png" alt="Business Security"
+                    class="h-[168px] object-cover bg-center w-full boxshadow1">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">Business Security</p>
+            </li>
+
+            <!-- 03.  -->
+            <li class="min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden">
+                <img src="./assets/impostor-detection.png" alt="Enhanced Productivity"
+                    class="h-[168px] object-cover bg-center w-full boxshadow1">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">Impostor Detection</p>
+            </li>
+
+            <!-- 04.  -->
+            <li class="min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden">
+                <img src="./assets/secured-digital-space.png" alt="Secured Digital Space"
+                    class="h-[168px] object-cover bg-center w-full boxshadow1">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">Secured Digital Space</p>
+            </li>
+
+            <!-- 05.  -->
+            <li class="min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden">
+                <img src="./assets/positive-interaction.png" alt="Positive Interaction"
+                    class="h-[168px] object-cover bg-center w-full boxshadow1">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">Positive Interaction</p>
+            </li>
+
+            <!-- 06.  -->
+            <li class="min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden">
+                <img src="./assets/optimized-screen-time.png" alt="Optimized Screen Time"
+                    class="h-[168px] object-cover bg-center w-full boxshadow1">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">Optimized Screen Time</p>
+            </li>
+
+            <!-- 07.  -->
+            <li class="min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden">
+                <img src="./assets/filtered-browsing.png" alt="Filtered Browsing"
+                    class="h-[168px] object-cover bg-center w-full boxshadow1">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">Filtered Browsing</p>
+            </li>
+
+            <!-- 08.  -->
+            <li class="min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden">
+                <img src="./assets/friendly-online-space.png" alt="Friendly Online Space"
+                    class="h-[168px] object-cover bg-center w-full boxshadow1">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">Friendly Online Space</p>
+            </li>
+
+            <!-- 09.  -->
+            <li class="min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden">
+                <img src="./assets/cyber-predator-detection.png" alt="Cyber Predator Detection"
+                    class="h-[168px] object-cover bg-center w-full boxshadow1">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">Cyber Predator Detection</p>
+            </li>
+
+            <!-- 10.  -->
+            <li class="min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden">
+                <img src="./assets/location-tracking.png" alt="24/7 Location Tracking"
+                    class="h-[168px] object-cover bg-center w-full boxshadow1">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">24/7 Location Tracking</p>
+            </li>
+
+            <!-- 11.  -->
+            <li class="min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden">
+                <img src="./assets/ultimate-data-protection.png" alt="Ultimate Data Protection"
+                    class="h-[168px] object-cover bg-center w-full boxshadow1">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">Ultimate Data Protection</p>
+            </li>
+
+            <!-- 12.  -->
+            <li
+                class="mr-5 md:mr-10 min-w-[200px] w-[200px] border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden">
+                <img src="./assets/recover-lost-phones.png" alt="Recover Lost Phones"
+                    class="h-[168px] object-cover bg-center w-full boxshadow1">
+                <p class="py-[10px] px-2 text-base text-dark font-medium text-center">Recover Lost Phones</p>
+            </li>
+
+        </ul>
+    </section>
+
+
+
+    <!-- Try Now Section  -->
+    <section class="py-5 md:py-10 border-b border-gray-200 px-4">
+        <div class="max-w-[1040px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+            <div class="flex items-center justify-center order-1 md:order-2">
+                <img src="./assets/try-now-main-image.svg" alt="try-now-main">
+            </div>
+
+            <div class="flex flex-col gap-6 md:gap-8 order-2 md:order-1">
+                <h2
+                    class="text-black-100 text-2xl md:text-[40px] leading-[26.4px] md:leading-[44px] tracking-[-0.2px] font-bold text-center md:text-start">
+                    One click and zero
+                    effort to access anyones phone across the globe
+                </h2>
+
+                <ul class="flex flex-col gap-4 md:gap-5">
+                    <li class="flex items-center gap-4">
+                        <img src="./assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                        <p
+                            class="flex-1 text-sm md:text-lg font-medium text-dark leading-[18.2px] md:leading-[21.6px] opacity-60">
+                            SilentEye can gain anonymous access to any phone, no matter where it is.
+                        </p>
+                    </li>
+
+                    <li class="flex items-center gap-4">
+                        <img src="./assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                        <p
+                            class="flex-1 text-sm md:text-lg font-medium text-dark leading-[18.2px] md:leading-[21.6px] opacity-60">
+                            Gain in-depth insights and remote control capabilities through our robust Live Control
+                            Panel.
+                        </p>
+                    </li>
+
+                    <li class="flex items-center gap-4">
+                        <img src="./assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                        <p
+                            class="flex-1 text-sm md:text-lg font-medium text-dark leading-[18.2px] md:leading-[21.6px] opacity-60">
+                            There is no phone in the world that SilentEye cant access remotely with just a phone number.
+                        </p>
+                    </li>
+                </ul>
+
+                <a href="/pricing"
+                    class="max-w-[197px] md:max-w-[236px] w-full btnshadow mx-auto md:mx-0 text-center py-[10px] md:py-3 bg-secondary rounded-xl text-white text-lg md:text-xl font-bold">Try
+                    Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- How it Works Section  -->
+    <section class="py-5 md:py-10 border-b border-gray-200 px-2">
+        <h2
+            class="mb-6 text-dark text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+            How It Works
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-[1280px] w-full mx-auto">
+            <div class="p-2 md:p-5 flex flex-col items-center justify-start h-full gap-5">
+                <div class="btnshadow2 rounded-xl flex items-center justify-center p-4">
+                    <img src="./assets/enter-the-desired-number.png" alt="enter-the-desired-number">
+                </div>
+
+                <h4
+                    class="text-xs md:text-xl font-semibold leading-[15.6px] md:leading-[26px] text-black-200 text-center">
+                    1. Enter the desired number
+                </h4>
+            </div>
+
+            <div class="p-2 md:p-5 flex flex-col items-center justify-start gap-5">
+                <div class="btnshadow2 rounded-xl flex items-center justify-center p-4">
+                    <img src="./assets/activate -plan-based-on-your-requirements.png"
+                        alt="activate -plan-based-on-your-requirements">
+                </div>
+
+                <h4
+                    class="text-xs md:text-xl font-semibold leading-[15.6px] md:leading-[26px] text-black-200 text-center">
+                    2. Activate a plan based on your requirements
+                </h4>
+            </div>
+
+            <div class="p-2 md:p-5 flex flex-col items-center justify-start gap-5">
+                <div class="btnshadow2 rounded-xl flex items-center justify-center p-4">
+                    <img src="./assets/instant-admin-access-delivered.png" alt="Instant admin access delivered">
+                </div>
+
+                <h4
+                    class="text-xs md:text-xl font-semibold leading-[15.6px] md:leading-[26px] text-black-200 text-center">
+                    3. Instant admin access delivered
+                </h4>
+            </div>
+
+            <div class="p-2 md:p-5 flex flex-col items-center justify-start gap-5">
+                <div class="btnshadow2 rounded-xl flex items-center justify-center p-4">
+                    <img src="./assets/take-control-through-our-admin-panel.png"
+                        alt="Take control through our admin panel">
+                </div>
+
+                <h4
+                    class="text-xs md:text-xl font-semibold leading-[15.6px] md:leading-[26px] text-black-200 text-center">
+                    4. Take control through our admin panel
+                </h4>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Frequently Asked Questions Section -->
+    <section class="py-5 md:py-10 border-b w-full border-gray-100">
+        <div class="max-w-[1040px] w-full mx-auto flex flex-col gap-5 md:gap-6">
+            <h2
+                class="text-dark text-2xl md:text-[32px] px-4 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                Frequently Asked Questions</h2>
+
+            <div class="flex items-center justify-center bg-white">
+                <div class="flex overflow-x-auto gap-3 md:gap-6 bg-white no-scrollbar">
+                    <button
+                        class="ml-4 md:ml-0 py-[10px] md:py-3 min-w-[141px] w-[141px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-white bg-secondary border border-secondary rounded-xl">
+                        <img src="./assets/product.svg" alt="product icon">
+                        Product
+                    </button>
+
+                    <button
+                        class="py-[10px] md:py-3 min-w-[152px] w-[152px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-dark border border-gray-200 rounded-xl">
+                        <img src="./assets/purchase.svg" alt="purchase icon">
+                        Purchase
+                    </button>
+
+                    <button
+                        class="py-[10px] md:py-3 min-w-[136px] w-[136px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-dark border border-gray-200 rounded-xl">
+                        <img src="./assets/refund.svg" alt="refund icon">
+                        Refund
+                    </button>
+
+                    <button
+                        class="mr-4 md:mr-0 py-[10px] md:py-3 min-w-[169px] w-[169px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-dark border border-gray-200 rounded-xl">
+                        <img src="./assets/installation.svg" alt="installation icon">
+                        Installation
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Faqs questions  -->
+            <div class="px-4">
+                <ul class="btnshadow1 border border-gray-200 w-full rounded-2xl">
+                    <li class="faq-item border-b border-gray-200 p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-gray-200">
+                                <img src="./assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="./assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-gray-200 p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-gray-200">
+                                <img src="./assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="./assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-gray-200 p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-gray-200">
+                                <img src="./assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="./assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- View More btn  -->
+
+            <div class="hidden md:flex items-center justify-center">
+                <a href="/faqs"
+                    class="py-4 px-7 rounded-lg text-[19px] font-bold text-dark flex items-center justify-center gap-4 border border-gray-200 btnshadow1">
+                    View More
+                    <img src="./assets/right-arrow.svg" alt="right-arrow">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Us Section -->
+    <section class="py-5 md:py-12 px-4">
+        <div class="max-w-[1280px] w-full mx-auto">
+            <div>
+                <h2
+                    class="mb-3 text-dark text-2xl md:text-[32px] font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                    Contact Us</h2>
+                <p
+                    class="opacity-60 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-black-200">
+                    Want to start tracking now but still have questions? Write us, and we will be glad to help.</p>
+            </div>
+
+            <div class="mt-5 md:mt-6 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+                <div class="h-full w-full">
+                    <img src="./assets/contact-us.png" alt="contact-us"
+                        class="w-full object-cover bg-center bg-cover rounded-2xl h-[320px] md:h-full">
+                </div>
+
+                <form
+                    class="contactusboxDropshadow border border-gray-200 rounded-2xl p-4 md:p-6 flex flex-col gap-3 md:gap-6 h-full">
+                    <div class="grid grid-cols-2 gap-3 md:gap-6">
+
+                        <!-- Name Input  -->
+                        <div>
+                            <label for="name"
+                                class="block mb-3 text-[15px] md:text-base font-semibold text-black-200 leading-[17.6px]">Name</label>
+                            <input type="text" placeholder="Enter Your Name"
+                                class="inputsshadow w-full border border-gray-200 rounded-lg py-[10px] md:py-3 px-3 md:px-4 bg-gray-200 bg-opacity-25 text-sm md:text-base font-medium text-black-200 text-opacity-50 outline-none">
+                        </div>
+
+                        <!-- Email Input  -->
+                        <div>
+                            <label for="email"
+                                class="block mb-3 text-[15px] md:text-base font-semibold text-black-200 leading-[17.6px]">Email</label>
+                            <input type="email" placeholder="Enter Your Mail ID"
+                                class="inputsshadow w-full border border-gray-200 rounded-lg py-[10px] md:py-3 px-3 md:px-4 bg-gray-200 bg-opacity-25 text-opacity-50 text-sm md:text-base font-medium text-black-200 outline-none">
+                        </div>
+                    </div>
+
+                    <!-- Subject Input  -->
+                    <div>
+                        <label for="subject"
+                            class="block mb-3 text-[15px] md:text-base font-semibold text-black-200 leading-[17.6px]">Subject</label>
+                        <input type="text" placeholder="Enter Your Concern"
+                            class="inputsshadow w-full border border-gray-200 rounded-lg py-[10px] md:py-3 px-3 md:px-4 bg-gray-200 bg-opacity-25 text-opacity-50 text-sm md:text-base font-medium text-black-200 outline-none">
+                    </div>
+
+                    <!-- Message Input  -->
+                    <div>
+                        <label for="message"
+                            class="block mb-3 text-[15px] md:text-base font-semibold text-black-200 leading-[17.6px]">Message</label>
+                        <textarea name="message" id="message" placeholder="Type your message here..."
+                            class="inputsshadow w-full border border-gray-200 h-[65px] md:h-[78px] rounded-lg py-[10px] md:py-3 px-3 md:px-4 bg-gray-200 bg-opacity-25 text-opacity-50 text-sm md:text-base font-medium text-black-200 outline-none"></textarea>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button
+                            class="bg-secondary flex items-center gap-3 rounded-xl py-2 md:py-3 px-5 md:px-5 btnshadow text-lg md:text-xl font-bold text-white">
+                            Send Message
+                            <img src="./assets/message.svg" alt="message">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section  -->
+    <footer class="border-t border-gray-100">
+
+        <!-- Links Section  -->
+        <div class="p-4 md:p-10 flex flex-col lg:flex-row gap-8 lg:gap-5 border-b border-gray-100 w-full">
+
+            <!-- Logos  -->
+            <div class="flex flex-col gap-4 flex-1 lg:max-w-[500px] w-full">
+                <a href="/" class="mx-auto">
+                    <img src="./assets/logo.svg" alt="SilentEye" class="h-8">
+                </a>
+
+                <p class="text-start md:text-center font-medium text-base leading-[20.8px] text-black opacity-60">
+                    SilentEye App is
+                    designed for legal use only.
+                    <span class="block md:hidden">The software is intended for the ethical supervision of employees and
+                        children with their consen</span>
+                </p>
+
+                <div class="flex flex-col gap-3 items-start">
+                    <div class="flex items-center gap-1">
+                        <img src="./assets/green-tikmark.svg" alt="green-tikmark">
+                        <span class="text-base font-medium leading-[17.6px] text-black">Approved by:</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 md:flex-wrap gap-3">
+                        <img src="./assets/stopbullying-logo.svg" alt="stopbullying"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="./assets/credit-card-safe-logo.svg" alt="credit-card-safe"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="./assets/pci-logo.svg" alt="pci" class="rounded-lg cursor-pointer flex-1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-5 flex-1">
+                <!-- Quick Links  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Quick Links</h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="/"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="/about"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">About
+                                Us</a>
+                        </li>
+
+                        <li>
+                            <a href="/contact"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Contact
+                                Us</a>
+                        </li>
+
+                        <li>
+                            <a href="/pricing"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="/reviews"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Reviews</a>
+                        </li>
+
+                        <li>
+                            <a href="/faqs"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Help & Policy  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Help & Policy
+                    </h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="/refund-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Refund
+                                Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="/privacy-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Privacy
+                                Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="/terms-conditions"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Terms &
+                                Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disclaimer Section  -->
+        <div class="max-w-[1040px] w-full mx-auto py-5 hidden md:block px-3">
+            <p class="text-base font-medium leading-[20.5px] text-black text-center">
+                <b class="font-bold">Disclaimer</b> : SilentEye App is designed for legal use only. The software is
+                intended for the
+                ethical
+                supervision of employees and children with their consent. Using the software for intrusion and stalking
+                purposes is highly discouraged by us. We reserve the right to cancel your license if any illicit or
+                illegal activity is reported. The user will be solely responsible if any violation in the state law
+                occurs.
+            </p>
+        </div>
+
+        <!-- Copy Right Section  -->
+
+        <div class="md:border-t py-6 px-4 md:px-10 flex justify-between items-center flex-col md:flex-row gap-2">
+            <p class="text-center md:text-start text-base font-medium leading-[17.6px]">Copyright © 2024. SilentEye. All
+                rights reserved.</p>
+            <div>
+                <img src="./assets/banking-logos.svg" alt="banking-logos">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Js Link  -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
