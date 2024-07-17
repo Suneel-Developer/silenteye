@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SilentEye</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <section class="sticky top-0 w-full left-0 bg-white z-40 headershow">
+        <!-- Desktop Navigation Menu  -->
+        <div class="bg-white flex items-center px-3 py-4 sticky top-0 w-full left-0">
+            <div class="max-w-[1328px] mx-auto w-full flex items-center justify-between gap-2">
+
+                <!-- Links  -->
+                <ul class="hidden lg:flex items-center flex-1">
+                    <!-- Home Link  -->
+                    <li>
+                        <a href="../index.html"
+                            class="nav-link py-2 pr-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- Features Link  -->
+                    <li><a href="./features.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Features</a>
+                    </li>
+
+                    <!-- Pricing Link  -->
+                    <li><a href="./pricing.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Pricing</a>
+                    </li>
+
+                    <!-- Reviews Link  -->
+                    <li><a href="./reviews.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Reviews</a>
+                    </li>
+
+                    <!-- Contact Link  -->
+                    <li><a href="./contact.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Toggle Btn  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/toggle-icon.svg" alt="toggle-icon" class="w-6 h-6 cursor-pointer"
+                        id="toggleMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge, Login & Try Demo btns  -->
+
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <a href="./login.html"
+                        class="text-center border border-[#D0D5DD] bg-white px-5 py-[10px] rounded-lg text-xl font-medium text-[#101828] btnsDropShadows hidden lg:flex leading-[22px]">Login</a>
+
+                    <button id="tryDemoBtnDesktop"
+                        class="text-center bg-[#172A6E] px-5 py-[10px] rounded-lg text-xl font-medium text-white btnsDropShadows hidden lg:flex items-center leading-[22px]">
+                        Try Demo
+                    </button>
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">Demo</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu"
+            class="fixed top-0 left-0 w-full h-full bg-white lg:hidden flex-col items-center hidden z-40">
+            <div class="flex items-center justify-between gap-2 py-4 px-3 w-full border-b border-[#D0D5DD]">
+
+                <!-- Close Toggle Btns  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/close-toggle.svg" alt="close-icon" class="w-6 h-6 cursor-pointer"
+                        id="closeMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge  & Demo btns  -->
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links  -->
+            <ul class="w-full flex flex-col">
+
+                <!-- Home Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="../index.html" class="nav-link text-xl font-medium text-[#172A6E]">Home</a>
+                </li>
+
+                <!-- Features Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./features.html" class="nav-link text-xl font-medium text-[#172A6E]">Features</a>
+                </li>
+
+                <!-- Pricing Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./pricing.html" class="nav-link text-xl font-medium text-[#172A6E]">Pricing</a>
+                </li>
+
+                <!-- Reviews Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./reviews.html" class="nav-link text-xl font-medium text-[#172A6E]">Reviews</a>
+                </li>
+
+                <!-- Contact Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./contact.html" class="nav-link text-xl font-medium text-[#172A6E]">Contact</a>
+                </li>
+
+                <!-- Try Demo popup btn  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="" class="text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/demo.svg" alt="demo">
+                        Try Demo
+                    </a>
+                </li>
+
+                <!-- Login Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./login.html" class="nav-link text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/login.svg" alt="login icon">
+                        Login</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Try Demo Popup  -->
+        <div id="tryDemoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div
+                class="bg-white btnsDropShadows max-w-[600px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">Fill Detail to View Demo</h2>
+
+                    <button id="closePopupBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div class="p-4 flex flex-col gap-3">
+                    <label for="your id" class="text-base font-semibold leading-[17.6px] text-[#222222]">
+                        Your Mail ID
+                    </label>
+
+                    <input type="text" placeholder="Enter Your Email Address Here"
+                        class="py-3 px-4 bg-[#D0D5DD] bg-opacity-[1%] rounded-lg outline-none border border-[#D0D5DD] btnsDropShadows text-base font-medium text-[#222222]">
+                </div>
+
+                <div class="p-4 flex items-center gap-4">
+                    <button id="cancelBtn"
+                        class="py-[10px] px-3 rounded-lg border border-[#D0D5DD] btnsDropShadows text-lg font-medium text-center text-[#101828]">
+                        Cancel
+                    </button>
+
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-[#2C56FE] btnsDropShadows text-lg font-semibold text-center text-white flex-1">View
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Our Platform  -->
+    <section class="bg-[#E9EBFF] py-5 md:py-10">
+        <h2
+            class="mb-10 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+            About Our Platform
+        </h2>
+
+        <ul class="flex justify-between max-w-[1400px] mx-auto w-full gap-3  no-scrollbar overflow-x-auto">
+            <li
+                class="pl-4 w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="../assets/star.svg" alt="star" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
+                        Rated 4.9 / 5</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
+                        80963+ Ratings</p>
+                </div>
+            </li>
+
+            <li
+                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="../assets/guarantee-logo.svg" alt="Hassle-Free Refund Guarantee" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
+                        30-Day</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
+                        Hassle-Free Refund Guarantee</p>
+                </div>
+            </li>
+
+            <li
+                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="../assets/solution-icon.svg" alt="Excellence in Surveillance Solutions" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
+                        12 Years</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
+                        of Excellence in Surveillance Solutions</p>
+                </div>
+            </li>
+
+            <li
+                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="../assets/satisfied-users.svg" alt="Number of Satisfied Users" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
+                        15 Million</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
+                        Number of
+                        Satisfied Users</p>
+                </div>
+            </li>
+
+            <li
+                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="../assets/support.svg" alt="Premium Support" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
+                        24/7</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
+                        Premium Support</p>
+                </div>
+            </li>
+
+            <li
+                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="../assets/anonymous.svg" alt="Anonymous" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
+                        100% Anonymous</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
+                        Operate anonymously No identification required</p>
+                </div>
+            </li>
+
+            <li
+                class="mr-4 w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+                <img src="../assets/powerful.svg" alt="Powerful" class="w-10 h-10">
+                <div>
+                    <h5
+                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
+                        Powerful</h5>
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
+                        Live Control Panel</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- Numbers that showcase our success  -->
+    <section class="py-5 md:py-12 px-4 border-b border-[#DDDDDD] w-full">
+        <div>
+            <h1
+                class="mb-3 text-[#101828] text-2xl md:text-[32px] font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                Numbers that showcase our success
+            </h1>
+
+            <p
+                class="opacity-60 max-w-[800px] m-auto mb-6 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-[#222222]">
+                Technology is always changing. Thats why we are always focused on whats next and helping you stay one
+                step ahead.
+            </p>
+        </div>
+
+        <div class="max-w-[1280px] mx-auto w-full grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            <div class="boxshadow3 border border-black border-opacity-10 py-4 md:py-8 px-4 md:px-6 rounded-[16px] flex flex-col items-center justify-center gap-4 md:gap-6"
+                style="background: linear-gradient(180deg, #FFF7E2 0%, #FFEDBA 100%);">
+                <img src="../assets/satisfied-user.svg" alt="satisfied-user">
+
+                <div>
+                    <h3
+                        class="text-2xl md:text-[32px] text-[#222222] font-bold leading-[26.4px] md:leading-[35.2px] text-center mb-1 md:mb-2">
+                        1.5M+</h3>
+                    <p class="text-lg text-[#222222] font-medium leading-[19.8px] text-center">Satisfied Users</p>
+                </div>
+            </div>
+
+            <div class="boxshadow3 border border-black border-opacity-10 py-4 md:py-8 px-4 md:px-6 rounded-[16px] flex flex-col items-center justify-center gap-4 md:gap-6"
+                style="background: linear-gradient(180deg, #FFE9E1 0%, #FFCCB8 100%);">
+                <img src="../assets/countries.svg" alt="countries">
+
+                <div>
+                    <h3
+                        class="text-2xl md:text-[32px] text-[#222222] font-bold leading-[26.4px] md:leading-[35.2px] text-center mb-1 md:mb-2">
+                        180</h3>
+                    <p class="text-lg text-[#222222] font-medium leading-[19.8px] text-center">Countries</p>
+                </div>
+            </div>
+
+            <div class="boxshadow3 border border-black border-opacity-10 py-4 md:py-8 px-4 md:px-6 rounded-[16px] flex flex-col items-center justify-center gap-4 md:gap-6"
+                style="background: linear-gradient(180deg, #DAFAFF 0%, #AFE2FF 100%);">
+                <img src="../assets/employees.svg" alt="employees">
+
+                <div>
+                    <h3
+                        class="text-2xl md:text-[32px] text-[#222222] font-bold leading-[26.4px] md:leading-[35.2px] text-center mb-1 md:mb-2">
+                        100+</h3>
+                    <p class="text-lg text-[#222222] font-medium leading-[19.8px] text-center">Employees</p>
+                </div>
+            </div>
+
+            <div class="boxshadow3 border border-black border-opacity-10 py-4 md:py-8 px-4 md:px-6 rounded-[16px] flex flex-col items-center justify-center gap-4 md:gap-6"
+                style="background: linear-gradient(180deg, #F0EAFF 0%, #CAB9F4 100%);">
+                <img src="../assets/average-rating.svg" alt="average rating">
+
+                <div>
+                    <h3
+                        class="text-2xl md:text-[32px] text-[#222222] font-bold leading-[26.4px] md:leading-[35.2px] text-center mb-1 md:mb-2 flex items-center justify-center gap-[6px]">
+                        4.8
+                        <img src="../assets/star-filled.svg" alt="star-filled">
+                    </h3>
+                    <p class="text-lg text-[#222222] font-medium leading-[19.8px] text-center">Average Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Awards & Recognitions Section  -->
+    <section class="py-5 md:py-12 border-b px-4 border-[#DDDDDD]">
+        <div class="max-w-[1280px] w-full mx-auto">
+            <h2
+                class="mb-3 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                Awards & Recognitions
+            </h2>
+            <p
+                class="opacity-60 mb-6 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-[#222222]">
+                SilentEye has been recognized as one of the best MDM solutions out in the market today
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                <!-- Awards  -->
+                <div class="py-8 px-6 rounded-2xl bg-white border border-[#DDDDDD] boxshadow2">
+                    <div class="mb-4 md:mb-6 flex flex-col items-center justify-center gap-2">
+                        <h3
+                            class="text-[#222222] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                            Awards
+                        </h3>
+                        <p
+                            class="opacity-60 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-[#222222]">
+                            Award-Winning Customer Service
+                        </p>
+
+                    </div>
+
+                    <div class="grid grid-cols-4 md:grid-cols-6 gap-[10px] md:gap-7">
+                        <img src="../assets/award-1.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="../assets/award-2.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="../assets/award-3.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="../assets/award-4.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="../assets/award-5.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="../assets/award-6.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="../assets/award-7.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="../assets/award-8.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="../assets/award-9.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="../assets/award-10.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="../assets/award-11.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                        <img src="../assets/award-12.svg" alt="award" class="h-[64px] md:h-[72px]" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Company -->
+
+                <div class="py-8 px-6 rounded-2xl bg-white border border-[#DDDDDD] boxshadow2">
+                    <div class="mb-4 md:mb-6 flex flex-col items-center justify-center gap-2">
+                        <h3
+                            class="text-[#222222] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                            Trusted Company
+                        </h3>
+                        <p
+                            class="opacity-60 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-[#222222]">
+                            Trusted by Leading Brands in Industries
+                        </p>
+
+                    </div>
+
+                    <div class="grid grid-cols-3 md:grid-cols-4 gap-x-7 gap-y-3">
+                        <img src="../assets/company-1.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="../assets/company-2.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="../assets/company-3.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="../assets/company-4.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="../assets/company-5.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="../assets/company-6.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="../assets/company-7.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="../assets/company-8.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="../assets/company-9.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="../assets/company-10.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="../assets/company-11.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                        <img src="../assets/company-12.svg" alt="company" class="h-8 md:h-[50px]" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Your Data Privacy  -->
+    <section class="pb-0 py-5 md:py-12 md:border-b border-[#DDDDDD] grid grid-cols-1 gap-6">
+        <div class="px-4 order-2 md:order-1">
+            <h2
+                class="mb-3 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                Your Data Privacy
+            </h2>
+            <p
+                class="opacity-60 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-[#222222] max-w-[800px] mx-auto w-full">
+                Privacy of your data was our prime concern while designing the product, and we've ensured that your data
+                stay with you, and not us.
+            </p>
+        </div>
+
+        <div
+            class="order-1 md:order-2 bg-[url('../assets/man-and-woman-sitting-on-table-1.png')] h-[200px] md:h-[400px] bg-center bg-cover">
+        </div>
+    </section>
+
+
+
+    <!-- Who We Are  -->
+    <section class="pt-5 md:pt-12 px-0 md:px-4">
+        <div class="max-w-[1280px] w-full mx-auto grid grid-cols-1 md:grid-cols-2">
+            <div class="flex items-center justify-center flex-col px-5 md:px-0 py-5 order-2 md:order-1">
+                <h2
+                    class="mb-4 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                    Who We Are
+                </h2>
+
+                <p
+                    class="text-sm mb-0 md:mb-4 md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-[#222222] opacity-60 pr-0 md:pr-5 text-center md:text-start">
+                    By combining our expertise and experience about the security of internet users, especially
+                    vulnerable kids, we have built SilentEye. We are always striving to make SilentEye the most reliable
+                    and trustworthy smart phone tracking and computer monitoring program. We focus a great deal on user
+                    trust and adopt every users ideas. Up to now, SilentEye is always dedicated to become preferred
+                    choice in parental control industry.
+                </p>
+
+                <p
+                    class="text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-[#222222] opacity-60 pr-0 md:pr-5 text-center md:text-start">
+                    Our highly proficient team of data security experts have gone above and beyond the call of duty to
+                    build customer data security solutions for globally renowned companies. At SilentEye we are
+                    dedicated toward helping you protect your loved ones and secure your data.
+                </p>
+            </div>
+
+            <div
+                class="order-1 md:order-2 bg-[url('../assets/1.png')] h-[220px] md:h-full bg-center bg-cover md:rounded-r-2xl">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Our Story  -->
+    <section class="pb-5 md:pb-12 px-0 md:px-4">
+        <div class="max-w-[1280px] w-full mx-auto grid grid-cols-1 md:grid-cols-2">
+            <div
+                class="order-1 md:order-1 bg-[url('../assets/1.png')] h-[220px] md:h-full bg-center bg-cover md:rounded-l-2xl">
+            </div>
+
+            <div class="flex items-center justify-center flex-col px-5 md:px-0 py-5 order-2 md:order-1">
+                <h2
+                    class="mb-3 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                    Our Story
+                </h2>
+
+                <p
+                    class="text-sm md:text-xl mb-0 md:mb-4 font-medium leading-[18.2px] md:leading-[26px] text-[#222222] opacity-60 pl-0 md:pl-5 text-center md:text-start">
+                    The 21st century changed everything. New technology, a focus on the Internet, and the development of
+                    the smartphone created a more connected world. But it also brought forth new challenges for parents.
+                </p>
+
+                <p
+                    class="text-sm md:text-xl mb-0 md:mb-4 font-medium leading-[18.2px] md:leading-[26px] text-[#222222] opacity-60 pl-0 md:pl-5 text-center md:text-start">
+                    Cyberbullying. A new way to connect with strangers. Access to inappropriate information. The
+                    possibilities to get into trouble were suddenly endless and just a click or tap away.
+                </p>
+
+                <p
+                    class="text-sm md:text-xl mb-0 md:mb-4 font-medium leading-[18.2px] md:leading-[26px] text-[#222222] opacity-60 pl-0 md:pl-5 text-center md:text-start">
+                    So, in 2010, SilentEye was born, helping concerned parents monitor their children and keep them safe
+                    online. And the rest, as they say, is history.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Our Team  -->
+    <section class="py-5 md:py-12 border-b border-[#DDDDDD] flex flex-col gap-5 md:gap-6">
+        <div class="max-w-[800px] w-full mx-auto flex flex-col gap-3">
+            <h2
+                class="text-[#101828] text-2xl md:text-[32px] font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                Our Team
+            </h2>
+            <p
+                class="opacity-60 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-[#222222] max-w-[800px] mx-auto w-full">
+                We are SilentEye, and while we often talk about SilentEye as a product and service, there are hundreds
+                of
+                passionate people working hard behind the scenes to keep everyone safe.
+            </p>
+        </div>
+
+        <ul class="flex justify-between max-w-[1280px] mx-auto w-full gap-4 no-scrollbar bg-white overflow-x-auto">
+
+            <li
+                class="w-[320px] md:w-[410px] min-w-[320px] md:min-w-[410px] bg-white border border-[#DDDDDD] rounded-[16px] overflow-hidden ml-4 md:ml-0">
+                <img src="../assets/developers.png" alt="Developers" class="w-full h-[220px] md:h-[320px]">
+
+                <div class="flex flex-col gap-2 md:gap-4 p-4 md:p-6">
+                    <h5
+                        class="text-[#222222] text-2xl md:text-[32px] font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                        Developers
+                    </h5>
+
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] tracking-[-0.2px] text-center opacity-60">
+                        At the heart of SilentEye are dozens of developers, squarely focused on creating a fast, secure,
+                        and flawless product that you all love to use. And they never stop developing, always striving
+                        to
+                        develop the best monitoring tool in the world.
+                    </p>
+                </div>
+            </li>
+
+            <li
+                class="w-[320px] md:w-[410px] min-w-[320px] md:min-w-[410px] bg-white border border-[#DDDDDD] rounded-[16px] overflow-hidden">
+                <img src="../assets/customer-support.png" alt="Customer Support" class="w-full h-[220px] md:h-[320px]">
+
+                <div class="flex flex-col gap-2 md:gap-4 p-4 md:p-6">
+                    <h5
+                        class="text-[#222222] text-2xl md:text-[32px] font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                        Customer Support
+                    </h5>
+
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] tracking-[-0.2px] text-center opacity-60">
+                        You are not just a number to us. Thats why we have a large team of Customer Support
+                        representatives waiting to help you with whatever you need. From installing the product to
+                        helping you get the most out of all the features, we are always here for you.
+                    </p>
+                </div>
+            </li>
+
+            <li
+                class="w-[320px] md:w-[410px] min-w-[320px] md:min-w-[410px] bg-white border border-[#DDDDDD] rounded-[16px] overflow-hidden mr-4 lg:mr-0">
+                <img src="../assets/creative-team.png" alt="Creative Team" class="w-full h-[220px] md:h-[320px]">
+
+                <div class="flex flex-col gap-2 md:gap-4 p-4 md:p-6">
+                    <h5
+                        class="text-[#222222] text-2xl md:text-[32px] font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                        Creative Team
+                    </h5>
+
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] tracking-[-0.2px] text-center opacity-60">
+                        Our team of designers helps us bring the SilentEye experience to life. And our writers are
+                        dedicated to bringing you the latest online safety news and advice so you can feel good about
+                        going online. Together, they form our talented Creative department.
+                    </p>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+
+
+    <!-- Better Family Lifestyle  -->
+    <section class="py-5 md:py-12 flex flex-col gap-5 md:gap-6">
+        <div class="max-w-[800px] w-full mx-auto flex flex-col gap-3">
+            <h2
+                class="text-[#101828] text-2xl md:text-[32px] font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                Better Family Lifestyle
+            </h2>
+            <p
+                class="opacity-60 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-[#222222] max-w-[800px] mx-auto w-full">
+                SilentEye, the link between children, parents, families, and the good life.
+            </p>
+        </div>
+
+        <ul class="flex justify-between max-w-[1280px] mx-auto w-full gap-4 no-scrollbar bg-white overflow-x-auto">
+
+            <li class="w-[320px] md:w-[302px] min-w-[320px] md:min-w-[302px] rounded-[16px] overflow-hidden ml-4 md:ml-0"
+                style="background: linear-gradient(180deg, #FFF8E4 0%, #FFEDB9 100%);">
+                <img src="../assets/family-1.png" alt="family Pictures" class="w-full h-[220px] md:h-[255px]">
+
+                <div class="p-4">
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] tracking-[-0.2px] text-center">
+                        SilentEye's tools filter and monitor content, ensuring children access only safe and
+                        age-appropriate information online.
+                    </p>
+                </div>
+            </li>
+
+            <li class="w-[320px] md:w-[302px] min-w-[320px] md:min-w-[302px] rounded-[16px] overflow-hidden"
+                style="background: linear-gradient(180deg, #FFEAE2 0%, #FFCAB5 100%);">
+                <img src="../assets/family-2.png" alt="family Pictures" class="w-full h-[220px] md:h-[255px] bg-center">
+
+                <div class="p-4">
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] tracking-[-0.2px] text-center">
+                        By encouraging open conversations about digital habits, SilentEye helps foster stronger family
+                        bonds and mutual understanding.
+                    </p>
+                </div>
+            </li>
+
+            <li class="w-[320px] md:w-[302px] min-w-[320px] md:min-w-[302px] rounded-[16px] overflow-hidden"
+                style="background: linear-gradient(180deg, #DCFBFF 0%, #ACE1FF 100%);">
+                <img src="../assets/family-3.png" alt="family Pictures" class="w-full h-[220px] md:h-[255px]">
+
+                <div class="p-4">
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] tracking-[-0.2px] text-center">
+                        SilentEye enables parents to set healthy device usage boundaries, promoting balanced digital
+                        habits and a healthier lifestyle for children.
+                    </p>
+                </div>
+            </li>
+
+            <li class="w-[320px] md:w-[302px] min-w-[320px] md:min-w-[302px] rounded-[16px] overflow-hidden mr-4 md:mr-0"
+                style="background: linear-gradient(180deg, #F1EBFF 0%, #C8B6F4 100%);">
+                <img src="../assets/family-4.png" alt="family Pictures" class="w-full h-[220px] md:h-[255px]">
+
+                <div class="p-4">
+                    <p
+                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] tracking-[-0.2px] text-center">
+                        With features like app usage control and location tracking, SilentEye allows parents to manage
+                        children's digital activities effectively
+                    </p>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+
+
+    <!-- Footer Section  -->
+    <footer class="border-t border-[#D0D5DD]">
+
+        <!-- Links Section  -->
+        <div class="p-4 md:p-10 flex flex-col lg:flex-row gap-8 lg:gap-5 border-b border-[#D0D5DD] w-full">
+
+            <!-- Logos  -->
+            <div class="flex flex-col gap-4 flex-1 lg:max-w-[500px] w-full">
+                <a href="" class="mx-auto">
+                    <img src="../assets/logo.svg" alt="SilentEye" class="h-8">
+                </a>
+
+                <p class="text-start md:text-center font-medium text-base leading-[20.8px] text-black opacity-60">
+                    SilentEye App is
+                    designed for legal use only.
+                    <span class="block md:hidden">The software is intended for the ethical supervision of employees and
+                        children with their consen</span>
+                </p>
+
+                <div class="flex flex-col gap-3 items-start">
+                    <div class="flex items-center gap-1">
+                        <img src="../assets/green-tikmark.svg" alt="green-tikmark">
+                        <span class="text-base font-medium leading-[17.6px] text-black">Approved by:</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 md:flex-wrap gap-3">
+                        <img src="../assets/stopbullying-logo.svg" alt="stopbullying"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/credit-card-safe-logo.svg" alt="credit-card-safe"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/pci-logo.svg" alt="pci" class="rounded-lg cursor-pointer flex-1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-5 flex-1">
+                <!-- Quick Links  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Quick Links</h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="../index.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Home</a>
+                        </li>
+
+                        <li>
+                            <a href=""
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">About
+                                Us</a>
+                        </li>
+
+                        <li>
+                            <a href="./contact.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Contact
+                                Us</a>
+                        </li>
+
+                        <li>
+                            <a href="./pricing.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="./reviews.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Reviews</a>
+                        </li>
+
+                        <li>
+                            <a href="./faqs.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Help & Policy  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Help & Policy
+                    </h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="/refund-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Refund
+                                Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="/privacy-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Privacy
+                                Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="./help-privacy.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Terms &
+                                Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="/disclaimer"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disclaimer Section  -->
+        <div class="max-w-[1040px] w-full mx-auto py-5 hidden md:block px-3">
+            <p class="text-base font-medium leading-[20.5px] text-black text-center">
+                <b class="font-bold">Disclaimer</b> : SilentEye App is designed for legal use only. The software is
+                intended for the
+                ethical
+                supervision of employees and children with their consent. Using the software for intrusion and stalking
+                purposes is highly discouraged by us. We reserve the right to cancel your license if any illicit or
+                illegal activity is reported. The user will be solely responsible if any violation in the state law
+                occurs.
+            </p>
+        </div>
+
+        <!-- Copy Right Section  -->
+
+        <div class="md:border-t py-6 px-4 md:px-10 flex justify-between items-center flex-col md:flex-row gap-2">
+            <p class="text-center md:text-start text-base font-medium leading-[17.6px]">Copyright © 2024. SilentEye. All
+                rights reserved.</p>
+            <div>
+                <img src="../assets/banking-logos.svg" alt="banking-logos">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JS Link  -->
+    <script src="../script.js"></script>
+</body>
+
+</html>

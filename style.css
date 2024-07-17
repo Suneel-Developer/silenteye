@@ -8,6 +8,7 @@
 
 body {
     font-family: "Urbanist", sans-serif;
+    width: 100%;
 }
 
 
@@ -66,6 +67,12 @@ body {
     box-shadow: 0px 2px 12px 0px #00000052 inset;
 }
 
+.btnshadow5 {
+    box-shadow: 0px 1px 2px 0px #0000000A;
+    box-shadow: 0px 4px 40px 0px #0000001F;
+    box-shadow: 0px 2px 12px 0px #FFFFFF14 inset;
+}
+
 .boxshadow1 {
     box-shadow: 0px 1px 2px 0px #1018280D;
 }
@@ -74,6 +81,28 @@ body {
     box-shadow: 0px 1px 2px 0px #0000000A;
     box-shadow: 0px 8px 64px 0px #00000014;
 }
+
+.boxshadow3 {
+    box-shadow: 0px 1px 2px 0px #0000000A;
+    box-shadow: 0px 8px 64px 0px #00000014;
+    box-shadow: 0px 4px 12px 0px #FFFFFF52 inset;
+}
+
+.headershow {
+    box-shadow: 0px 4px 4px 0px #00000005;
+    box-shadow: 0px 8px 100px 0px #00000014;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

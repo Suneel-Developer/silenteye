@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | SilentEye</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <section class="sticky top-0 w-full left-0 bg-white z-40 headershow">
+        <!-- Desktop Navigation Menu  -->
+        <div class="bg-white flex items-center px-3 py-4 sticky top-0 w-full left-0">
+            <div class="max-w-[1328px] mx-auto w-full flex items-center justify-between gap-2">
+
+                <!-- Links  -->
+                <ul class="hidden lg:flex items-center flex-1">
+                    <!-- Home Link  -->
+                    <li>
+                        <a href="../index.html"
+                            class="nav-link py-2 pr-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- Features Link  -->
+                    <li><a href=""
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Features</a>
+                    </li>
+
+                    <!-- Pricing Link  -->
+                    <li><a href="./pricing.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Pricing</a>
+                    </li>
+
+                    <!-- Reviews Link  -->
+                    <li><a href="./reviews.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Reviews</a>
+                    </li>
+
+                    <!-- Contact Link  -->
+                    <li><a href="./contact.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Toggle Btn  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/toggle-icon.svg" alt="toggle-icon" class="w-6 h-6 cursor-pointer"
+                        id="toggleMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge, Login & Try Demo btns  -->
+
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <a href="./login.html"
+                        class="text-center border border-[#D0D5DD] bg-white px-5 py-[10px] rounded-lg text-xl font-medium text-[#101828] btnsDropShadows hidden lg:flex leading-[22px]">Login</a>
+
+                    <button id="tryDemoBtnDesktop"
+                        class="text-center bg-[#172A6E] px-5 py-[10px] rounded-lg text-xl font-medium text-white btnsDropShadows hidden lg:flex items-center leading-[22px]">
+                        Try Demo
+                    </button>
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">Demo</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu"
+            class="fixed top-0 left-0 w-full h-full bg-white lg:hidden flex-col items-center hidden z-40">
+            <div class="flex items-center justify-between gap-2 py-4 px-3 w-full border-b border-[#D0D5DD]">
+
+                <!-- Close Toggle Btns  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/close-toggle.svg" alt="close-icon" class="w-6 h-6 cursor-pointer"
+                        id="closeMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge  & Demo btns  -->
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links  -->
+            <ul class="w-full flex flex-col">
+
+                <!-- Home Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="../index.html" class="nav-link text-xl font-medium text-[#172A6E]">Home</a>
+                </li>
+
+                <!-- Features Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="" class="nav-link text-xl font-medium text-[#172A6E]">Features</a>
+                </li>
+
+                <!-- Pricing Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./pricing.html" class="nav-link text-xl font-medium text-[#172A6E]">Pricing</a>
+                </li>
+
+                <!-- Reviews Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./reviews.html" class="nav-link text-xl font-medium text-[#172A6E]">Reviews</a>
+                </li>
+
+                <!-- Contact Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./contact.html" class="nav-link text-xl font-medium text-[#172A6E]">Contact</a>
+                </li>
+
+                <!-- Try Demo popup btn  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="" class="text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/demo.svg" alt="demo">
+                        Try Demo
+                    </a>
+                </li>
+
+                <!-- Login Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./login.html" class="nav-link text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/login.svg" alt="login icon">
+                        Login</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Try Demo Popup  -->
+        <div id="tryDemoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div
+                class="bg-white btnsDropShadows max-w-[600px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">Fill Detail to View Demo</h2>
+
+                    <button id="closePopupBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div class="p-4 flex flex-col gap-3">
+                    <label for="your id" class="text-base font-semibold leading-[17.6px] text-[#222222]">
+                        Your Mail ID
+                    </label>
+
+                    <input type="text" placeholder="Enter Your Email Address Here"
+                        class="py-3 px-4 bg-[#D0D5DD] bg-opacity-[1%] rounded-lg outline-none border border-[#D0D5DD] btnsDropShadows text-base font-medium text-[#222222]">
+                </div>
+
+                <div class="p-4 flex items-center gap-4">
+                    <button id="cancelBtn"
+                        class="py-[10px] px-3 rounded-lg border border-[#D0D5DD] btnsDropShadows text-lg font-medium text-center text-[#101828]">
+                        Cancel
+                    </button>
+
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-[#2C56FE] btnsDropShadows text-lg font-semibold text-center text-white flex-1">View
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- hero Section  -->
+    <section class="py-5 md:py-[86px] px-4 border-b border-[#DDDDDD]">
+        <div class="max-w-[1200px] w-full mx-auto flex flex-col gap-4 md:gap-6">
+            <div
+                class="text-[28px] md:text-[56px] font-bold leading-[30.8px] md:leading-[61.6px] text-[#222222] text-center">
+                SilentEye Features</div>
+
+            <p
+                class="text-sm md:text-2xl font-medium leading-[18.2px] md:leading-[31.2px] text-[#222222] text-center opacity-60">
+                SilentEye is the only monitoring app that you all ever need. Why? Just because we have developed it with
+                you in mind. You deserve to know it all and now you can.
+            </p>
+
+            <div class="flex items-center gap-3 md:gap-6 justify-center">
+                <a href="./pricing.html"
+                    class="py-3 md:py-4 px-5 md:px-20 rounded-[10px] md:rounded-xl btnshadow5 bg-[#2C56FE] border-2 border-[#2C56FE] text-lg md:text-xl font-bold text-white flex items-center justify-center">
+                    Try Now
+                </a>
+
+                <button
+                    class="py-3 md:py-4 px-5 md:px-20 rounded-[10px] md:rounded-xl btnshadow5 bg-white text-lg md:text-xl font-bold text-[#2C56FE] border-2 border-[#2C56FE] flex items-center justify-center gap-2">
+                    <img src="../assets/view-demo-icon.svg" alt="view-demo-icon" class="">
+                    View Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Features Section  -->
+    <section class="border-b border-[#DDDDDD]">
+
+        <!-- Title  -->
+        <div class="py-4 md:py-8 md:border-b border-[#DDDDDD] text-center">
+            <h2
+                class="mb-2 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                Even more Great Features
+            </h2>
+
+        </div>
+
+        <!-- Features 01  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-start items-start gap-4 md:gap-6 order-2 md:order-1">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        Device Control and Locking
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        Device Lock Controller enables
+                        device management for credit providers. Your provider can remotely restrict access to your
+                        device if you don't make payments. If your device is restricted, basic functionality, such
+                        as emergency calling and access to settings, will still be available.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/block-internet-connection.svg" alt="Block Internet Connection"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Block Internet Connection
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Prevents internet access on the target device.
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/block-mobile-network.svg" alt="Block Mobile Network" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Block Mobile Network
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Disables mobile network connectivity.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/unlock-devices.svg" alt="Remotely Lock or Unlock Device"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Remotely Lock or Unlock Device
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Securely control device access.
+                                </p>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-2">
+                    <img src="../assets/device-control-and-locking.png" alt="Device Control and Locking">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Features 02  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-start items-start gap-4 md:gap-6 order-2">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        Real-Time Monitoring
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        Real-time monitoring is the delivery of continuously updated data about systems, processes or
+                        events. Such monitoring provides information streaming at zero or low latency, so there is
+                        minimal delay between data collection and analysis.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/screen-sharing.svg" alt="Real-Time Screen Sharing" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Real-Time Screen Sharing
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Collaborate instantly with live screen sharing
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/recored-live-screen.svg"
+                                alt="Record Live Screen and Screenshot Anonymously" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Record Live Screen and Screenshot Anonymously
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Capture screen activity discreetly
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/live-microphone.svg"
+                                alt="Live Microphone Access for Listening to Surroundings" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Live Microphone Access for Listening to Surroundings
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Listen to the device's surroundings in real-time
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/gps-tracking.svg" alt="GPS-Free Real-Time Tracking" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    GPS-Free Real-Time Tracking
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Track device location without GPS
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/jps-position.svg" alt="GPS Position History" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    GPS Position History
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Access historical GPS location data
+                                </p>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1">
+                    <img src="../assets/real-time-monitoring.png" alt="Real-Time Monitoring">
+                </div>
+            </div>
+        </div>
+
+        <!-- Features 03  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-start items-start gap-4 md:gap-6 order-2 md:order-1">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        Communication Control
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        A communication controller manages data input and output to a host computer or computer network.
+                        The units may be complex front-end mainframe interfaces or simpler devices such as multiplexors,
+                        bridges, and routers.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/record-all-calls.svg"
+                                alt="Record All Calls, Including Unsupported Devices" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Record All Calls, Including Unsupported Devices
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Prevents internet access on the target device.
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/block-contacts.svg" alt="Block Unwanted Contacts" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Block Unwanted Contacts
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Prevent unwanted communications
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/remote-call-control.svg" alt="Remote Call Control" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Remote Call Control
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Dial or Disconnect: Manage calls remotely
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/sms-control.svg" alt="SMS Control" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    SMS Control
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Send, Receive, and Read Messages Secretly: Monitor text messages discreetly
+                                </p>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-2">
+                    <img src="../assets/communication-control.png" alt="Communication Control">
+                </div>
+            </div>
+        </div>
+
+        <!-- Features 04  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-start items-start gap-4 md:gap-6 order-2 md:order-2">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        App and File Management
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        Real-time monitoring is the delivery of continuously updated data about systems, processes or
+                        events. Such monitoring provides information streaming at zero or low latency.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/apps.svg" alt="Remotely Install or Uninstall Any Apps"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Remotely Install or Uninstall Any Apps
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Manage apps remotely
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/delete.svg" alt="Remotely Delete Anything Without Limitations"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Remotely Delete Anything Without Limitations
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Remove files and data remotely
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/download-files.svg"
+                                alt="Download Any Details as Files or Folders from the Target Device"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Download Any Details as Files or Folders from the Target Device
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Retrieve data to your dashboard
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/view-photos-videos.svg" alt="View Photos and Videos on the Target Phone"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    View Photos and Videos on the Target Phone
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Access multimedia files remotely
+                                </p>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-1">
+                    <img src="../assets/app-and-file-management.png" alt="App and File Management">
+                </div>
+            </div>
+        </div>
+
+        <!-- Features 05  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-start items-start gap-4 md:gap-6 order-2 md:order-1">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        Privacy and Security
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        A communication controller manages data input and output to a host computer or computer network.
+                        The units may be complex front-end mainframe interfaces or simpler devices such as multiplexors,
+                        bridges, and routers.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/unlock-access-folders.svg"
+                                alt="Unlock and Access Encrypted Folders Without Restrictions" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Unlock and Access Encrypted Folders Without Restrictions
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Gain access to encrypted data
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/locks.svg"
+                                alt="Unrestricted Access to Saved IDs, Passwords, Card Details, and Payment Methods"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Unrestricted Access to Saved IDs, Passwords, Card Details, and Payment Methods
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Securely access sensitive information
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/view-apps-messages.svg"
+                                alt="View App Messages, Stories, or Content Anonymously" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    View App Messages, Stories, or Content Anonymously
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Monitor app content without detection
+                                </p>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-2">
+                    <img src="../assets/privacy-and-security.png" alt="Privacy and Security">
+                </div>
+            </div>
+        </div>
+
+        <!-- Features 06  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-center items-start h-full gap-4 md:gap-6 order-2 md:order-2">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        Alerts and Notifications
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        Real-time monitoring is the delivery of continuously updated data about systems, processes or
+                        events. Such monitoring provides information streaming at zero or low latency.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/apps.svg" alt="Real-Time Notification Sync" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Real-Time Notification Sync
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Stay updated with real-time alerts
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/instant-alerts.svg" alt="Instant Alerts" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Instant Alerts
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Low Battery, Offline Status, App Access, and Geofence Updates: Receive immediate
+                                    notifications
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-1">
+                    <img src="../assets/alerts-and-notifications.png" alt="Alerts and Notifications">
+                </div>
+            </div>
+        </div>
+
+        <!-- Features 07  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-center items-start gap-4 md:gap-6 order-2 md:order-1">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        Activity Monitoring
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        A communication controller manages data input and output to a host computer or computer network.
+                        The units may be complex front-end mainframe interfaces or simpler devices such as multiplexors,
+                        bridges, and routers.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/tracking-screen-records.svg"
+                                alt="Comprehensive Activity Tracking with Date, Time, and Screen Recordings"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Comprehensive Activity Tracking with Date, Time, and Screen Recordings
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Monitor device usage comprehensively
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/activity-reports.svg" alt="Activity Reports" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Activity Reports
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Monitor Daily/Weekly Phone Usage for Informed Adjustments: Review usage reports.
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-2">
+                    <img src="../assets/activity-monitoring.png" alt="Activity Monitoring">
+                </div>
+            </div>
+        </div>
+
+        <!-- Features 08  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-center items-start gap-4 md:gap-6 order-2 md:order-2">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        Camera and Media Access
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        Real-time monitoring is the delivery of continuously updated data about systems, processes or
+                        events. Such monitoring provides information streaming at zero or low latency.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/rear-front-camera.svg" alt="Rear/Front Camera Activity"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Remotely Activate and Record the Target's Rear/Front Camera Activity
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Access device cameras remotely
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/power-control.svg" alt="Remote Power Control" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Remote Power Control
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    On/Off Instantly: Manage device power remotely
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/camera-access.svg" alt="Remote Camera Access" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Remote Camera Access
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Gain control over the device's camera
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-1">
+                    <img src="../assets/camera-and-media-access.png" alt="Camera and Media Access">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Features 09  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-center items-start gap-4 md:gap-6 order-2 md:order-1">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        Web and App Usage Control
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        A communication controller manages data input and output to a host computer or computer network.
+                        The units may be complex front-end mainframe interfaces or simpler devices such as multiplexors,
+                        bridges, and routers.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/social-media-filter.svg" alt="Social Media Content Filter"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Social Media Content Filter
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Filter harmful content on social media
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/blocking-websites.svg" alt="Blocking Websites" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Blocking Websites
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Restrict access to specific websites
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/app-time-limits.svg"
+                                alt="App Time Limits: Enhance Focus by Setting App Usage Timeframes" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    App Time Limits: Enhance Focus by Setting App Usage Timeframes
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Limit app usage for better productivity
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-2">
+                    <img src="../assets/web-and-app-usage-control.png" alt="Web and App Usage Control">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Features 10  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-center items-start gap-4 md:gap-6 order-2 md:order-2">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        Keylogging and Keystroke Monitoring
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        Real-time monitoring is the delivery of continuously updated data about systems, processes or
+                        events. Such monitoring provides information streaming at zero or low latency.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/record-every-keystroke.svg" alt="Record Every Keystroke"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Record Every Keystroke
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Monitor all typed keystrokes
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/timestamps.svg" alt="Timestamps" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Monitor and Retrieve Keystrokes, Including Incognito and Deleted Entries with
+                                    Timestamps
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Access typed data with timestamps
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-1">
+                    <img src="../assets/keylogging-and-keystroke-monitoring.png"
+                        alt="Keylogging and Keystroke Monitoring">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Features 11  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-center items-start gap-4 md:gap-6 order-2 md:order-1">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        App and Web Activity Tracking
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        A communication controller manages data input and output to a host computer or computer network.
+                        The units may be complex front-end mainframe interfaces or simpler devices such as multiplexors,
+                        bridges, and routers.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/moniter-web-and-mobile-activity.svg" alt="Monitor App and Web Activity"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Monitor App and Web Activity
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Keep an eye on app and web usage
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/track-app-usage.svg" alt="Track App Usage and Website Visits"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Track App Usage and Website Visits
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Monitor time spent on apps and websites
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/monitor-file-activity.svg" alt="Monitor File Activity"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Monitor File Activity, Capture File Usage, Record Actions, and Timestamps
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Access typed data with timestamps
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/user-ids-and-passwords.svg" alt="User IDs and Passwords"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Log Login and Logoff Activities with User IDs and Passwords
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Monitor time spent on apps and websites
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-2">
+                    <img src="../assets/app-and-web-activity-tracking.png" alt="App and Web Activity Tracking">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Features 12  -->
+        <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-center items-start gap-4 md:gap-6 order-2 md:order-2">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        Location and Movement Tracking
+                    </h2>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/route-history.svg" alt="Route History" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Route History
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Discover Frequent Locations on a Timeline: Track frequent locations
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/geofencing.svg" alt="Geofencing" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Geofencing: Receive Alerts for Entry and Exit from Defined Areas
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Get alerts for specific location entries and exits
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-1">
+                    <img src="../assets/location-and-movement-tracking.png" alt="Location and Movement Tracking">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Features 13  -->
+        <div class="py-5 md:py-10 px-4">
+            <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div class="flex flex-col justify-center items-start gap-4 md:gap-6 order-2 md:order-1">
+                    <h2
+                        class="text-2xl md:text-[40px] font-bold tracking-[-0.2px] leading-[26.4px] md:leading-[44px] text-[#101828]">
+                        Data and Reporting
+                    </h2>
+
+                    <p class="text-sm md:text-lg font-medium leading-18.2px] md:leading-[23.4px] text-[#101828]">
+                        A communication controller manages data input and output to a host computer or computer network.
+                        The units may be complex front-end mainframe interfaces or simpler devices such as multiplexors,
+                        bridges, and routers.
+                    </p>
+
+                    <ul class="flex flex-col gap-4 md:gap-6">
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/statistics-summary.svg" alt="Statistics Summary" class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Statistics Summary
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    View summary statistics
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/formats-icon.svg" alt="Generate Reports in PDF, Excel, or CSV Formats"
+                                class="h-6 md:h-8">
+
+                            <div class="flex-1">
+                                <h4
+                                    class="text-lg md:text-xl font-bold leading-[21.6px] md:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                    Generate Reports in PDF, Excel, or CSV Formats
+                                </h4>
+                                <p
+                                    class="text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-[#101828]">
+                                    Create detailed reports
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center order-1 md:order-2">
+                    <img src="../assets/data-and-reporting.png" alt="Data and Reporting">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="border-b border-[#DDDDDD] py-5 md:py-10 flex items-center justify-center">
+            <button
+                class="py-3 md:py-4 px-3 md:px-6 border border-[#DDDDDD] rounded-lg text-center btnshadow3 text-base md:text-[19px] font-bold text-[#101828] tracking-[-0.17px] flex items-center justify-center gap-4">
+                View More Features
+                <img src="../assets/btn-down-arrow.svg" alt="down-arrow">
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <!-- Communication Monitoring for Various Apps Section -->
+    <section class="py-5 md:py-10 px-4">
+        <h2
+            class="mb-2 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+            Communication Monitoring for Various Apps
+        </h2>
+        <p
+            class="opacity-60 mb-5 md:mb-10 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-[#222222]">
+            Monitor 20+ popular apps and social media platforms
+        </p>
+
+        <div class="max-w-[1208px] mx-auto w-full flex items-center flex-wrap justify-between gap-5 md:gap-10">
+            <img src="../assets/1.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/2.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/3.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/4.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/5.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/6.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/7.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/8.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/9.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/10.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/11.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/12.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/13.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/14.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/15.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/16.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/17.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/18.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/19.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/20.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/21.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/22.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/23.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+            <img src="../assets/24.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer Section  -->
+    <footer class="border-t border-[#D0D5DD]">
+
+        <!-- Links Section  -->
+        <div class="p-4 md:p-10 flex flex-col lg:flex-row gap-8 lg:gap-5 border-b border-[#D0D5DD] w-full">
+
+            <!-- Logos  -->
+            <div class="flex flex-col gap-4 flex-1 lg:max-w-[500px] w-full">
+                <a href="" class="mx-auto">
+                    <img src="../assets/logo.svg" alt="SilentEye" class="h-8">
+                </a>
+
+                <p class="text-start md:text-center font-medium text-base leading-[20.8px] text-black opacity-60">
+                    SilentEye App is
+                    designed for legal use only.
+                    <span class="block md:hidden">The software is intended for the ethical supervision of employees and
+                        children with their consen</span>
+                </p>
+
+                <div class="flex flex-col gap-3 items-start">
+                    <div class="flex items-center gap-1">
+                        <img src="../assets/green-tikmark.svg" alt="green-tikmark">
+                        <span class="text-base font-medium leading-[17.6px] text-black">Approved by:</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 md:flex-wrap gap-3">
+                        <img src="../assets/stopbullying-logo.svg" alt="stopbullying"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/credit-card-safe-logo.svg" alt="credit-card-safe"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/pci-logo.svg" alt="pci" class="rounded-lg cursor-pointer flex-1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-5 flex-1">
+                <!-- Quick Links  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Quick Links</h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="../index.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="./about.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">About
+                                Us</a>
+                        </li>
+
+                        <li>
+                            <a href="./contact.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Contact
+                                Us</a>
+                        </li>
+
+                        <li>
+                            <a href="./pricing.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="./reviews.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Reviews</a>
+                        </li>
+
+                        <li>
+                            <a href="./faqs.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Help & Policy  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Help & Policy
+                    </h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="/refund-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Refund
+                                Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="/privacy-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Privacy
+                                Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="./help-privacy.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Terms &
+                                Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="/disclaimer"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disclaimer Section  -->
+        <div class="max-w-[1040px] w-full mx-auto py-5 hidden md:block px-3">
+            <p class="text-base font-medium leading-[20.5px] text-black text-center">
+                <b class="font-bold">Disclaimer</b> : SilentEye App is designed for legal use only. The software is
+                intended for the
+                ethical
+                supervision of employees and children with their consent. Using the software for intrusion and stalking
+                purposes is highly discouraged by us. We reserve the right to cancel your license if any illicit or
+                illegal activity is reported. The user will be solely responsible if any violation in the state law
+                occurs.
+            </p>
+        </div>
+
+        <!-- Copy Right Section  -->
+
+        <div class="md:border-t py-6 px-4 md:px-10 flex justify-between items-center flex-col md:flex-row gap-2">
+            <p class="text-center md:text-start text-base font-medium leading-[17.6px]">Copyright © 2024. SilentEye. All
+                rights reserved.</p>
+            <div>
+                <img src="../assets/banking-logos.svg" alt="banking-logos">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JS Link  -->
+    <script src="../script.js"></script>
+
+
+</body>
+
+</html>

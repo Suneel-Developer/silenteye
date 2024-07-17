@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | SilentEye</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <section class="sticky top-0 w-full left-0 bg-white z-40 headershow">
+        <!-- Desktop Navigation Menu  -->
+        <div class="bg-white flex items-center px-3 py-4 w-full left-0">
+            <div class="max-w-[1328px] mx-auto w-full flex items-center justify-between m-0 gap-2">
+
+                <!-- Links  -->
+                <ul class="hidden lg:flex items-center flex-1">
+                    <!-- Home Link  -->
+                    <li>
+                        <a href="../index.html"
+                            class="nav-link py-2 pr-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- Features Link  -->
+                    <li><a href="./features.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Features</a>
+                    </li>
+
+                    <!-- Pricing Link  -->
+                    <li><a href=""
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Pricing</a>
+                    </li>
+
+                    <!-- Reviews Link  -->
+                    <li><a href="./reviews.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Reviews</a>
+                    </li>
+
+                    <!-- Contact Link  -->
+                    <li><a href="./contact.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Toggle Btn  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/toggle-icon.svg" alt="toggle-icon" class="w-6 h-6 cursor-pointer"
+                        id="toggleMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge, Login & Try Demo btns  -->
+
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <a href="./login.html"
+                        class="text-center border border-[#D0D5DD] bg-white px-5 py-[10px] rounded-lg text-xl font-medium text-[#101828] btnsDropShadows hidden lg:flex leading-[22px]">Login</a>
+
+                    <button id="tryDemoBtnDesktop"
+                        class="text-center bg-[#172A6E] px-5 py-[10px] rounded-lg text-xl font-medium text-white btnsDropShadows hidden lg:flex items-center leading-[22px]">
+                        Try Demo
+                    </button>
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu"
+            class="fixed top-0 left-0 w-full h-full bg-white lg:hidden flex-col items-center hidden z-40">
+            <div class="flex items-center justify-between gap-2 py-4 px-3 w-full border-b border-[#D0D5DD]">
+
+                <!-- Close Toggle Btns  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/close-toggle.svg" alt="close-icon" class="w-6 h-6 cursor-pointer"
+                        id="closeMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge  & Demo btns  -->
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links  -->
+            <ul class="w-full flex flex-col">
+
+                <!-- Home Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="../index.html" class="nav-link text-xl font-medium text-[#172A6E]">Home</a>
+                </li>
+
+                <!-- Features Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./features.html" class="nav-link text-xl font-medium text-[#172A6E]">Features</a>
+                </li>
+
+                <!-- Pricing Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="" class="nav-link text-xl font-medium text-[#172A6E]">Pricing</a>
+                </li>
+
+                <!-- Reviews Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./reviews.html" class="nav-link text-xl font-medium text-[#172A6E]">Reviews</a>
+                </li>
+
+                <!-- Contact Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./contact.html" class="nav-link text-xl font-medium text-[#172A6E]">Contact</a>
+                </li>
+
+                <!-- Try Demo popup btn  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <button class="text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/demo.svg" alt="demo">
+                        Try Demo
+                    </button>
+                </li>
+
+                <!-- Login Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./login.html" class="nav-link text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/login.svg" alt="login icon">
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Try Demo Popup  -->
+        <div id="tryDemoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div
+                class="bg-white btnsDropShadows max-w-[600px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">Fill Detail to View Demo</h2>
+
+                    <button id="closePopupBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div class="p-4 flex flex-col gap-3">
+                    <label for="your id" class="text-base font-semibold leading-[17.6px] text-[#222222]">
+                        Your Mail ID
+                    </label>
+
+                    <input type="text" placeholder="Enter Your Email Address Here"
+                        class="py-3 px-4 bg-[#D0D5DD] bg-opacity-[1%] rounded-lg outline-none border border-[#D0D5DD] btnsDropShadows text-base font-medium text-[#222222]">
+                </div>
+
+                <div class="p-4 flex items-center gap-4">
+                    <button id="cancelBtn"
+                        class="py-[10px] px-3 rounded-lg border border-[#D0D5DD] btnsDropShadows text-lg font-medium text-center text-[#101828]">
+                        Cancel
+                    </button>
+
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-[#2C56FE] btnsDropShadows text-lg font-semibold text-center text-white flex-1">View
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Hero Section   -->
+    <section class="hidden md:flex bg-[#F5F8FF] border-b border-[#DDDDDD] py-[60px] px-4">
+        <div class="max-w-[1328px] mx-auto w-full flex flex-col gap-3">
+            <h1 class="text-[40px] font-bold leading-[52px] text-[#222222]">We have got a pricing plan <br> thats
+                perfect for you </h1>
+            <p class="text-[#222222] opacity-60 text-base font-medium">Explore our pricing options and choose the plan
+                that suits you best</p>
+
+            <div
+                class="flex items-center gap-2 flex-wrap text-base leading-[17.6px] font-medium text-black text-opacity-50">
+                <h3>Rated <b class="font-bold text-black text-opacity-90">Excellent</b> on</h3>
+                <img src="../assets/Trustpilot-logo.svg" alt="Trustpilot-logo">
+                <h3>Based on <b class="font-bold text-black text-opacity-90">456 reviews</b></h3>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Pricing Plans  -->
+
+    <section class="pt-5 md:pt-10 pb-6">
+
+        <div class="flex md:hidden justify-between gap-2 no-scrollbar overflow-x-auto mb-5">
+            <div
+                class="ml-4 min-w-[220px] w-[220px] border border-[#D0D5DD] p-2 rounded-[8px] flex gap-[6px] items-center">
+                <img src="../assets/shopping-bag.svg" alt="shopping-bag">
+                <div>
+                    <p class="text-[15px] font-normal tracking-[-0.17px] leading-[18px] text-[#101828]">
+                        <b class="font-bold">Jessi</b>
+                        from 🇺🇸
+                        <b class="font-bold">New York</b>
+                        just Purchased a
+                        <b class="font-bold">Pro Plan</b>
+                    </p>
+
+                    <span class="text-[13px] font-normal text-[#101828] leading-[15.6px]">2 hours ago</span>
+                </div>
+            </div>
+
+            <div
+                class="ml-4 min-w-[220px] w-[220px] border border-[#D0D5DD] p-2 rounded-[8px] flex gap-[6px] items-center">
+                <img src="../assets/shopping-bag.svg" alt="shopping-bag">
+                <div>
+                    <p class="text-[15px] font-normal tracking-[-0.17px] leading-[18px] text-[#101828]">
+                        <b class="font-bold">Jessi</b>
+                        from 🇺🇸
+                        <b class="font-bold">New York</b>
+                        just Purchased a
+                        <b class="font-bold">Pro Plan</b>
+                    </p>
+
+                    <span class="text-[13px] font-normal text-[#101828] leading-[15.6px]">2 hours ago</span>
+                </div>
+            </div>
+
+            <div
+                class="mr-4 min-w-[220px] w-[220px] border border-[#D0D5DD] p-2 rounded-[8px] flex gap-[6px] items-center">
+                <img src="../assets/shopping-bag.svg" alt="shopping-bag">
+                <div>
+                    <p class="text-[15px] font-normal tracking-[-0.17px] leading-[18px] text-[#101828]">
+                        <b class="font-bold">Jessi</b>
+                        from 🇺🇸
+                        <b class="font-bold">New York</b>
+                        just Purchased a
+                        <b class="font-bold">Pro Plan</b>
+                    </p>
+
+                    <span class="text-[13px] font-normal text-[#101828] leading-[15.6px]">2 hours ago</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-4">
+            <div class="flex items-center justify-between gap-2 w-full mb-6 max-w-[1200px] w-full mx-auto">
+                <h1 class="text-[32px] font-bold leading-[41.6px] text-[#222222] hidden md:flex">Pricing Plans</h1>
+
+                <div class="flex items-center gap-[10px] w-full md:w-auto">
+                    <div
+                        class="flex items-center gap-2 py-1 px-[10px] bg-[#172A6E] rounded-[200px] md:rounded-[6px] w-full md:w-auto max-w-full md:max-w-[343px] mx-auto md:h-[43px]">
+                        <img src="../assets/quality-badge-checkmark-icon 1.svg" alt="quality-badge-checkmark-icon">
+
+                        <div>
+                            <span class="text-white text-base font-bold leading-[5px]">30-Day</span>
+                            <span class="text-sm font-bold text-white leading-[5px]">Money Back Guarantee</span>
+                            <p class="text-white text-[13px] font-medium leading-[10px] pb-2">No Questions Asked.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="hidden md:flex items-center gap-1 py-[6px] px-[10px] bg-[#F10404] rounded-[6px] h-[43px]">
+                        <img src="../assets/danger-icon.svg" alt="danger-icon">
+                        <span class="text-white text-base font-medium leading-[19.09px] tracking-[-0.17px]">Dont wait !
+                            Discounts Ends in <b>00:15:00</b></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-6 max-w-[1200px] w-full mx-auto">
+
+                <!-- Weakly  -->
+                <div class="flex items-end order-4 md:order-1">
+                    <div
+                        class="bg-white border border-[#D0D5DD] max-w-full md:max-w-[282px] w-full p-4 flex flex-col gap-4 rounded-[16px]">
+                        <div class="flex justify-between flex-wrap items-center gap-1">
+                            <img src="../assets/plans-icon.svg" alt="plans-icon" class="w-6 h-6 hidden md:block">
+                            <img src="../assets/weakly.svg" alt="weakly" class="block md:hidden">
+                            <h4 class="flex-1 text-[#18181B] text-xl font-bold leading-[23px]">Weekly</h4>
+                            <input type="radio" id="weakly" value="weakly" name="weakly"
+                                class="outline-none w-[18px] h-[18px] rounded-full border border-[#D0D5DD] cursor-pointer">
+                        </div>
+
+                        <p class="text-[#18181B] opacity-50 text-base font-medium leading-[18.4px] hidden md:flex">Best
+                            for
+                            personal use</p>
+
+                        <div class="flex justify-between items-end flex-wrap gap-1">
+                            <div class="flex-1 text-[#101828] opacity-60 text-base font-medium leading-[19.09px]">
+                                $4.<span class="text-sm leading-[16.71px]">28</span>/day
+                            </div>
+                            <span class="text-[#101828] text-sm font-semibold leading-[17.71px]">$</span>
+                            <span class="text-[#101828] text-2xl font-medium leading-[25.4px]">29.99</span>
+                        </div>
+
+                        <button id="getStartedBtn"
+                            class="w-full text-lg font-bold py-3 px-5 rounded-[6px] text-center bg-[#172A6E] text-white hidden md:flex justify-center">Get
+                            started</button>
+                    </div>
+                </div>
+
+                <!-- Monthly  -->
+                <div class="flex items-end order-2 md:order-2">
+                    <div
+                        class="bg-white border border-[#D0D5DD] max-w-full md:max-w-[282px] w-full p-4 flex flex-col gap-4 rounded-[16px]">
+                        <div class="flex justify-between items-center flex-wrap gap-1">
+                            <img src="../assets/plans-icon.svg" alt="plans-icon" class="w-6 h-6 hidden md:block">
+                            <img src="../assets/monthly.svg" alt="monthly" class="block md:hidden">
+                            <h4 class="text-[#18181B] text-xl font-bold leading-[23px]">Monthly</h4>
+                            <div class="flex-1">
+                                <div
+                                    class="w-[61px] py-[2px] px-[6px] bg-[#ACDF873D] border border-[#4C9A2A] text-[#4C9A2A] rounded-[100px] text-center text-xs font-bold tracking-[-0.17px]">
+                                    95% OFF
+                                </div>
+                            </div>
+                            <input type="radio" id="weakly" value="weakly" name="weakly"
+                                class="outline-none w-[18px] h-[18px] rounded-full border border-[#D0D5DD] cursor-pointer">
+                        </div>
+
+                        <p class="text-[#18181B] opacity-50 text-base font-medium leading-[18.4px] hidden md:flex">
+                            Best for growing terms
+                        </p>
+
+                        <div class="flex justify-between items-end flex-wrap gap-1">
+                            <div class="flex-1 text-[#101828] opacity-60 text-base font-medium leading-[19.09px]">
+                                $2.<span class="text-sm leading-[16.71px]">00</span>/day
+                            </div>
+                            <span class="text-[#636E6E] text-base font-normal leading-[19.09px]">$</span>
+                            <span class="text-[#636E6E] text-base font-medium leading-[19.09px] line-through">199</span>
+                            <span
+                                class="text-[#636E6E] text-xs font-medium leading-[14.32px] -ml-1 mr-1 line-through">.66</span>
+                            <span class="text-[#F10404] text-sm font-semibold leading-[17.71px]">$</span>
+                            <span class="text-[#F10404] text-2xl font-medium leading-[25.4px]">59.99</span>
+                        </div>
+
+                        <button
+                            class="w-full text-lg font-bold py-3 px-5 rounded-[6px] text-center bg-[#172A6E] text-white hidden md:flex justify-center">Get
+                            started</button>
+                    </div>
+                </div>
+
+                <!-- Quarterly  -->
+                <div
+                    class="bg-white border order-3 md:order-3 border-[#D0D5DD] max-w-[282px] w-full hidden md:block overflow-hidden rounded-[16px]">
+                    <div
+                        class="flex items-center justify-center p-2 bg-[#172A6E] text-white text-sm font-semibold gap-1">
+                        Most Popular
+                        <img src="../assets/sparkles.svg" alt="sparkles">
+                    </div>
+                    <div class="py-3 px-4 flex flex-col gap-4">
+                        <div class="flex justify-between items-center gap-1">
+                            <img src="../assets/plans-icon.svg" alt="plans-icon" class="w-6 h-6">
+                            <h4 class="flex-1 text-[#18181B] text-xl font-bold leading-[23px]">Quarterly</h4>
+                            <input type="radio" id="weakly" value="weakly" name="weakly"
+                                class="outline-none w-[18px] h-[18px] rounded-full border border-[#D0D5DD] cursor-pointer">
+                        </div>
+
+                        <p class="text-[#18181B] opacity-50 text-base font-medium leading-[18.4px] hidden md:flex">
+                            Our Most Pouplar Plan
+                        </p>
+
+                        <div class="flex justify-between items-end gap-1">
+                            <div class="flex-1 text-[#101828] opacity-60 text-base font-medium leading-[19.09px]">
+                                $4.<span class="text-sm leading-[16.71px]">28</span>/day
+                            </div>
+                            <span class="text-[#101828] text-sm font-semibold leading-[17.71px]">$</span>
+                            <span class="text-[#101828] text-2xl font-medium leading-[25.4px]">29.99</span>
+                        </div>
+
+                        <button
+                            class="w-full text-lg font-bold py-3 px-5 rounded-[6px] text-center bg-[#172A6E] text-white hidden md:flex justify-center">Get
+                            started</button>
+                    </div>
+                </div>
+
+                <!-- Yearly  -->
+                <div class="flex items-end order-1 md:order-4">
+                    <div
+                        class="bg-[#E9EBFF] border-[1.5px] border-[#172A6E] max-w-full md:max-w-[282px] w-full p-4 flex flex-col gap-4 rounded-[16px]">
+                        <div class="flex justify-between flex-wrap items-center gap-1">
+                            <img src="../assets/plans-icon.svg" alt="plans-icon" class="w-6 h-6 hidden md:block">
+                            <img src="../assets/yearly.svg" alt="plans-icon"
+                                class="w-[15.75px] h-[10.5px] block md:hidden">
+                            <h4 class="text-[#18181B] text-xl font-bold leading-[23px]">Yearly</h4>
+                            <div class="flex-1">
+                                <div
+                                    class="w-[61px] py-[2px] px-[6px] bg-[#ACDF873D] border border-[#4C9A2A] text-[#4C9A2A] rounded-[100px] text-center text-xs font-bold tracking-[-0.17px]">
+                                    95% OFF
+                                </div>
+                            </div>
+                            <img src="../assets/_checkbox.svg" alt="_checkbox">
+                        </div>
+
+                        <p class="text-[#18181B] opacity-50 text-base font-medium leading-[18.4px] hidden md:flex">
+                            Best for long run
+                        </p>
+
+                        <div class="flex justify-between items-end flex-wrap gap-1">
+                            <div class="flex-1 text-[#101828] opacity-60 text-base font-medium leading-[19.09px]">
+                                $0.<span class="text-sm leading-[16.71px]">22</span>/day
+                            </div>
+                            <span class="text-[#636E6E] text-base font-normal leading-[19.09px]">$</span>
+                            <span
+                                class="text-[#636E6E] text-base font-medium leading-[19.09px] line-through">1599</span>
+                            <span
+                                class="text-[#636E6E] text-xs font-medium leading-[14.32px] -ml-1 mr-1 line-through">.99</span>
+                            <span class="text-[#F10404] text-sm font-semibold leading-[17.71px]">$</span>
+                            <span class="text-[#F10404] text-2xl font-medium leading-[25.4px]">79.99</span>
+                        </div>
+
+                        <button
+                            class="w-full text-lg font-bold py-3 px-5 rounded-[6px] text-center bg-[#172A6E] text-white hidden md:flex justify-center">Get
+                            started</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div
+                class="flex md:hidden items-center gap-1 py-[6px] px-[10px] bg-[#F10404] rounded-[6px] justify-center mt-3">
+                <img src="../assets/danger-icon.svg" alt="danger-icon">
+                <span class="text-white text-base font-medium leading-[19.09px] tracking-[-0.17px]">Dont wait !
+                    Discounts Ends in <b>00:15:00</b></span>
+            </div>
+        </div>
+
+
+        <!-- Up Sell Popup  -->
+
+        <div id="upsellPopup"
+            class="hidden fixed top-0 left-0 p-3 w-full h-full flex items-center justify-center bg-black bg-opacity-40 z-50">
+            <div class="bg-white max-w-[600px] w-full my-auto mx-auto rounded-[16px] overflow-hidden transition duration-200 ease-in-out"
+                id="upSellpopupContent">
+                <div class="py-2 md:py-3 px-2 md:px-4 bg-[#FFEAB5] text-sm md:text-base font-medium leading-[17.6px] text-[#101828]">
+                    Users can access one device per license. Additional licences are available with discounts for
+                    multiple devices.
+                </div>
+
+                <div class="p-4 flex flex-col gap-3 md:gap-4">
+                    <div class="flex justify-between gap-2">
+                        <h1 class="flex-1 text-[32px] md:text-[40px] font-bold leading-[34.19px] leading-[44px]">Buy More License <br>
+                            Get More <span class="text-[#4C9A2A]">Discount</span>
+                        </h1>
+
+                        <button class="w-10 h-10 flex items-center justify-center md:border border-[#D0D5DD] rounded-lg">
+                            <img id="upSellcloseBtn" src="../assets/close-toggle.svg" alt="close" class="w-5 h-5">
+                        </button>
+                    </div>
+
+                    <div class="flex p-[6px] md:p-3 gap-2 md:gap-3 border items-center border-[#D0D5DD] rounded-xl">
+                        <img src="../assets/couple.png" alt="couple" class="w-9 h-9">
+
+                        <div class="flex-1 flex flex-col gap-2">
+                            <div class="flex justify-between gap-1 items-center">
+                                <p class="flex gap-1 items-center text-base md:text-xl font-semibold text-[#101828]">
+                                    Couple
+                                    <span class="text-sm md:text-base font-medium opacity-60">(2-Device License)</span>
+                                </p>
+
+                                <div class="bg-[#F10404] rounded-[4px] p-1 text-white text-sm font-medium text-center">
+                                    10% OFF
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between gap-1 items-center">
+                                <p class="flex items-end text-base font-medium opacity-60 text-[#101828]">
+                                    <span class="text-sm leading-[15.4px]">$ </span>
+                                    <span class="leading-[15.6px] mx-[2px]"> 18.99 </span>
+                                    <span class="text-sm leading-[15.4px]"> / license</span>
+                                </p>
+
+                                <p class="flex items-end">
+                                    <span class="text-xs text-[#636E6E] leading-[15.4px]">$ </span>
+                                    <span class="leading-[15.6px] text-sm text-[#636E6E] ml-[2px] mr-2"> 39.98 </span>
+                                    <span class="text-sm text-[#F10404] font-medium leading-[15.4px]">$ </span>
+                                    <span class="text-lg text-[#F10404] font-semibold leading-[17px]"> 35.96</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex p-[6px] md:p-3 gap-2 md:gap-3 border items-center border-[#172A6E] bg-[#E9EBFF] rounded-xl">
+                        <img src="../assets/family.png" alt="family" class="w-9 h-9">
+
+                        <div class="flex-1 flex flex-col gap-2">
+                            <div class="flex justify-between gap-1 items-center">
+                                <p class="flex gap-1 items-center text-base md:text-xl font-semibold text-[#101828]">
+                                    Family
+                                    <span class="text-sm md:text-base font-medium opacity-60">(5-Device License)</span>
+                                </p>
+
+                                <div class="bg-[#F10404] rounded-[4px] p-1 text-white text-sm font-medium text-center">
+                                    30% OFF
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between gap-1 items-center">
+                                <p class="flex items-end text-base font-medium opacity-60 text-[#101828]">
+                                    <span class="text-sm leading-[15.4px]">$ </span>
+                                    <span class="leading-[15.6px] mx-[2px]"> 18.99 </span>
+                                    <span class="text-sm leading-[15.4px]"> / license</span>
+                                </p>
+
+                                <p class="flex items-end">
+                                    <span class="text-xs text-[#636E6E] leading-[15.4px]">$ </span>
+                                    <span class="leading-[15.6px] text-sm text-[#636E6E] ml-[2px] mr-2"> 39.98 </span>
+                                    <span class="text-sm text-[#F10404] font-medium leading-[15.4px]">$ </span>
+                                    <span class="text-lg text-[#F10404] font-semibold leading-[17px]"> 60.99</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex p-[6px] md:p-3 gap-2 md:gap-3 border items-center border-[#D0D5DD] rounded-xl">
+                        <img src="../assets/business.png" alt="business" class="w-9 h-9">
+
+                        <div class="flex-1 flex flex-col gap-2">
+                            <div class="flex justify-between gap-1 items-center">
+                                <p class="flex gap-1 items-center text-base md:text-xl font-semibold text-[#101828]">
+                                    Business
+                                    <span class="text-sm md:text-base font-medium opacity-60">(10-Device License)</span>
+                                </p>
+
+                                <div class="bg-[#F10404] rounded-[4px] p-1 text-white text-sm font-medium text-center">
+                                    40% OFF
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between gap-1 items-center">
+                                <p class="flex items-end text-base font-medium opacity-60 text-[#101828]">
+                                    <span class="text-sm leading-[15.4px]">$ </span>
+                                    <span class="leading-[15.6px] mx-[2px]"> 18.99 </span>
+                                    <span class="text-sm leading-[15.4px]"> / license</span>
+                                </p>
+
+                                <p class="flex items-end">
+                                    <span class="text-xs text-[#636E6E] leading-[15.4px]">$ </span>
+                                    <span class="leading-[15.6px] text-sm text-[#636E6E] ml-[2px] mr-2"> 39.98 </span>
+                                    <span class="text-sm text-[#F10404] font-medium leading-[15.4px]">$ </span>
+                                    <span class="text-lg text-[#F10404] font-semibold leading-[17px]"> 99.96</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="./checkout.html"
+                        class="flex items-center justify-center py-[14px] px-[18px] w-full bg-[#172A6E] rounded-lg gap-2 text-white text-xl font-semibold">
+                        Continue
+                        <img src="../assets/_right-arrow.svg" alt="right-arrow">
+                    </a>
+
+                    <a href="./checkout.html"
+                        class="flex items-center justify-center w-full underline text-[#101828] text-base font-medium">
+                        No Thanks, I Dont Require
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Include Features  -->
+
+    <section class="pb-6 md:pb-10 px-4">
+        <div class="max-w-[1200px] w-full mx-auto border border-[#DDDDDD] rounded-[16px]">
+            <div
+                class="border-b border-[#D0D5DD] p-4 sm:p-6 text-xl font-semibold text-[#101828] text-center sm:text-start">
+                Included Features
+            </div>
+
+            <ul>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/block-internet-connection.svg" alt="Block Internet Connection">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Block Internet Connection
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">Prevents
+                            internet access on the target device.
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/block-mobile-network.svg" alt="Block Mobile Network">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Block Mobile Network
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Disables mobile network connectivity.
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/unlock-devices.svg" alt="Remotely Lock or Unlock Device">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Remotely Lock or Unlock Device
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Securely control device access.
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/screen-sharing.svg" alt="Real-Time Screen Sharing">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Real-Time Screen Sharing
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Collaborate instantly with live screen sharing
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/recored-live-screen.svg" alt="Record Live Screen and Screenshot Anonymously">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Record Live Screen and Screenshot Anonymously
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Capture screen activity discreetly
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/live-microphone.svg" alt="Live Microphone Access for Listening to Surroundings">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Live Microphone Access for Listening to Surroundings
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Listen to the device's surroundings in real-time
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/gps-tracking.svg" alt="GPS-Free Real-Time Tracking">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            GPS-Free Real-Time Tracking
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Track device location without GPS
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/jps-position.svg" alt="GPS Position History">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            GPS Position History
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Access historical GPS location data
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/record-all-calls.svg" alt="Record All Calls, Including Unsupported Devices">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Record All Calls, Including Unsupported Devices
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Prevents internet access on the target device.
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/block-contacts.svg" alt="Block Unwanted Contacts">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Block Unwanted Contacts
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Prevent unwanted communications
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/remote-call-control.svg" alt="Remote Call Control">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Remote Call Control
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Dial or Disconnect: Manage calls remotely
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/sms-control.svg" alt="SMS Control">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            SMS Control
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Send, Receive, and Read Messages Secretly: Monitor text messages discreetly
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/apps.svg" alt="Remotely Install or Uninstall Any Apps">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Remotely Install or Uninstall Any Apps
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Manage apps remotely
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/delete.svg" alt="Remotely Delete Anything Without Limitations">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Remotely Delete Anything Without Limitations
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Remove files and data remotely
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/download-files.svg"
+                        alt="Download Any Details as Files or Folders from the Target Device">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Download Any Details as Files or Folders from the Target Device
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Retrieve data to your dashboard
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/view-photos-videos.svg" alt="View Photos and Videos on the Target Phone">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            View Photos and Videos on the Target Phone
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Access multimedia files remotely
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/unlock-access-folders.svg"
+                        alt="Unlock and Access Encrypted Folders Without Restrictions">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Unlock and Access Encrypted Folders Without Restrictions
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Gain access to encrypted data
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/locks.svg" alt="Saved IDs">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Unrestricted Access to Saved IDs, Passwords, Card Details, and Payment Methods
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Securely access sensitive information
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/view-apps-messages.svg"
+                        alt="View App Messages, Stories, or Content Anonymously">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            View App Messages, Stories, or Content Anonymously
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Monitor app content without detection
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/apps.svg" alt="Real-Time Notification Sync">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Real-Time Notification Sync
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Stay updated with real-time alerts
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/instant-alerts.svg" alt="Instant Alerts">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Instant Alerts
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Low Battery, Offline Status, App Access, and Geofence Updates: Receive immediate
+                            notifications
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/tracking-screen-records.svg" alt="tracking screen records">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Comprehensive Activity Tracking with Date, Time, and Screen Recordings
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Monitor device usage comprehensively
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/activity-reports.svg" alt="Activity Reports">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Activity Reports
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Monitor Daily/Weekly Phone Usage for Informed Adjustments: Review usage reports.
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/rear-front-camera.svg" alt="Rear/Front Camera Activity">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Remotely Activate and Record the Target's Rear/Front Camera Activity
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Access device cameras remotely
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/power-control.svg" alt="Remote Power Control">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Remote Power Control
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            On/Off Instantly: Manage device power remotely
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/camera-access.svg" alt="Remote Camera Access">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Remote Camera Access
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Gain control over the device's camera
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/social-media-filter.svg" alt="Social Media Content Filter">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Social Media Content Filter
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Filter harmful content on social media
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/blocking-websites.svg" alt="Blocking Websites">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Blocking Websites
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Restrict access to specific websites
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/app-time-limits.svg" alt="App Time Limits">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            App Time Limits: Enhance Focus by Setting App Usage Timeframes
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            App Time Limits: Enhance Focus by Setting App Usage Timeframes
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/silently-record-video-calss.svg"
+                        alt="Silently Record All or Specific Video Calls">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Silently Record All or Specific Video Calls
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Record video calls discreetly
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/record-every-keystroke.svg" alt="Record Every Keystroke">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Record Every Keystroke
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Monitor all typed keystrokes
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/timestamps.svg" alt="timestamps">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Monitor and Retrieve Keystrokes, Including Incognito and Deleted Entries with Timestamps
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Access typed data with timestamps
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/moniter-web-and-mobile-activity.svg" alt="Monitor App and Web Activity">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Monitor App and Web Activity
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Keep an eye on app and web usage
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/track-app-usage.svg" alt="Track App Usage and Website Visits">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Track App Usage and Website Visits
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Monitor time spent on apps and websites
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/monitor-file-activity.svg" alt="Monitor File Activity">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Monitor File Activity, Capture File Usage, Record Actions, and Timestamps
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Access typed data with timestamps
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/user-ids-and-passwords.svg" alt="User IDs and Passwords">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Log Login and Logoff Activities with User IDs and Passwords
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Record login and logoff events
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/route-history.svg" alt="Route History">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Route History
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Discover Frequent Locations on a Timeline: Track frequent locations
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/geofencing.svg" alt="Geofencing">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Geofencing: Receive Alerts for Entry and Exit from Defined Areas
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Get alerts for specific location entries and exits
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5 border-b border-[#D0D5DD]">
+                    <img src="../assets/statistics-summary.svg" alt="Statistics Summary">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Statistics Summary
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            View summary statistics
+                        </span>
+                    </div>
+                </li>
+
+                <li class="pl-5 pr-[10px] py-[10px] sm:py-3 flex items-center gap-4 sm:gap-5">
+                    <img src="../assets/formats-icon.svg" alt="Generate Reports in PDF, Excel, or CSV Formats">
+                    <div>
+                        <h3
+                            class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
+                            Generate Reports in PDF, Excel, or CSV Formats
+                        </h3>
+                        <span
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                            Create detailed reports
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section  -->
+    <footer class="border-t border-[#D0D5DD]">
+
+        <!-- Links Section  -->
+        <div class="p-4 md:p-10 flex flex-col lg:flex-row gap-8 lg:gap-5 border-b border-[#D0D5DD] w-full">
+
+            <!-- Logos  -->
+            <div class="flex flex-col gap-4 flex-1 lg:max-w-[500px] w-full">
+                <a href="" class="mx-auto">
+                    <img src="../assets/logo.svg" alt="SilentEye" class="h-8">
+                </a>
+
+                <p class="text-start md:text-center font-medium text-base leading-[20.8px] text-black opacity-60">
+                    SilentEye App is
+                    designed for legal use only.
+                    <span class="block md:hidden">The software is intended for the ethical supervision of employees and
+                        children with their consen
+                    </span>
+                </p>
+
+                <div class="flex flex-col gap-3 items-start">
+                    <div class="flex items-center gap-1">
+                        <img src="../assets/green-tikmark.svg" alt="green-tikmark">
+                        <span class="text-base font-medium leading-[17.6px] text-black">Approved by:</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 md:flex-wrap gap-3">
+                        <img src="../assets/stopbullying-logo.svg" alt="stopbullying"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/credit-card-safe-logo.svg" alt="credit-card-safe"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/pci-logo.svg" alt="pci" class="rounded-lg cursor-pointer flex-1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-5 flex-1">
+                <!-- Quick Links  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Quick Links</h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="../index.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="./about.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./contact.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href=""
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="./reviews.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Reviews</a>
+                        </li>
+
+                        <li>
+                            <a href="./faqs.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Help & Policy  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Help & Policy
+                    </h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="/refund-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Refund
+                                Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="/privacy-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Privacy
+                                Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="./help-privacy.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Terms &
+                                Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="/disclaimer"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disclaimer Section  -->
+        <div class="max-w-[1040px] w-full mx-auto py-5 hidden md:block px-3">
+            <p class="text-base font-medium leading-[20.5px] text-black text-center">
+                <b class="font-bold">Disclaimer</b> : SilentEye App is designed for legal use only. The software is
+                intended for the
+                ethical
+                supervision of employees and children with their consent. Using the software for intrusion and stalking
+                purposes is highly discouraged by us. We reserve the right to cancel your license if any illicit or
+                illegal activity is reported. The user will be solely responsible if any violation in the state law
+                occurs.
+            </p>
+        </div>
+
+        <!-- Copy Right Section  -->
+
+        <div class="md:border-t py-6 px-4 md:px-10 flex justify-between items-center flex-col md:flex-row gap-2">
+            <p class="text-center md:text-start text-base font-medium leading-[17.6px]">Copyright © 2024. SilentEye. All
+                rights reserved.</p>
+            <div>
+                <img src="../assets/banking-logos.svg" alt="banking-logos">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JS Link  -->
+    <script src="../script.js"></script>
+</body>
+
+</html>
