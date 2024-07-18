@@ -63,7 +63,7 @@
                 <!-- Langauge, Login & Try Demo btns  -->
 
                 <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
-                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]" id="videoBtn">
 
                     <a href="./login.html"
                         class="text-center border border-[#D0D5DD] bg-white px-5 py-[10px] rounded-lg text-xl font-medium text-[#101828] btnsDropShadows hidden lg:flex leading-[22px]">Login</a>
@@ -184,6 +184,35 @@
                     <button
                         class="py-[10px] px-3 rounded-lg bg-[#2C56FE] btnsDropShadows text-lg font-semibold text-center text-white flex-1">View
                         Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Video Popup  -->
+        <div id="videoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div id="videopopupContent"
+                class="bg-white btnsDropShadows max-w-[1000px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">How it Work?</h2>
+
+                    <button id="videocloseBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div>
+                    <img src="../assets/video.jpg" alt="video" class="w-full">
+                </div>
+
+                <div class="p-4">
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-white btnsDropShadows text-lg font-semibold text-center border border-[#D0D5DD] text-[#101828] w-full">
+                        Start Access Gaining
                     </button>
                 </div>
             </div>
@@ -695,7 +724,7 @@
 
             <!-- Logos  -->
             <div class="flex flex-col gap-4 flex-1 lg:max-w-[500px] w-full">
-                <a href="" class="mx-auto">
+                <a href="../index.html" class="mx-auto">
                     <img src="../assets/logo.svg" alt="SilentEye" class="h-8">
                 </a>
 

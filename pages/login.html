@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SilentEye</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <!-- Header Section -->
+    <section class="sticky top-0 w-full left-0 bg-white z-40 headershow">
+        <!-- Desktop Navigation Menu  -->
+        <div class="bg-white flex items-center px-3 py-4 w-full left-0">
+            <div class="max-w-[1328px] mx-auto w-full flex items-center justify-between m-0 gap-2">
+
+                <!-- Links  -->
+                <ul class="hidden lg:flex items-center flex-1">
+                    <!-- Home Link  -->
+                    <li>
+                        <a href="../index.html"
+                            class="nav-link py-2 pr-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- Features Link  -->
+                    <li><a href="./features.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Features</a>
+                    </li>
+
+                    <!-- Pricing Link  -->
+                    <li><a href="./pricing.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Pricing</a>
+                    </li>
+
+                    <!-- Reviews Link  -->
+                    <li><a href="./reviews.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Reviews</a>
+                    </li>
+
+                    <!-- Contact Link  -->
+                    <li><a href="./contact.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Toggle Btn  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/toggle-icon.svg" alt="toggle-icon" class="w-6 h-6 cursor-pointer"
+                        id="toggleMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge, Login & Try Demo btns  -->
+
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]" id="videoBtn">
+
+                    <a href=""
+                        class="text-center border border-[#D0D5DD] bg-white px-5 py-[10px] rounded-lg text-xl font-medium text-[#101828] btnsDropShadows hidden lg:flex leading-[22px]">Login</a>
+
+                    <button id="tryDemoBtnDesktop"
+                        class="text-center bg-[#172A6E] px-5 py-[10px] rounded-lg text-xl font-medium text-white btnsDropShadows hidden lg:flex items-center leading-[22px]">
+                        Try Demo
+                    </button>
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu"
+            class="fixed top-0 left-0 w-full h-full bg-white lg:hidden flex-col items-center hidden z-40">
+            <div class="flex items-center justify-between gap-2 py-4 px-3 w-full border-b border-[#D0D5DD]">
+
+                <!-- Close Toggle Btns  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/close-toggle.svg" alt="close-icon" class="w-6 h-6 cursor-pointer"
+                        id="closeMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge  & Demo btns  -->
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links  -->
+            <ul class="w-full flex flex-col">
+
+                <!-- Home Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="../index.html" class="nav-link text-xl font-medium text-[#172A6E]">Home</a>
+                </li>
+
+                <!-- Features Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./features.html" class="nav-link text-xl font-medium text-[#172A6E]">Features</a>
+                </li>
+
+                <!-- Pricing Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./pricing.html" class="nav-link text-xl font-medium text-[#172A6E]">Pricing</a>
+                </li>
+
+                <!-- Reviews Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./reviews.html" class="nav-link text-xl font-medium text-[#172A6E]">Reviews</a>
+                </li>
+
+                <!-- Contact Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./contact.html" class="nav-link text-xl font-medium text-[#172A6E]">Contact</a>
+                </li>
+
+                <!-- Try Demo popup btn  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <button class="text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/demo.svg" alt="demo">
+                        Try Demo
+                    </button>
+                </li>
+
+                <!-- Login Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="" class="nav-link text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/login.svg" alt="login icon">
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Try Demo Popup  -->
+        <div id="tryDemoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div
+                class="bg-white btnsDropShadows max-w-[600px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">Fill Detail to View Demo</h2>
+
+                    <button id="closePopupBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div class="p-4 flex flex-col gap-3">
+                    <label for="your id" class="text-base font-semibold leading-[17.6px] text-[#222222]">
+                        Your Mail ID
+                    </label>
+
+                    <input type="text" placeholder="Enter Your Email Address Here"
+                        class="py-3 px-4 bg-[#D0D5DD] bg-opacity-[1%] rounded-lg outline-none border border-[#D0D5DD] btnsDropShadows text-base font-medium text-[#222222]">
+                </div>
+
+                <div class="p-4 flex items-center gap-4">
+                    <button id="cancelBtn"
+                        class="py-[10px] px-3 rounded-lg border border-[#D0D5DD] btnsDropShadows text-lg font-medium text-center text-[#101828]">
+                        Cancel
+                    </button>
+
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-[#2C56FE] btnsDropShadows text-lg font-semibold text-center text-white flex-1">View
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Video Popup  -->
+        <div id="videoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div id="videopopupContent"
+                class="bg-white btnsDropShadows max-w-[1000px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">How it Work?</h2>
+
+                    <button id="videocloseBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div>
+                    <img src="../assets/video.jpg" alt="video" class="w-full">
+                </div>
+
+                <div class="p-4">
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-white btnsDropShadows text-lg font-semibold text-center border border-[#D0D5DD] text-[#101828] w-full">
+                        Start Access Gaining
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Login Section  -->
+
+    <section class="px-4 py-5">
+        <div class="max-w-[1400px] w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <!-- Login Image  -->
+            <div>
+                <img src="../assets/login-image.svg" alt="login" class="w-full h-full">
+            </div>
+
+            <!-- Login Form  -->
+            <div class="flex items-center lg:py-6">
+                <form class="flex flex-col gap-5 lg:gap-6 max-w-[470px] w-full mx-auto">
+                    <div>
+                        <h2
+                            class="text-[28px] lg:text-[32px] leading-[30.8px] lg:leading-[35.2px] font-bold text-[#222222] mb-3 text-center lg:text-start">
+                            Login to SilentEye</h2>
+                        <p class="text-lg leading-[22px] font-medium text-[#222222] text-center lg:text-start">
+                            <span class="opacity-100">Welcome Back </span>👋
+                        </p>
+                    </div>
+
+                    <!-- Email  -->
+                    <div class="flex flex-col gap-2">
+                        <label for="email" class="text-base font-semibold text-[#222222] leading-[17.6px]">Email</label>
+                        <div
+                            class="flex items-center border border-[#DDDDDD] bg-white rounded-lg py-[10px] lg:py-3 px-3 lg:px-4 gap-3 boxshadow2">
+                            <img src="../assets/gmail.svg" alt="gmail">
+                            <input type="email" name="email" id="email" placeholder="Enter Your Mail ID"
+                                class="flex-1 h-full border-none outline-none font-medium text-base lg:text-lg text-[#222222] text-opacity-50">
+                        </div>
+                    </div>
+
+                    <!-- Password  -->
+                    <div class="flex flex-col gap-2">
+                        <label for="password"
+                            class="text-base font-semibold text-[#222222] leading-[17.6px]">Password</label>
+                        <div
+                            class="flex items-center border border-[#DDDDDD] bg-white rounded-lg py-[10px] lg:py-3 px-3 lg:px-4 gap-3 boxshadow2">
+                            <img src="../assets/password-lock.svg" alt="password">
+                            <input type="password" name="password" id="password" placeholder="Enter Your Password"
+                                class="flex-1 h-full border-none outline-none font-medium text-base lg:text-lg text-[#222222] text-opacity-50">
+                        </div>
+                    </div>
+
+                    <!-- Remember me  -->
+
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox"
+                            class="outline-none boxshadow2 border border-[#DDDDDD] h-[18px] w-[18px] rounded-lg opacity-50">
+                        <p class="text-[15px] font-semibold text-[#222222] leading-[16.5px]">Remember Me</p>
+                    </div>
+
+
+                    <!-- Login Button  -->
+                    <button
+                        class="bg-[#2C56FE] p-[10px] lg:p-3 w-full text-white flex items-center rounded-xl justify-center gap-2 btnshadow5 text-lg lg:text-xl font-bold text-white">
+                        Login
+                        <img src="../assets/login-arrow.svg" alt="login-arrow">
+                    </button>
+
+                    <!-- purchase plane  -->
+
+                    <div
+                        class="flex items-center justify-center opacity-80 text-base lg:text-lg font-medium text-center gap-1 text-[#22222299] leading-[19.8px]">
+                        <p>Dont have an account?</p>
+                        <a href="./pricing.html" class="text-[#2C56FE]">Purchase Plan</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- JS Link  -->
+    <script src="../script.js"></script>
+</body>
+
+</html>

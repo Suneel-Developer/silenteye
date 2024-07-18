@@ -64,7 +64,7 @@
                 <!-- Langauge, Login & Try Demo btns  -->
 
                 <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
-                    <img src="./assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+                    <img src="./assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]" id="videoBtn">
 
                     <a href="./pages/login.html"
                         class="text-center border border-[#D0D5DD] bg-white px-5 py-[10px] rounded-lg text-xl font-medium text-[#101828] btnsDropShadows hidden lg:flex leading-[22px]">Login</a>
@@ -144,7 +144,8 @@
 
                 <!-- Login Link  -->
                 <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
-                    <a href="/pages/login.html" class="nav-link text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                    <a href="/pages/login.html"
+                        class="nav-link text-xl font-medium text-[#172A6E] flex items-center gap-4">
                         <img src="./assets/login.svg" alt="login icon">
                         Login</a>
                 </li>
@@ -188,8 +189,370 @@
                 </div>
             </div>
         </div>
+
+        <!-- Video Popup  -->
+        <div id="videoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div id="videopopupContent"
+                class="bg-white btnsDropShadows max-w-[1000px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">How it Work?</h2>
+
+                    <button 
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="./assets/close-toggle.svg" alt="close icon" class="w-5 h-5" id="videocloseBtn">
+                    </button>
+                </div>
+
+                <div>
+                    <img src="./assets/video.jpg" alt="video" class="w-full">
+                </div>
+
+                <div class="p-4">
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-white btnsDropShadows text-lg font-semibold text-center border border-[#D0D5DD] text-[#101828] w-full">
+                        Start Access Gaining
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
 
+
+    <!-- Hero Section  -->
+    <section class="py-5 md:py-[64px] px-4 border-b border-[#DDDDDD]">
+        <div class="max-w-[1200px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div class="flex flex-col gap-4 w-full">
+                <h1
+                    class="text-[32px] md:text-[56px] font-bold text-[#101828] tracking-[-0.2px] leading-[35.2px] md:leading-[61.6px]">
+                    Get Any Phone is Entire Access Instantly With Just Number
+                </h1>
+
+                <div class="flex items-center gap-2">
+                    <img src="./assets/usa.svg" alt="usa logo" class="w-8 h-8 rounded-full">
+                    <span class="text-xl md:text-2xl font-medium text-[#101828] leading-[22px] md:leading-[26.4px]">No.
+                        1 Choice in USA</span>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <p
+                        class="text-base md:text-lg font-medium text-[#101828] leading-[17.6px] md:leading-[19.8px] opacity-60">
+                        Type in the phone number you want to access.
+                    </p>
+
+                    <div
+                        class="max-w-full md:max-w-[371px] w-full py-1 pr-1 pl-2 md:pl-5 border border-[#D0D5DD] rounded-[100px] boxshadow6 flex gap-1">
+                        <div class="flex items-center gap-1 cursor-pointer">
+                            <img src="./assets/flag.png" alt="flag" class="w-9 h-6 rounded">
+                            <span class="text-base font-semibold text-[#101828]">+1</span>
+                            <img src="./assets/__down-arrow.svg" alt="down arrow">
+                        </div>
+                        <input type="text" placeholder="(555) 555-1234"
+                            class="flex-1 overflow-hidden h-full outline-none border-none text-lg font-medium text-[#101828] placeholder:text-opacity-50">
+
+                        <button id="openPopupBtn"
+                            class="py-[10px] md:py-3 px-3 md:px-[18px] bg-[#101828] rounded-[100px] text-white text-center text-base md:text-xl font-bold">Access</button>
+                    </div>
+                </div>
+
+                <div class="py-[10px] px-3 md:px-4 flex items-center w-full md:w-fit bg-[#E9EBFF] rounded-lg gap-4">
+                    <img src="./assets/plus-user.svg" alt="user">
+                    <p class="text-sm md:text-base font-medium text-[#101828] leading-[17.6px]">00000 People Gained
+                        Device Access
+                        Today!</p>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <div
+                        class="flex items-center gap-2 flex-wrap text-base leading-[17.6px] font-medium text-black text-opacity-50">
+                        <h3>Rated <b class="font-bold text-black text-opacity-90">Excellent</b> on</h3>
+                        <img src="./assets/Trustpilot-logo.svg" alt="Trustpilot-logo">
+                        <h3>Based on <b class="font-bold text-black text-opacity-90 underline">456 reviews</b></h3>
+                    </div>
+
+                    <p class="text-xs md:text-sm font-medium leading-[18.2px] text-[#101828] opacity-60">
+                        SilentEye is a robust spyware providing unrestricted access to any device worldwide through a
+                        phone number, no app installs or physical contact needed.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full h-full hidden lg:flex items-center">
+                <img src="./assets/hero-image.png" alt="hero image" class="w-auto h-auto">
+            </div>
+        </div>
+
+
+        <!-- Popup  -->
+        <div id="initialPopup" class="popup hidden z-50">
+            <div
+                class="popup-content max-w-[400px] w-full flex flex-col gap-2 p-5 bg-white rounded-[12px] h-[441px] justify-between">
+                <div class="text-[32px] font-bold leading-[38.19px]">
+                    How it Work?
+                </div>
+                <img src="./assets/access-1.svg" alt="Initial Image" class="w-[311px] h-[311px] mx-auto">
+
+
+                <button id="startAccessBtn"
+                    class="rounded-lg py-[10px] px-3 text-center border border-[#D0D5DD] text-base font-medium text-[#101828]">Start
+                    Access Gaining</button>
+            </div>
+        </div>
+
+        <div id="progressPopup" class="popup hidden z-50">
+            <div class="popup-content max-w-[400px] w-full flex flex-col gap-2 p-4 bg-white rounded-[12px] h-[500px]">
+                <img id="progressImage" src="image1.jpg" alt="Progress Image" class="w-[311px] h-[311px] mx-auto">
+                <div>
+                    <h1 id="progressTitle" class="text-[32px] font-bold leading-[38.19px]"></h1>
+                    <div class="flex items-end gap-3">
+                        <h1 id="progressTitle2" class="text-[32px] font-bold leading-[38.19px]"></h1>
+                        <div class="flex items-center mb-[6px] gap-[2px]" id="loadingDots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="py-[10px] px-3 rounded-lg border border-[#D0D5DD] bg-white flex items-center gap-2">
+                    <img src="./assets/flag.png" alt="flag" class="w-9 h-6">
+                    <p class="flex-1 text-base font-medium text-[#101828]">98989 98989</p>
+                    <img src="./assets/green-circle-tikmark.svg" alt="green-circle-tikmark">
+                </div>
+
+                <div class="h-[13px] w-full rounded-lg overflow-hidden border border-[#00B557] relative">
+                    <div class="progress-bar-fill" id="progressBarFill"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Most Used features  -->
+    <section>
+        <!-- Title  -->
+        <div class="py-4 md:py-8 text-center">
+            <h2
+                class="mb-2 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                Most Used Features
+            </h2>
+        </div>
+
+        <!-- Features Slider -->
+        <div class="py-8 bg-[#E9EBFF] w-full h-auto relative">
+            <div class="slider-container overflow-hidden mx-auto w-full ">
+                <div class="slider flex gap-2 md:gap-3">
+                    <div class="slide">
+                        <img src="./assets/block-internet-connection.svg" alt="Block Internet Connection" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Block Internet Connection</h3>
+                            <span
+                                class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">Prevents
+                                internet access on the target device.</span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/block-mobile-network.svg" alt="Block Mobile Network" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Block Mobile Network
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Disables mobile network connectivity.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/unlock-devices.svg" alt="Remotely Lock or Unlock Device" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Remotely Lock or Unlock Device
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Securely control device access.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/screen-sharing.svg" alt="Real-Time Screen Sharing" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Real-Time Screen Sharing
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Real-Time Screen Sharing
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/recored-live-screen.svg" alt="Record Live Screen and Screenshot Anonymously"
+                            class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Record Live Screen and Screenshot Anonymously
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Capture screen activity discreetly
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/live-microphone.svg"
+                            alt="Live Microphone Access for Listening to Surroundings" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Live Microphone Access for Listening to Surroundings
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Listen to the device's surroundings in real-time
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/gps-tracking.svg" alt="GPS-Free Real-Time Tracking" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                GPS-Free Real-Time Tracking
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Track device location without GPS
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/jps-position.svg" alt=" GPS Position History" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                GPS Position History
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Access historical GPS location data
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/record-all-calls.svg" alt="Record All Calls, Including Unsupported Devices"
+                            class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Record All Calls, Including Unsupported Devices
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Prevents internet access on the target device.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/block-contacts.svg" alt="Block Unwanted Contacts" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Block Unwanted Contacts
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Prevent unwanted communications
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/remote-call-control.svg" alt="Remote Call Control" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Remote Call Control
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Dial or Disconnect: Manage calls remotely
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/sms-control.svg" alt="SMS Control" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                SMS Control
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Send, Receive, and Read Messages Secretly: Monitor text messages discreetly
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/apps.svg" alt="Remotely Install or Uninstall Any Apps" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Remotely Install or Uninstall Any Apps
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Manage apps remotely
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/delete.svg" alt="Remotely Delete Anything Without Limitations" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Remotely Delete Anything Without Limitations
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Remove files and data remotely
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/download-files.svg"
+                            alt="Download Any Details as Files or Folders from the Target Device" class="h-8">
+                        <div class="flex flex-col gap-1">
+                            <h3
+                                class="text-lg sm:text-xl whitespace-normal font-bold leading-[21.6px] sm:leading-[24px] tracking-[-0.17px] text-[#101828]">
+                                Download Any Details as Files or Folders from the Target Device
+                            </h3>
+                            <span class="text-sm sm:text-base whitespace-normal font-medium text-[#101828] opacity-60">
+                                Retrieve data to your dashboard
+                            </span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="sliderleftshadow absolute left-0 top-0 h-full w-20 md:w-[150px] z-40"></div>
+            <div class="sliderleftshadow absolute right-0 top-0 h-full w-20 md:w-[150px] z-40 -rotate-180"></div>
+
+        </div>
+
+    </section>
 
 
     <!-- Features Section  -->
@@ -239,7 +602,6 @@
                             </div>
                         </li>
 
-
                         <li class="flex items-center gap-4">
                             <img src="./assets/block-mobile-network.svg" alt="Block Mobile Network" class="h-6 md:h-8">
 
@@ -282,7 +644,6 @@
         </div>
 
 
-        <!-- Features 02  -->
         <div class="py-5 md:py-10 px-4 border-b border-[#DDDDDD]">
             <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
                 <div class="flex flex-col justify-start items-start gap-4 md:gap-6 order-2">
@@ -387,7 +748,6 @@
             </div>
         </div>
 
-        <!-- Features 03  -->
         <div class="py-5 md:py-10 px-4">
             <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
                 <div class="flex flex-col justify-start items-start gap-4 md:gap-6 order-2 md:order-1">
@@ -405,7 +765,8 @@
                     <ul class="flex flex-col gap-4 md:gap-6">
 
                         <li class="flex items-center gap-4">
-                            <img src="./assets/record-all-calls.svg" alt="Record All Calls, Including Unsupported Devices" class="h-6 md:h-8">
+                            <img src="./assets/record-all-calls.svg"
+                                alt="Record All Calls, Including Unsupported Devices" class="h-6 md:h-8">
 
                             <div class="flex-1">
                                 <h4
@@ -419,10 +780,8 @@
                             </div>
                         </li>
 
-
                         <li class="flex items-center gap-4">
-                            <img src="./assets/block-contacts.svg"
-                                alt="Block Unwanted Contacts" class="h-6 md:h-8">
+                            <img src="./assets/block-contacts.svg" alt="Block Unwanted Contacts" class="h-6 md:h-8">
 
                             <div class="flex-1">
                                 <h4
@@ -437,8 +796,7 @@
                         </li>
 
                         <li class="flex items-center gap-4">
-                            <img src="./assets/remote-call-control.svg"
-                                alt="Remote Call Control" class="h-6 md:h-8">
+                            <img src="./assets/remote-call-control.svg" alt="Remote Call Control" class="h-6 md:h-8">
 
                             <div class="flex-1">
                                 <h4
@@ -466,8 +824,6 @@
                                 </p>
                             </div>
                         </li>
-
-
                     </ul>
                 </div>
 
@@ -477,15 +833,19 @@
             </div>
         </div>
 
-
         <div class="border-b border-[#DDDDDD] py-5 md:py-10 flex items-center justify-center">
-            <a href="./pages/features.html" class="py-3 md:py-4 px-3 md:px-6 border border-[#DDDDDD] rounded-lg text-center btnshadow3 text-base md:text-[19px] font-bold text-[#101828] tracking-[-0.17px]">View More Features</a>
+            <a href="./pages/features.html"
+                class="py-3 md:py-4 px-3 md:px-6 flex items-center gap-3 border border-[#DDDDDD] rounded-lg text-center btnshadow3 text-base md:text-[19px] font-bold text-[#101828] tracking-[-0.17px]">
+                View More Features
+                <img src="./assets/right-arrow.svg" alt="right-arrow" class="w-3 h-3">
+            </a>
         </div>
     </section>
 
 
 
     <!-- Communication Monitoring for Various Apps Section -->
+
     <section class="py-5 md:py-10 px-4">
         <h2
             class="mb-2 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
@@ -522,7 +882,10 @@
             <img src="./assets/23.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
             <img src="./assets/24.svg" alt="social icons" class="h-10 md:h-[64px]" loading="lazy">
         </div>
+
     </section>
+
+
 
 
 
@@ -928,7 +1291,8 @@
         <div class="max-w-[1040px] w-full mx-auto flex flex-col gap-5 md:gap-6">
             <h2
                 class="text-[#101828] text-2xl md:text-[32px] px-4 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
-                Frequently Asked Questions</h2>
+                Frequently Asked Questions
+            </h2>
 
             <div class="flex items-center justify-center bg-white">
                 <div class="flex overflow-x-auto gap-3 md:gap-6 bg-white no-scrollbar">
@@ -1030,16 +1394,251 @@
 
 
 
+    <!-- Reviews  Section   -->
+    <section>
+        <!-- Title  -->
+        <div class="py-4 md:py-8 text-center">
+            <h2
+                class="mb-2 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+                What our Users Says
+            </h2>
+
+            <a href="./pages/reviews.html" class="flex items-center justify-center gap-2 opacity-60">
+                <span class="text-lg font-bold text-[#222222] ">View All Reviews</span>
+                <img src="./assets/right-arrow.svg" alt="right-arrow" class="w-3 h-3">
+            </a>
+
+        </div>
+
+        <!-- Reviews Slider -->
+        <div class="py-8 bg-[#E9EBFF] w-full h-auto relative">
+            <div class="slider-container overflow-hidden mx-auto w-full ">
+                <div class="slider flex gap-2 md:gap-3">
+                    <div class="slide">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
+                            <div class="flex flex-col gap-[6px]">
+                                <h2 class="text-xl font-bold text-[#222222] leading-[21.6px]">Ciara Reining</h2>
+                                <div class="flex items-center gap-1">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-sm whitespace-normal font-medium text-[#222222] opacity-60 leading-[16.8px]">
+                            59% of teenagers said they had been harassed or bullied online. Your child may be
+                            bullied by acquaintances and strangers in social media, and chat rooms.
+                        </span>
+                    </div>
+
+                    <div class="slide">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
+                            <div class="flex flex-col gap-[6px]">
+                                <h2 class="text-xl font-bold text-[#222222] leading-[21.6px]">Ciara Reining</h2>
+                                <div class="flex items-center gap-1">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-sm whitespace-normal font-medium text-[#222222] opacity-60 leading-[16.8px]">
+                            59% of teenagers said they had been harassed or bullied online. Your child may be
+                            bullied by acquaintances and strangers in social media, and chat rooms.
+                        </span>
+                    </div>
+
+                    <div class="slide">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
+                            <div class="flex flex-col gap-[6px]">
+                                <h2 class="text-xl font-bold text-[#222222] leading-[21.6px]">Ciara Reining</h2>
+                                <div class="flex items-center gap-1">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-sm whitespace-normal font-medium text-[#222222] opacity-60 leading-[16.8px]">
+                            59% of teenagers said they had been harassed or bullied online. Your child may be
+                            bullied by acquaintances and strangers in social media, and chat rooms.
+                        </span>
+                    </div>
+
+                    <div class="slide">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
+                            <div class="flex flex-col gap-[6px]">
+                                <h2 class="text-xl font-bold text-[#222222] leading-[21.6px]">Ciara Reining</h2>
+                                <div class="flex items-center gap-1">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-sm whitespace-normal font-medium text-[#222222] opacity-60 leading-[16.8px]">
+                            59% of teenagers said they had been harassed or bullied online. Your child may be
+                            bullied by acquaintances and strangers in social media, and chat rooms.
+                        </span>
+                    </div>
+
+                    <div class="slide">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
+                            <div class="flex flex-col gap-[6px]">
+                                <h2 class="text-xl font-bold text-[#222222] leading-[21.6px]">Ciara Reining</h2>
+                                <div class="flex items-center gap-1">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-sm whitespace-normal font-medium text-[#222222] opacity-60 leading-[16.8px]">
+                            59% of teenagers said they had been harassed or bullied online. Your child may be
+                            bullied by acquaintances and strangers in social media, and chat rooms.
+                        </span>
+                    </div>
+
+                    <div class="slide">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
+                            <div class="flex flex-col gap-[6px]">
+                                <h2 class="text-xl font-bold text-[#222222] leading-[21.6px]">Ciara Reining</h2>
+                                <div class="flex items-center gap-1">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-sm whitespace-normal font-medium text-[#222222] opacity-60 leading-[16.8px]">
+                            59% of teenagers said they had been harassed or bullied online. Your child may be
+                            bullied by acquaintances and strangers in social media, and chat rooms.
+                        </span>
+                    </div>
+
+                    <div class="slide">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
+                            <div class="flex flex-col gap-[6px]">
+                                <h2 class="text-xl font-bold text-[#222222] leading-[21.6px]">Ciara Reining</h2>
+                                <div class="flex items-center gap-1">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-sm whitespace-normal font-medium text-[#222222] opacity-60 leading-[16.8px]">
+                            59% of teenagers said they had been harassed or bullied online. Your child may be
+                            bullied by acquaintances and strangers in social media, and chat rooms.
+                        </span>
+                    </div>
+
+                    <div class="slide">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
+                            <div class="flex flex-col gap-[6px]">
+                                <h2 class="text-xl font-bold text-[#222222] leading-[21.6px]">Ciara Reining</h2>
+                                <div class="flex items-center gap-1">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-sm whitespace-normal font-medium text-[#222222] opacity-60 leading-[16.8px]">
+                            59% of teenagers said they had been harassed or bullied online. Your child may be
+                            bullied by acquaintances and strangers in social media, and chat rooms.
+                        </span>
+                    </div>
+
+                    <div class="slide">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
+                            <div class="flex flex-col gap-[6px]">
+                                <h2 class="text-xl font-bold text-[#222222] leading-[21.6px]">Ciara Reining</h2>
+                                <div class="flex items-center gap-1">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-sm whitespace-normal font-medium text-[#222222] opacity-60 leading-[16.8px]">
+                            59% of teenagers said they had been harassed or bullied online. Your child may be
+                            bullied by acquaintances and strangers in social media, and chat rooms.
+                        </span>
+                    </div>
+
+                    <div class="slide">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
+                            <div class="flex flex-col gap-[6px]">
+                                <h2 class="text-xl font-bold text-[#222222] leading-[21.6px]">Ciara Reining</h2>
+                                <div class="flex items-center gap-1">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                    <img src="./assets/star-filled-yellow.svg" alt="start">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-sm whitespace-normal font-medium text-[#222222] opacity-60 leading-[16.8px]">
+                            59% of teenagers said they had been harassed or bullied online. Your child may be
+                            bullied by acquaintances and strangers in social media, and chat rooms.
+                        </span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="sliderleftshadow absolute left-0 top-0 h-full w-20 md:w-[150px] z-40"></div>
+            <div class="sliderleftshadow absolute right-0 top-0 h-full w-20 md:w-[150px] z-40 -rotate-180"></div>
+
+        </div>
+
+    </section>
+
+
+
     <!-- Contact Us Section -->
     <section class="py-5 md:py-12 px-4">
         <div class="max-w-[1280px] w-full mx-auto">
             <div>
                 <h2
                     class="mb-3 text-[#101828] text-2xl md:text-[32px] font-bold text-center leading-[26.4px] md:leading-[35.2px]">
-                    Contact Us</h2>
+                    Contact Us
+                </h2>
                 <p
                     class="opacity-60 text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-[#222222]">
-                    Want to start tracking now but still have questions? Write us, and we will be glad to help.</p>
+                    Want to start tracking now but still have questions? Write us, and we will be glad to help.
+                </p>
             </div>
 
             <div class="mt-5 md:mt-6 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
@@ -1146,29 +1745,29 @@
                         </li>
 
                         <li>
-                            <a href="/pages/about.html"
+                            <a href="./pages/about.html"
                                 class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">About
                                 Us</a>
                         </li>
 
                         <li>
-                            <a href="/pages/contact.html"
+                            <a href="./pages/contact.html"
                                 class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Contact
                                 Us</a>
                         </li>
 
                         <li>
-                            <a href="/pages/pricing.html"
+                            <a href="./pages/pricing.html"
                                 class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Pricing</a>
                         </li>
 
                         <li>
-                            <a href="/pages/reviews.html"
+                            <a href="./pages/reviews.html"
                                 class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Reviews</a>
                         </li>
 
                         <li>
-                            <a href="/pages/faqs.html"
+                            <a href="./pages/faqs.html"
                                 class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">FAQs</a>
                         </li>
                     </ul>
@@ -1181,21 +1780,22 @@
 
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                         <li>
-                            <a href="#"
-                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Refund
-                                Policy</a>
+                            <a href="#" class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Refund Policy
+                            </a>
                         </li>
 
                         <li>
-                            <a href="#"
-                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Privacy
-                                Policy</a>
+                            <a href="#" class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Privacy Policy
+                            </a>
                         </li>
 
                         <li>
-                            <a href="/pages/help-privacy.html"
-                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Terms &
-                                Conditions</a>
+                            <a href="./pages/help-privacy.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Terms & Conditions
+                            </a>
                         </li>
 
                         <li>

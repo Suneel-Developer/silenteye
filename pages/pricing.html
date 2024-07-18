@@ -63,7 +63,7 @@
                 <!-- Langauge, Login & Try Demo btns  -->
 
                 <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
-                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]" id="videoBtn">
 
                     <a href="./login.html"
                         class="text-center border border-[#D0D5DD] bg-white px-5 py-[10px] rounded-lg text-xl font-medium text-[#101828] btnsDropShadows hidden lg:flex leading-[22px]">Login</a>
@@ -187,6 +187,35 @@
                     <button
                         class="py-[10px] px-3 rounded-lg bg-[#2C56FE] btnsDropShadows text-lg font-semibold text-center text-white flex-1">View
                         Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Video Popup  -->
+        <div id="videoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div id="videopopupContent"
+                class="bg-white btnsDropShadows max-w-[1000px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">How it Work?</h2>
+
+                    <button id="videocloseBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div>
+                    <img src="../assets/video.jpg" alt="video" class="w-full">
+                </div>
+
+                <div class="p-4">
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-white btnsDropShadows text-lg font-semibold text-center border border-[#D0D5DD] text-[#101828] w-full">
+                        Start Access Gaining
                     </button>
                 </div>
             </div>
@@ -321,7 +350,7 @@
                             <span class="text-[#101828] text-2xl font-medium leading-[25.4px]">29.99</span>
                         </div>
 
-                        <button id="getStartedBtn"
+                        <button id="getStartedBtnWeakly"
                             class="w-full text-lg font-bold py-3 px-5 rounded-[6px] text-center bg-[#172A6E] text-white hidden md:flex justify-center">Get
                             started</button>
                     </div>
@@ -361,7 +390,7 @@
                             <span class="text-[#F10404] text-2xl font-medium leading-[25.4px]">59.99</span>
                         </div>
 
-                        <button
+                        <button id="getStartedBtnMonthly"
                             class="w-full text-lg font-bold py-3 px-5 rounded-[6px] text-center bg-[#172A6E] text-white hidden md:flex justify-center">Get
                             started</button>
                     </div>
@@ -395,7 +424,7 @@
                             <span class="text-[#101828] text-2xl font-medium leading-[25.4px]">29.99</span>
                         </div>
 
-                        <button
+                        <button id="getStartedBtnQuarterly"
                             class="w-full text-lg font-bold py-3 px-5 rounded-[6px] text-center bg-[#172A6E] text-white hidden md:flex justify-center">Get
                             started</button>
                     </div>
@@ -436,7 +465,7 @@
                             <span class="text-[#F10404] text-2xl font-medium leading-[25.4px]">79.99</span>
                         </div>
 
-                        <button
+                        <button id="getStartedBtnYearly"
                             class="w-full text-lg font-bold py-3 px-5 rounded-[6px] text-center bg-[#172A6E] text-white hidden md:flex justify-center">Get
                             started</button>
                     </div>
@@ -460,18 +489,21 @@
             class="hidden fixed top-0 left-0 p-3 w-full h-full flex items-center justify-center bg-black bg-opacity-40 z-50">
             <div class="bg-white max-w-[600px] w-full my-auto mx-auto rounded-[16px] overflow-hidden transition duration-200 ease-in-out"
                 id="upSellpopupContent">
-                <div class="py-2 md:py-3 px-2 md:px-4 bg-[#FFEAB5] text-sm md:text-base font-medium leading-[17.6px] text-[#101828]">
+                <div
+                    class="py-2 md:py-3 px-2 md:px-4 bg-[#FFEAB5] text-sm md:text-base font-medium leading-[17.6px] text-[#101828]">
                     Users can access one device per license. Additional licences are available with discounts for
                     multiple devices.
                 </div>
 
                 <div class="p-4 flex flex-col gap-3 md:gap-4">
                     <div class="flex justify-between gap-2">
-                        <h1 class="flex-1 text-[32px] md:text-[40px] font-bold leading-[34.19px] leading-[44px]">Buy More License <br>
+                        <h1 class="flex-1 text-[32px] md:text-[40px] font-bold leading-[34.19px] leading-[44px]">Buy
+                            More License <br>
                             Get More <span class="text-[#4C9A2A]">Discount</span>
                         </h1>
 
-                        <button class="w-10 h-10 flex items-center justify-center md:border border-[#D0D5DD] rounded-lg">
+                        <button
+                            class="w-10 h-10 flex items-center justify-center md:border border-[#D0D5DD] rounded-lg">
                             <img id="upSellcloseBtn" src="../assets/close-toggle.svg" alt="close" class="w-5 h-5">
                         </button>
                     </div>
@@ -508,7 +540,8 @@
                         </div>
                     </div>
 
-                    <div class="flex p-[6px] md:p-3 gap-2 md:gap-3 border items-center border-[#172A6E] bg-[#E9EBFF] rounded-xl">
+                    <div
+                        class="flex p-[6px] md:p-3 gap-2 md:gap-3 border items-center border-[#172A6E] bg-[#E9EBFF] rounded-xl">
                         <img src="../assets/family.png" alt="family" class="w-9 h-9">
 
                         <div class="flex-1 flex flex-col gap-2">
@@ -1179,7 +1212,7 @@
 
             <!-- Logos  -->
             <div class="flex flex-col gap-4 flex-1 lg:max-w-[500px] w-full">
-                <a href="" class="mx-auto">
+                <a href="../index.html" class="mx-auto">
                     <img src="../assets/logo.svg" alt="SilentEye" class="h-8">
                 </a>
 

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpPrivacy | SilentEye</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <!-- Header Section -->
+    <section class="sticky top-0 w-full left-0 bg-white z-40 headershow">
+        <!-- Desktop Navigation Menu  -->
+        <div class="bg-white flex items-center px-3 py-4 w-full left-0">
+            <div class="max-w-[1328px] mx-auto w-full flex items-center justify-between m-0 gap-2">
+
+                <!-- Links  -->
+                <ul class="hidden lg:flex items-center flex-1">
+                    <!-- Home Link  -->
+                    <li>
+                        <a href="../index.html"
+                            class="nav-link py-2 pr-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- Features Link  -->
+                    <li><a href="./features.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Features</a>
+                    </li>
+
+                    <!-- Pricing Link  -->
+                    <li><a href="./pricing.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Pricing</a>
+                    </li>
+
+                    <!-- Reviews Link  -->
+                    <li><a href="./reviews.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Reviews</a>
+                    </li>
+
+                    <!-- Contact Link  -->
+                    <li><a href="./contact.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Toggle Btn  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/toggle-icon.svg" alt="toggle-icon" class="w-6 h-6 cursor-pointer"
+                        id="toggleMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge, Login & Try Demo btns  -->
+
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]" id="videoBtn">
+
+                    <a href="./login.html"
+                        class="text-center border border-[#D0D5DD] bg-white px-5 py-[10px] rounded-lg text-xl font-medium text-[#101828] btnsDropShadows hidden lg:flex leading-[22px]">Login</a>
+
+                    <button id="tryDemoBtnDesktop"
+                        class="text-center bg-[#172A6E] px-5 py-[10px] rounded-lg text-xl font-medium text-white btnsDropShadows hidden lg:flex items-center leading-[22px]">
+                        Try Demo
+                    </button>
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu"
+            class="fixed top-0 left-0 w-full h-full bg-white lg:hidden flex-col items-center hidden z-40">
+            <div class="flex items-center justify-between gap-2 py-4 px-3 w-full border-b border-[#D0D5DD]">
+
+                <!-- Close Toggle Btns  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/close-toggle.svg" alt="close-icon" class="w-6 h-6 cursor-pointer"
+                        id="closeMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge  & Demo btns  -->
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links  -->
+            <ul class="w-full flex flex-col">
+
+                <!-- Home Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="../index.html" class="nav-link text-xl font-medium text-[#172A6E]">Home</a>
+                </li>
+
+                <!-- Features Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./features.html" class="nav-link text-xl font-medium text-[#172A6E]">Features</a>
+                </li>
+
+                <!-- Pricing Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./pricing.html" class="nav-link text-xl font-medium text-[#172A6E]">Pricing</a>
+                </li>
+
+                <!-- Reviews Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./reviews.html" class="nav-link text-xl font-medium text-[#172A6E]">Reviews</a>
+                </li>
+
+                <!-- Contact Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./contact.html" class="nav-link text-xl font-medium text-[#172A6E]">Contact</a>
+                </li>
+
+                <!-- Try Demo popup btn  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <button class="text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/demo.svg" alt="demo">
+                        Try Demo
+                    </button>
+                </li>
+
+                <!-- Login Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./login.html" class="nav-link text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/login.svg" alt="login icon">
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Try Demo Popup  -->
+        <div id="tryDemoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div
+                class="bg-white btnsDropShadows max-w-[600px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">Fill Detail to View Demo</h2>
+
+                    <button id="closePopupBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div class="p-4 flex flex-col gap-3">
+                    <label for="your id" class="text-base font-semibold leading-[17.6px] text-[#222222]">
+                        Your Mail ID
+                    </label>
+
+                    <input type="text" placeholder="Enter Your Email Address Here"
+                        class="py-3 px-4 bg-[#D0D5DD] bg-opacity-[1%] rounded-lg outline-none border border-[#D0D5DD] btnsDropShadows text-base font-medium text-[#222222]">
+                </div>
+
+                <div class="p-4 flex items-center gap-4">
+                    <button id="cancelBtn"
+                        class="py-[10px] px-3 rounded-lg border border-[#D0D5DD] btnsDropShadows text-lg font-medium text-center text-[#101828]">
+                        Cancel
+                    </button>
+
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-[#2C56FE] btnsDropShadows text-lg font-semibold text-center text-white flex-1">View
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Video Popup  -->
+        <div id="videoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div id="videopopupContent"
+                class="bg-white btnsDropShadows max-w-[1000px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">How it Work?</h2>
+
+                    <button id="videocloseBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div>
+                    <img src="../assets/video.jpg" alt="video" class="w-full">
+                </div>
+
+                <div class="p-4">
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-white btnsDropShadows text-lg font-semibold text-center border border-[#D0D5DD] text-[#101828] w-full">
+                        Start Access Gaining
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hero Section  -->
+    <section class="py-5 md:py-20 px-4 border-b border-[#DDDDDD]">
+        <div class="max-w-[560px] mx-auto w-full flex flex-col gap-3">
+            <h1
+                class="text-[28px] md:text-[64px] font-bold leading-[30.8px] md:leading-[70.4px] text-[#101828] text-center">
+                Terms & Conditions
+            </h1>
+
+            <p class="text-sm opacity-60 md:text-[20px] font-medium leading-[18.2px] md:leading-[26px] text-[#222222] text-center">
+                Last Update: 28 October, 2023
+            </p>
+
+            <div class="flex items-center justify-center gap-2 md:gap-3">
+                <a href="../index.html" class="text-base text-[#222222] font-medium opacity-60">Home</a>
+                <img src="../assets/right-arrow.svg" alt="" class="w-1 h-2">
+                <a href="#" class="text-base text-[#222222] font-semibold">Terms & Conditions</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Privacy Rules  -->
+    <section class="px-4 py-5 md:py-12">
+        <div class="flex flex-col gap-4 md:gap-6 max-w-[1280px] w-full mx-auto">
+            <div class="text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-[#222222] opacity-60">
+                Welcome to SilentEye. This site is provided as a service to our visitors and may be used for
+                informational purposes only. Because the Terms and Conditions contain legal obligations, please read
+                them carefully.
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <h1 class="text-2xl md:text-[32px] font-bold leading-[26.4px] md:leading-[35.2px] text-[#101828]">
+                    1. YOUR AGREEMENT
+                </h1>
+
+                <p class="text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-[#222222] opacity-60">
+                    using this Site, you agree to be bound , and to comply with, these Terms and Conditions. If you do
+                    not agree to these Terms and Conditions, please do not use this site. <br> <br>
+                    PLEASE NOTE: We reserve the right, at our sole discretion, to change, modify or otherwise alter
+                    these Terms and Conditions at any time. Unless otherwise indicated, amendments will become effective
+                    immediately. Please review these Terms and Conditions periodically. Your continued use of the Site
+                    following the posting of changes and/or modifications will constitute your acceptance of the revised
+                    Terms and Conditions and the reasonableness of these standards for notice of changes. For your
+                    information, this page was last updated as of the date at the top of these terms and conditions.
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <h1 class="text-2xl md:text-[32px] font-bold leading-[26.4px] md:leading-[35.2px] text-[#101828]">
+                    2. PRIVACY
+                </h1>
+
+                <p class="text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-[#222222] opacity-60">
+                    Please review our Privacy Policy, which also governs your visit to this Site, to understand our
+                    practices.
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <h1 class="text-2xl md:text-[32px] font-bold leading-[26.4px] md:leading-[35.2px] text-[#101828]">
+                    3. LINKED SITES
+                </h1>
+
+                <p class="text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-[#222222] opacity-60">
+                    This Site may contain links to other independent third-party Web sites ("Linked Sites”). These
+                    Linked
+                    Sites are provided solely as a convenience to our visitors. Such Linked Sites are not under our
+                    control,
+                    and we are not responsible for and does not endorse the content of such Linked Sites, including any
+                    information or materials contained on such Linked Sites. You will need to make your own independent
+                    judgment regarding your interaction with these Linked Sites.
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <h1 class="text-2xl md:text-[32px] font-bold leading-[26.4px] md:leading-[35.2px] text-[#101828]">
+                    4. FORWARD LOOKING STATEMENTS
+                </h1>
+
+                <p class="text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-[#222222] opacity-60">
+                    All materials reproduced on this site speak as of the original date of publication or filing. The
+                    fact
+                    that
+                    a document is available on this site does not mean that the information contained in such document
+                    has
+                    not
+                    been modified or superseded events or a subsequent document or filing. We have no duty or policy to
+                    update
+                    any information or statements contained on this site and, therefore, such information or statements
+                    should
+                    not be relied upon as being current as of the date you access this site.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section  -->
+    <footer class="border-t border-[#D0D5DD]">
+
+        <!-- Links Section  -->
+        <div class="p-4 md:p-10 flex flex-col lg:flex-row gap-8 lg:gap-5 border-b border-[#D0D5DD] w-full">
+
+            <!-- Logos  -->
+            <div class="flex flex-col gap-4 flex-1 lg:max-w-[500px] w-full">
+                <a href="../index.html" class="mx-auto">
+                    <img src="../assets/logo.svg" alt="SilentEye" class="h-8">
+                </a>
+
+                <p class="text-start md:text-center font-medium text-base leading-[20.8px] text-black opacity-60">
+                    SilentEye App is
+                    designed for legal use only.
+                    <span class="block md:hidden">The software is intended for the ethical supervision of employees and
+                        children with their consen
+                    </span>
+                </p>
+
+                <div class="flex flex-col gap-3 items-start">
+                    <div class="flex items-center gap-1">
+                        <img src="../assets/green-tikmark.svg" alt="green-tikmark">
+                        <span class="text-base font-medium leading-[17.6px] text-black">Approved by:</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 md:flex-wrap gap-3">
+                        <img src="../assets/stopbullying-logo.svg" alt="stopbullying"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/credit-card-safe-logo.svg" alt="credit-card-safe"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/pci-logo.svg" alt="pci" class="rounded-lg cursor-pointer flex-1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-5 flex-1">
+                <!-- Quick Links  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Quick Links</h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="../index.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="./about.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./contact.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pricing.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="./reviews.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Reviews</a>
+                        </li>
+
+                        <li>
+                            <a href="./faqs.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Help & Policy  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Help & Policy
+                    </h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="/refund-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Refund Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/privacy-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Privacy Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Terms & Conditions
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/disclaimer"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disclaimer Section  -->
+        <div class="max-w-[1040px] w-full mx-auto py-5 hidden md:block px-3">
+            <p class="text-base font-medium leading-[20.5px] text-black text-center">
+                <b class="font-bold">Disclaimer</b> : SilentEye App is designed for legal use only. The software is
+                intended for the
+                ethical
+                supervision of employees and children with their consent. Using the software for intrusion and stalking
+                purposes is highly discouraged by us. We reserve the right to cancel your license if any illicit or
+                illegal activity is reported. The user will be solely responsible if any violation in the state law
+                occurs.
+            </p>
+        </div>
+
+        <!-- Copy Right Section  -->
+
+        <div class="md:border-t py-6 px-4 md:px-10 flex justify-between items-center flex-col md:flex-row gap-2">
+            <p class="text-center md:text-start text-base font-medium leading-[17.6px]">Copyright © 2024. SilentEye. All
+                rights reserved.</p>
+            <div>
+                <img src="../assets/banking-logos.svg" alt="banking-logos">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JS Link  -->
+    <script src="../script.js"></script>
+</body>
+
+</html>

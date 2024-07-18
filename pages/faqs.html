@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | SilentEye</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <!-- Header Section -->
+    <section class="sticky top-0 w-full left-0 bg-white z-40 headershow">
+        <!-- Desktop Navigation Menu  -->
+        <div class="bg-white flex items-center px-3 py-4 w-full left-0">
+            <div class="max-w-[1328px] mx-auto w-full flex items-center justify-between m-0 gap-2">
+
+                <!-- Links  -->
+                <ul class="hidden lg:flex items-center flex-1">
+                    <!-- Home Link  -->
+                    <li>
+                        <a href="../index.html"
+                            class="nav-link py-2 pr-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- Features Link  -->
+                    <li><a href="./features.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Features</a>
+                    </li>
+
+                    <!-- Pricing Link  -->
+                    <li><a href="./pricing.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Pricing</a>
+                    </li>
+
+                    <!-- Reviews Link  -->
+                    <li><a href="./reviews.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Reviews</a>
+                    </li>
+
+                    <!-- Contact Link  -->
+                    <li><a href="./contact.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Toggle Btn  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/toggle-icon.svg" alt="toggle-icon" class="w-6 h-6 cursor-pointer"
+                        id="toggleMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge, Login & Try Demo btns  -->
+
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]" id="videoBtn">
+
+                    <a href="./login.html"
+                        class="text-center border border-[#D0D5DD] bg-white px-5 py-[10px] rounded-lg text-xl font-medium text-[#101828] btnsDropShadows hidden lg:flex leading-[22px]">Login</a>
+
+                    <button id="tryDemoBtnDesktop"
+                        class="text-center bg-[#172A6E] px-5 py-[10px] rounded-lg text-xl font-medium text-white btnsDropShadows hidden lg:flex items-center leading-[22px]">
+                        Try Demo
+                    </button>
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu"
+            class="fixed top-0 left-0 w-full h-full bg-white lg:hidden flex-col items-center hidden z-40">
+            <div class="flex items-center justify-between gap-2 py-4 px-3 w-full border-b border-[#D0D5DD]">
+
+                <!-- Close Toggle Btns  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/close-toggle.svg" alt="close-icon" class="w-6 h-6 cursor-pointer"
+                        id="closeMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge  & Demo btns  -->
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links  -->
+            <ul class="w-full flex flex-col">
+
+                <!-- Home Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="../index.html" class="nav-link text-xl font-medium text-[#172A6E]">Home</a>
+                </li>
+
+                <!-- Features Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./features.html" class="nav-link text-xl font-medium text-[#172A6E]">Features</a>
+                </li>
+
+                <!-- Pricing Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./pricing.html" class="nav-link text-xl font-medium text-[#172A6E]">Pricing</a>
+                </li>
+
+                <!-- Reviews Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./reviews.html" class="nav-link text-xl font-medium text-[#172A6E]">Reviews</a>
+                </li>
+
+                <!-- Contact Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./contact.html" class="nav-link text-xl font-medium text-[#172A6E]">Contact</a>
+                </li>
+
+                <!-- Try Demo popup btn  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <button class="text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/demo.svg" alt="demo">
+                        Try Demo
+                    </button>
+                </li>
+
+                <!-- Login Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./login.html" class="nav-link text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/login.svg" alt="login icon">
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Try Demo Popup  -->
+        <div id="tryDemoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div
+                class="bg-white btnsDropShadows max-w-[600px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">Fill Detail to View Demo</h2>
+
+                    <button id="closePopupBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div class="p-4 flex flex-col gap-3">
+                    <label for="your id" class="text-base font-semibold leading-[17.6px] text-[#222222]">
+                        Your Mail ID
+                    </label>
+
+                    <input type="text" placeholder="Enter Your Email Address Here"
+                        class="py-3 px-4 bg-[#D0D5DD] bg-opacity-[1%] rounded-lg outline-none border border-[#D0D5DD] btnsDropShadows text-base font-medium text-[#222222]">
+                </div>
+
+                <div class="p-4 flex items-center gap-4">
+                    <button id="cancelBtn"
+                        class="py-[10px] px-3 rounded-lg border border-[#D0D5DD] btnsDropShadows text-lg font-medium text-center text-[#101828]">
+                        Cancel
+                    </button>
+
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-[#2C56FE] btnsDropShadows text-lg font-semibold text-center text-white flex-1">View
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Video Popup  -->
+        <div id="videoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div id="videopopupContent"
+                class="bg-white btnsDropShadows max-w-[1000px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">How it Work?</h2>
+
+                    <button id="videocloseBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div>
+                    <img src="../assets/video.jpg" alt="video" class="w-full">
+                </div>
+
+                <div class="p-4">
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-white btnsDropShadows text-lg font-semibold text-center border border-[#D0D5DD] text-[#101828] w-full">
+                        Start Access Gaining
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hero Section  -->
+    <section class="py-5 md:py-20 px-4">
+        <div class="w-full flex flex-col gap-3">
+            <h1
+                class="text-[28px] md:text-[64px] font-bold leading-[30.8px] md:leading-[70.4px] text-[#101828] text-center">
+                Frequently Asked Questions
+            </h1>
+
+            <p
+                class="text-sm md:text-[20px] opacity-60 font-medium leading-[18.2px] md:leading-[26px] text-[#222222] text-center max-w-[500px] w-full mx-auto">
+                Browse the FAQs to find answers to any questions you may have about SilentEye.
+            </p>
+
+            <div class="flex items-center justify-center gap-2 md:gap-3">
+                <a href="../index.html" class="text-base text-[#222222] font-medium opacity-60">Home</a>
+                <img src="../assets/right-arrow.svg" alt="" class="w-1 h-2">
+                <a href="#" class="text-base text-[#222222] font-semibold">FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions Section -->
+    <section class="pb-5 md:pb-20 border-b w-full border-[#D0D5DD]">
+        <div class="max-w-[1040px] w-full mx-auto flex flex-col gap-5 md:gap-6">
+
+            <div class="flex items-center justify-center bg-white">
+                <div class="flex overflow-x-auto gap-3 md:gap-6 bg-white no-scrollbar">
+                    <button
+                        class="ml-4 md:ml-0 py-[10px] md:py-3 min-w-[141px] w-[141px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-white bg-[#2C56FE] border border-[#2C56FE] rounded-xl">
+                        <img src="../assets/product.svg" alt="product icon">
+                        Product
+                    </button>
+
+                    <button
+                        class="py-[10px] md:py-3 min-w-[152px] w-[152px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-[#101828] border border-[#DDDDDD] rounded-xl">
+                        <img src="../assets/purchase.svg" alt="purchase icon">
+                        Purchase
+                    </button>
+
+                    <button
+                        class="py-[10px] md:py-3 min-w-[136px] w-[136px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-[#101828] border border-[#DDDDDD] rounded-xl">
+                        <img src="../assets/refund.svg" alt="refund icon">
+                        Refund
+                    </button>
+
+                    <button
+                        class="mr-4 md:mr-0 py-[10px] md:py-3 min-w-[169px] w-[169px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-[#101828] border border-[#DDDDDD] rounded-xl">
+                        <img src="../assets/installation.svg" alt="installation icon">
+                        Installation
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Faqs questions  -->
+            <div class="lg:px-0 px-4">
+                <ul class="btnshadow1 border border-[#DDDDDD] w-full rounded-2xl">
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">
+                                How to spy on a phone remotely?
+                            </h2>
+
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+        <!-- Try Now Section  -->
+        <section class="py-5 md:py-10 border-b border-[#DDDDDD] px-4">
+            <div class="max-w-[1040px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+                <div class="flex items-center justify-center order-1 md:order-2">
+                    <img src="../assets/try-now-main-image.svg" alt="try-now-main">
+                </div>
+    
+                <div class="flex flex-col gap-6 md:gap-8 order-2 md:order-1">
+                    <h2
+                        class="text-[#101828] text-2xl md:text-[40px] leading-[26.4px] md:leading-[44px] tracking-[-0.2px] font-bold text-center md:text-start">
+                        One click and zero
+                        effort to access anyones phone across the globe
+                    </h2>
+    
+                    <ul class="flex flex-col gap-4 md:gap-5">
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                            <p
+                                class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
+                                SilentEye can gain anonymous access to any phone, no matter where it is.
+                            </p>
+                        </li>
+    
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                            <p
+                                class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
+                                Gain in-depth insights and remote control capabilities through our robust Live Control
+                                Panel.
+                            </p>
+                        </li>
+    
+                        <li class="flex items-center gap-4">
+                            <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                            <p
+                                class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
+                                There is no phone in the world that SilentEye cant access remotely with just a phone number.
+                            </p>
+                        </li>
+                    </ul>
+    
+                    <a href="./pricing.html"
+                        class="max-w-[197px] md:max-w-[236px] w-full btnshadow mx-auto md:mx-0 text-center py-[10px] md:py-3 bg-[#2C56FE] rounded-xl text-white text-lg md:text-xl font-bold">Try
+                        Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    <!-- Footer Section  -->
+    <footer class="border-t border-[#D0D5DD]">
+
+        <!-- Links Section  -->
+        <div class="p-4 md:p-10 flex flex-col lg:flex-row gap-8 lg:gap-5 border-b border-[#D0D5DD] w-full">
+
+            <!-- Logos  -->
+            <div class="flex flex-col gap-4 flex-1 lg:max-w-[500px] w-full">
+                <a href="../index.html" class="mx-auto">
+                    <img src="../assets/logo.svg" alt="SilentEye" class="h-8">
+                </a>
+
+                <p class="text-start md:text-center font-medium text-base leading-[20.8px] text-black opacity-60">
+                    SilentEye App is
+                    designed for legal use only.
+                    <span class="block md:hidden">The software is intended for the ethical supervision of employees and
+                        children with their consen
+                    </span>
+                </p>
+
+                <div class="flex flex-col gap-3 items-start">
+                    <div class="flex items-center gap-1">
+                        <img src="../assets/green-tikmark.svg" alt="green-tikmark">
+                        <span class="text-base font-medium leading-[17.6px] text-black">Approved by:</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 md:flex-wrap gap-3">
+                        <img src="../assets/stopbullying-logo.svg" alt="stopbullying"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/credit-card-safe-logo.svg" alt="credit-card-safe"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/pci-logo.svg" alt="pci" class="rounded-lg cursor-pointer flex-1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-5 flex-1">
+                <!-- Quick Links  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Quick Links</h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="../index.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="./about.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./contact.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pricing.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="./reviews.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Reviews</a>
+                        </li>
+
+                        <li>
+                            <a href=""
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Help & Policy  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Help & Policy
+                    </h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="/refund-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Refund Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/privacy-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Privacy Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./help-privacy.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Terms & Conditions
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/disclaimer"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disclaimer Section  -->
+        <div class="max-w-[1040px] w-full mx-auto py-5 hidden md:block px-3">
+            <p class="text-base font-medium leading-[20.5px] text-black text-center">
+                <b class="font-bold">Disclaimer</b> : SilentEye App is designed for legal use only. The software is
+                intended for the
+                ethical
+                supervision of employees and children with their consent. Using the software for intrusion and stalking
+                purposes is highly discouraged by us. We reserve the right to cancel your license if any illicit or
+                illegal activity is reported. The user will be solely responsible if any violation in the state law
+                occurs.
+            </p>
+        </div>
+
+        <!-- Copy Right Section  -->
+
+        <div class="md:border-t py-6 px-4 md:px-10 flex justify-between items-center flex-col md:flex-row gap-2">
+            <p class="text-center md:text-start text-base font-medium leading-[17.6px]">Copyright © 2024. SilentEye. All
+                rights reserved.</p>
+            <div>
+                <img src="../assets/banking-logos.svg" alt="banking-logos">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JS Link  -->
+    <script src="../script.js"></script>
+</body>
+
+</html>

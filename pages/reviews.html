@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews | SilentEye</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <!-- Header Section -->
+    <section class="sticky top-0 w-full left-0 bg-white z-40 headershow">
+        <!-- Desktop Navigation Menu  -->
+        <div class="bg-white flex items-center px-3 py-4 w-full left-0">
+            <div class="max-w-[1328px] mx-auto w-full flex items-center justify-between m-0 gap-2">
+
+                <!-- Links  -->
+                <ul class="hidden lg:flex items-center flex-1">
+                    <!-- Home Link  -->
+                    <li>
+                        <a href="../index.html"
+                            class="nav-link py-2 pr-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- Features Link  -->
+                    <li><a href="./features.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Features</a>
+                    </li>
+
+                    <!-- Pricing Link  -->
+                    <li><a href="./pricing.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Pricing</a>
+                    </li>
+
+                    <!-- Reviews Link  -->
+                    <li><a href=""
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Reviews</a>
+                    </li>
+
+                    <!-- Contact Link  -->
+                    <li><a href="./contact.html"
+                            class="nav-link py-2 px-4 text-xl font-medium leading-[22px] text-[#101828] transition duration-200 hover:text-[#2C56FE]">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Toggle Btn  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/toggle-icon.svg" alt="toggle-icon" class="w-6 h-6 cursor-pointer"
+                        id="toggleMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge, Login & Try Demo btns  -->
+
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]" id="videoBtn">
+
+                    <a href="./login.html"
+                        class="text-center border border-[#D0D5DD] bg-white px-5 py-[10px] rounded-lg text-xl font-medium text-[#101828] btnsDropShadows hidden lg:flex leading-[22px]">Login</a>
+
+                    <button id="tryDemoBtnDesktop"
+                        class="text-center bg-[#172A6E] px-5 py-[10px] rounded-lg text-xl font-medium text-white btnsDropShadows hidden lg:flex items-center leading-[22px]">
+                        Try Demo
+                    </button>
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu"
+            class="fixed top-0 left-0 w-full h-full bg-white lg:hidden flex-col items-center hidden z-40">
+            <div class="flex items-center justify-between gap-2 py-4 px-3 w-full border-b border-[#D0D5DD]">
+
+                <!-- Close Toggle Btns  -->
+                <div class="mr-1 block lg:hidden">
+                    <img src="../assets/close-toggle.svg" alt="close-icon" class="w-6 h-6 cursor-pointer"
+                        id="closeMenu">
+                </div>
+
+                <!-- Logo  -->
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-32 sm:w-[147px] md:w-[159.79px] flex-1">
+                </a>
+
+                <!-- Langauge  & Demo btns  -->
+                <div class="flex items-center gap-0 md:gap-3 flex-1 justify-end">
+                    <img src="../assets/gift.svg" alt="gift" class="cursor-pointer mr-2 h-9 md:w-[42px]">
+
+                    <button id="tryDemoBtnMobile"
+                        class="text-center border border-[#D0D5DD] px-4 py-[7px] rounded-lg text-xl font-medium text-[#172A6E] btnsDropShadow flex lg:hidden items-centers leading-[22px]">
+                        Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links  -->
+            <ul class="w-full flex flex-col">
+
+                <!-- Home Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="../index.html" class="nav-link text-xl font-medium text-[#172A6E]">Home</a>
+                </li>
+
+                <!-- Features Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./features.html" class="nav-link text-xl font-medium text-[#172A6E]">Features</a>
+                </li>
+
+                <!-- Pricing Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./pricing.html" class="nav-link text-xl font-medium text-[#172A6E]">Pricing</a>
+                </li>
+
+                <!-- Reviews Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="" class="nav-link text-xl font-medium text-[#172A6E]">Reviews</a>
+                </li>
+
+                <!-- Contact Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./contact.html" class="nav-link text-xl font-medium text-[#172A6E]">Contact</a>
+                </li>
+
+                <!-- Try Demo popup btn  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <button class="text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/demo.svg" alt="demo">
+                        Try Demo
+                    </button>
+                </li>
+
+                <!-- Login Link  -->
+                <li class="w-full border-b border-[#D0D5DD] border-opacity-50 py-4 px-5">
+                    <a href="./login.html" class="nav-link text-xl font-medium text-[#172A6E] flex items-center gap-4">
+                        <img src="../assets/login.svg" alt="login icon">
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Try Demo Popup  -->
+        <div id="tryDemoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div
+                class="bg-white btnsDropShadows max-w-[600px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">Fill Detail to View Demo</h2>
+
+                    <button id="closePopupBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div class="p-4 flex flex-col gap-3">
+                    <label for="your id" class="text-base font-semibold leading-[17.6px] text-[#222222]">
+                        Your Mail ID
+                    </label>
+
+                    <input type="text" placeholder="Enter Your Email Address Here"
+                        class="py-3 px-4 bg-[#D0D5DD] bg-opacity-[1%] rounded-lg outline-none border border-[#D0D5DD] btnsDropShadows text-base font-medium text-[#222222]">
+                </div>
+
+                <div class="p-4 flex items-center gap-4">
+                    <button id="cancelBtn"
+                        class="py-[10px] px-3 rounded-lg border border-[#D0D5DD] btnsDropShadows text-lg font-medium text-center text-[#101828]">
+                        Cancel
+                    </button>
+
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-[#2C56FE] btnsDropShadows text-lg font-semibold text-center text-white flex-1">View
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Video Popup  -->
+        <div id="videoPopup"
+            class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
+            <div id="videopopupContent"
+                class="bg-white btnsDropShadows max-w-[1000px] w-full my-auto mx-auto rounded-xl overflow-hidden transition duration-200 ease-in-out">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">How it Work?</h2>
+
+                    <button id="videocloseBtn"
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-5 h-5">
+                    </button>
+                </div>
+
+                <div>
+                    <img src="../assets/video.jpg" alt="video" class="w-full">
+                </div>
+
+                <div class="p-4">
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-white btnsDropShadows text-lg font-semibold text-center border border-[#D0D5DD] text-[#101828] w-full">
+                        Start Access Gaining
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hero Section  -->
+    <section class="py-5 md:py-14 px-4 border-b border-[#DDDDDD]">
+        <div
+            class="w-full flex max-w-[1240px] mx-auto justify-center md:justify-between flex-col md:flex-row items-center gap-5 md:gap-10">
+            <div class="flex flex-col gap-4 md:gap-6 flex-1 order-2 md:order-1">
+                <h1
+                    class="text-[28px] md:text-[56px] text-center md:text-start font-bold leading-[30.8px] md:leading-[61.6px] text-[#222222]">
+                    SilentEye Reviews
+                </h1>
+
+                <p
+                    class="text-sm md:text-2xl opacity-60 font-medium leading-[18.2px] md:leading-[31.2px] text-[#222222] max-w-[714px] w-full text-center md:text-start">
+                    Is Eyezy legit? Is it better than other monitoring apps? We all let our customers answer these
+                    questions for us.
+                </p>
+
+                <div class="flex items-center justify-center md:justify-start gap-3 md:gap-6">
+                    <a href="./pricing.html"
+                        class="py-3 md:py-4 px-5 md:px-2 max-w-[236px] w-full rounded-[10px] md:rounded-xl btnshadow5 bg-[#2C56FE] border-2 border-[#2C56FE] text-lg md:text-xl font-bold text-white flex items-center justify-center">
+                        Try Now
+                    </a>
+
+                    <button
+                        class="py-3 md:py-4 px-5 md:px-2 max-w-[296px] w-full rounded-[10px] md:rounded-xl btnshadow5 bg-white text-lg md:text-xl font-bold text-[#2C56FE] border-2 border-[#2C56FE] flex items-center justify-center gap-2">
+                        <img src="../assets/view-demo-icon.svg" alt="view-demo-icon" class="">
+                        View Demo
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center order-1 md:order-2">
+                <img src="../assets/reviews.svg" alt="SilentEye Reviews">
+            </div>
+        </div>
+    </section>
+
+    <!-- SilentEye app reviews Section -->
+    <section class="px-4 py-8 border-b border-[#DDDDDD]">
+        <div class="flex flex-col gap-3 mb-8">
+            <h2
+                class="text-[28px] md:text-[32px] font-bold leading-[30.8px] md:leading-[35.2px] text-center text-[#101828]">
+                SilentEye app reviews from verified customers</h2>
+            <p
+                class="text-sm md:text-xl font-medium leading-[18.2px] md:leading-[26px] text-center text-[#222222] opacity-60">
+                Lets see what our longtime customers have to say about their experience with SilentEye.</p>
+        </div>
+
+        <div class="max-w-[1040px] w-full mx-auto flex justify-between gap-4 md:gap-10 flex-col md:flex-row">
+            <div id="reviews-container" class="max-w-[705px] mx-auto w-full flex flex-col gap-4 order-2 md:order-1">
+                <div class="review border border-[#DDDDDD] rounded-[16px] p-3 sm:p-4 flex flex-col gap-3 boxshadow4">
+                    <div class="flex justify-between gap-3">
+                        <img src="../assets/reviews-user.jfif" alt="Ciara Reining" class="rounded-full h-14 w-14">
+
+                        <div class="flex-1 flex flex-col gap-1">
+                            <div class="flex items-center gap-[6px] text-lg font-bold text-[#222222]">
+                                Ciara Reining
+                                <img src="../assets/green-circle-tikmark.svg" alt="green-circle-tikmark">
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                            </div>
+                        </div>
+                        <span class="text-sm font-medium text-[#222222] opacity-60">2 Hrs ago</span>
+                    </div>
+
+                    <h2 class="text-xl font-bold text-[#101828]">I like it!</h2>
+                    <p class="text-sm font-medium leading-[16.8px] text-[#222222] opacity-60">
+                        59% of teenagers said they had been harassed or bullied online. Your child may be bullied by
+                        acquaintances and strangers in social media, and chat rooms.
+                    </p>
+                </div>
+
+                <div class="review border border-[#DDDDDD] rounded-[16px] p-3 sm:p-4 flex flex-col gap-3 boxshadow4">
+                    <div class="flex justify-between gap-3">
+                        <img src="../assets/reviews-user.jfif" alt="Ciara Reining" class="rounded-full h-14 w-14">
+
+                        <div class="flex-1 flex flex-col gap-1">
+                            <div class="flex items-center gap-[6px] text-lg font-bold text-[#222222]">
+                                Ciara Reining
+                                <img src="../assets/green-circle-tikmark.svg" alt="green-circle-tikmark">
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                            </div>
+                        </div>
+                        <span class="text-sm font-medium text-[#222222] opacity-60">2 Hrs ago</span>
+                    </div>
+
+                    <h2 class="text-xl font-bold text-[#101828]">I like it!</h2>
+                    <p class="text-sm font-medium leading-[16.8px] text-[#222222] opacity-60">
+                        59% of teenagers said they had been harassed or bullied online. Your child may be bullied by
+                        acquaintances and strangers in social media, and chat rooms.
+                    </p>
+                </div>
+
+                <div class="review border border-[#DDDDDD] rounded-[16px] p-3 sm:p-4 flex flex-col gap-3 boxshadow4">
+                    <div class="flex justify-between gap-3">
+                        <img src="../assets/reviews-user.jfif" alt="Ciara Reining" class="rounded-full h-14 w-14">
+
+                        <div class="flex-1 flex flex-col gap-1">
+                            <div class="flex items-center gap-[6px] text-lg font-bold text-[#222222]">
+                                Ciara Reining
+                                <img src="../assets/green-circle-tikmark.svg" alt="green-circle-tikmark">
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                            </div>
+                        </div>
+                        <span class="text-sm font-medium text-[#222222] opacity-60">2 Hrs ago</span>
+                    </div>
+
+                    <h2 class="text-xl font-bold text-[#101828]">I like it!</h2>
+                    <p class="text-sm font-medium leading-[16.8px] text-[#222222] opacity-60">
+                        59% of teenagers said they had been harassed or bullied online. Your child may be bullied by
+                        acquaintances and strangers in social media, and chat rooms.
+                    </p>
+                </div>
+
+                <div class="review border border-[#DDDDDD] rounded-[16px] p-3 sm:p-4 flex flex-col gap-3 boxshadow4">
+                    <div class="flex justify-between gap-3">
+                        <img src="../assets/reviews-user.jfif" alt="Ciara Reining" class="rounded-full h-14 w-14">
+
+                        <div class="flex-1 flex flex-col gap-1">
+                            <div class="flex items-center gap-[6px] text-lg font-bold text-[#222222]">
+                                Ciara Reining
+                                <img src="../assets/green-circle-tikmark.svg" alt="green-circle-tikmark">
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                            </div>
+                        </div>
+                        <span class="text-sm font-medium text-[#222222] opacity-60">2 Hrs ago</span>
+                    </div>
+
+                    <h2 class="text-xl font-bold text-[#101828]">I like it!</h2>
+                    <p class="text-sm font-medium leading-[16.8px] text-[#222222] opacity-60">
+                        59% of teenagers said they had been harassed or bullied online. Your child may be bullied by
+                        acquaintances and strangers in social media, and chat rooms.
+                    </p>
+                </div>
+
+                <div class="review border border-[#DDDDDD] rounded-[16px] p-3 sm:p-4 flex flex-col gap-3 boxshadow4">
+                    <div class="flex justify-between gap-3">
+                        <img src="../assets/reviews-user.jfif" alt="Ciara Reining" class="rounded-full h-14 w-14">
+
+                        <div class="flex-1 flex flex-col gap-1">
+                            <div class="flex items-center gap-[6px] text-lg font-bold text-[#222222]">
+                                Ciara Reining
+                                <img src="../assets/green-circle-tikmark.svg" alt="green-circle-tikmark">
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                            </div>
+                        </div>
+                        <span class="text-sm font-medium text-[#222222] opacity-60">2 Hrs ago</span>
+                    </div>
+
+                    <h2 class="text-xl font-bold text-[#101828]">I like it!</h2>
+                    <p class="text-sm font-medium leading-[16.8px] text-[#222222] opacity-60">
+                        59% of teenagers said they had been harassed or bullied online. Your child may be bullied by
+                        acquaintances and strangers in social media, and chat rooms.
+                    </p>
+                </div>
+
+                <div class="review border border-[#DDDDDD] rounded-[16px] p-3 sm:p-4 flex flex-col gap-3 boxshadow4">
+                    <div class="flex justify-between gap-3">
+                        <img src="../assets/reviews-user.jfif" alt="Ciara Reining" class="rounded-full h-14 w-14">
+
+                        <div class="flex-1 flex flex-col gap-1">
+                            <div class="flex items-center gap-[6px] text-lg font-bold text-[#222222]">
+                                Ciara Reining
+                                <img src="../assets/green-circle-tikmark.svg" alt="green-circle-tikmark">
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                            </div>
+                        </div>
+                        <span class="text-sm font-medium text-[#222222] opacity-60">2 Hrs ago</span>
+                    </div>
+
+                    <h2 class="text-xl font-bold text-[#101828]">I like it!</h2>
+                    <p class="text-sm font-medium leading-[16.8px] text-[#222222] opacity-60">
+                        59% of teenagers said they had been harassed or bullied online. Your child may be bullied by
+                        acquaintances and strangers in social media, and chat rooms.
+                    </p>
+                </div>
+
+                <div class="review border border-[#DDDDDD] rounded-[16px] p-3 sm:p-4 flex flex-col gap-3 boxshadow4">
+                    <div class="flex justify-between gap-3">
+                        <img src="../assets/reviews-user.jfif" alt="Ciara Reining" class="rounded-full h-14 w-14">
+
+                        <div class="flex-1 flex flex-col gap-1">
+                            <div class="flex items-center gap-[6px] text-lg font-bold text-[#222222]">
+                                Ciara Reining
+                                <img src="../assets/green-circle-tikmark.svg" alt="green-circle-tikmark">
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                                <img src="../assets/star-filled-yellow.svg" alt="star-filled">
+                            </div>
+                        </div>
+                        <span class="text-sm font-medium text-[#222222] opacity-60">2 Hrs ago</span>
+                    </div>
+
+                    <h2 class="text-xl font-bold text-[#101828]">I like it!</h2>
+                    <p class="text-sm font-medium leading-[16.8px] text-[#222222] opacity-60">
+                        59% of teenagers said they had been harassed or bullied online. Your child may be bullied by
+                        acquaintances and strangers in social media, and chat rooms.
+                    </p>
+                </div>
+
+
+
+                <!-- Load more & less reviews btn  -->
+                <div class="flex justify-center">
+                    <button id="load-more-btn"
+                        class="text-xl font-bold text-[#2C56FE] text-center border-[1.5px] border-[#2C56FE] px-3 flex items-center justify-center max-w-[335px] w-full rounded-xl btnshadow5 mt-3 h-12">
+                        Load More Reviews
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="w-full sm:w-[295px] mx-auto border h-fit border-[#DDDDDD] rounded-[16px] boxshadow4 overflow-hidden order-1 md:order-2">
+                <div class=" p-4 flex justify-center items-center border-b border-[#DDDDDD]">
+                    <img src="../assets/logo.svg" alt="SilentEye Logo" class="w-[159px]">
+                </div>
+
+                <div class="p-4 flex flex-col gap-3 items-center justify-between">
+                    <div class="flex items-end justify-center gap-1">
+                        <span class="text-[48px] font-bold text-[#101828] leading-[52.8px]">4.9</span>
+                        <span class="text-[32px] font-bold text-[#101828] opacity-40 leading-[43px]">/ 5.0</span>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-1">
+                        <img src="../assets/star-filled-yellow.svg" alt="star-filled-yellow" class="h-8 w-8">
+                        <img src="../assets/star-filled-yellow.svg" alt="star-filled-yellow" class="h-8 w-8">
+                        <img src="../assets/star-filled-yellow.svg" alt="star-filled-yellow" class="h-8 w-8">
+                        <img src="../assets/star-filled-yellow.svg" alt="star-filled-yellow" class="h-8 w-8">
+                        <img src="../assets/star-filled-yellow.svg" alt="star-filled-yellow" class="h-8 w-8">
+                    </div>
+
+                    <p class="text-sm font-medium text-[#222222] opacity-60">Based on 398 reviews</p>
+                </div>
+
+                <div
+                    class="flex items-center justify-center gap-2 border-b border-[#DDDDDD] p-3 text-sm font-medium text-[#222222] text-opacity-60">
+                    <img src="../assets/green-circle-tikmark.svg" alt="green-circle-tikmark">
+                    Feedback from verified customers only
+                </div>
+
+                <button id="leaveReviewBtn" class="p-4 bg-[#2C56FE] text-center w-full text-xl font-bold text-white">
+                    Leave a Review
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Leave / Submit Review Popup  -->
+
+        <div id="reviewsubmitPopup"
+            class="hidden fixed top-0 left-0 p-3 w-full h-full flex items-center justify-center bg-black bg-opacity-40 z-50">
+            <div class="bg-white max-w-[600px] w-full my-auto mx-auto rounded-[16px] overflow-hidden transition duration-200 ease-in-out"
+                id="reviewsubmitpopupContent">
+                <!-- header section  -->
+                <div class="py-3 px-4 border-b border-[#D0D5DD] flex items-center justify-between">
+                    <h2 class="text-[22px] leading-[26.5px] font-semibold text-black">Your input is valuable to us</h2>
+
+                    <button 
+                        class="h-10 w-10 rounded-lg flex items-center justify-center border border-[#D0D5DD]">
+                        <img src="../assets/close-toggle.svg" alt="close icon" class="w-6 h-6" id="reviewsubmitcloseBtn">
+                    </button>
+                </div>
+
+                <div class="p-4 text-center text-lg font-medium text-black opacity-50">
+                    User can leave review only after purchasing and experiencing product
+                </div>
+
+                <div class="p-4 flex items-center gap-4">
+                    <button id="reviewsubmitcloseBtn"
+                        class="py-[10px] px-3 rounded-lg border border-[#D0D5DD] btnsDropShadows text-lg font-medium text-center text-[#101828]">
+                        Cancel
+                    </button>
+
+                    <button
+                        class="py-[10px] px-3 rounded-lg bg-[#2C56FE] btnsDropShadows text-lg font-semibold text-center text-white flex-1">
+                        Purchase Now
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Try Now Section  -->
+    <section class="py-5 md:py-10 border-b border-[#DDDDDD] px-4">
+        <div class="max-w-[1040px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+            <div class="flex items-center justify-center order-1 md:order-2">
+                <img src="../assets/try-now-main-image.svg" alt="try-now-main">
+            </div>
+
+            <div class="flex flex-col gap-6 md:gap-8 order-2 md:order-1">
+                <h2
+                    class="text-[#101828] text-2xl md:text-[40px] leading-[26.4px] md:leading-[44px] tracking-[-0.2px] font-bold text-center md:text-start">
+                    One click and zero
+                    effort to access anyones phone across the globe
+                </h2>
+
+                <ul class="flex flex-col gap-4 md:gap-5">
+                    <li class="flex items-center gap-4">
+                        <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                        <p
+                            class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
+                            SilentEye can gain anonymous access to any phone, no matter where it is.
+                        </p>
+                    </li>
+
+                    <li class="flex items-center gap-4">
+                        <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                        <p
+                            class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
+                            Gain in-depth insights and remote control capabilities through our robust Live Control
+                            Panel.
+                        </p>
+                    </li>
+
+                    <li class="flex items-center gap-4">
+                        <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                        <p
+                            class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
+                            There is no phone in the world that SilentEye cant access remotely with just a phone number.
+                        </p>
+                    </li>
+                </ul>
+
+                <a href="./pricing.html"
+                    class="max-w-[197px] md:max-w-[236px] w-full btnshadow mx-auto md:mx-0 text-center py-[10px] md:py-3 bg-[#2C56FE] rounded-xl text-white text-lg md:text-xl font-bold">Try
+                    Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer Section  -->
+    <footer class="border-t border-[#D0D5DD]">
+
+        <!-- Links Section  -->
+        <div class="p-4 md:p-10 flex flex-col lg:flex-row gap-8 lg:gap-5 border-b border-[#D0D5DD] w-full">
+
+            <!-- Logos  -->
+            <div class="flex flex-col gap-4 flex-1 lg:max-w-[500px] w-full">
+                <a href="../index.html" class="mx-auto">
+                    <img src="../assets/logo.svg" alt="SilentEye" class="h-8">
+                </a>
+
+                <p class="text-start md:text-center font-medium text-base leading-[20.8px] text-black opacity-60">
+                    SilentEye App is
+                    designed for legal use only.
+                    <span class="block md:hidden">The software is intended for the ethical supervision of employees and
+                        children with their consen
+                    </span>
+                </p>
+
+                <div class="flex flex-col gap-3 items-start">
+                    <div class="flex items-center gap-1">
+                        <img src="../assets/green-tikmark.svg" alt="green-tikmark">
+                        <span class="text-base font-medium leading-[17.6px] text-black">Approved by:</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 md:flex-wrap gap-3">
+                        <img src="../assets/stopbullying-logo.svg" alt="stopbullying"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/credit-card-safe-logo.svg" alt="credit-card-safe"
+                            class="rounded-lg cursor-pointer flex-1">
+                        <img src="../assets/pci-logo.svg" alt="pci" class="rounded-lg cursor-pointer flex-1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-5 flex-1">
+                <!-- Quick Links  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Quick Links</h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="../index.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="./about.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./contact.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pricing.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href=""
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Reviews</a>
+                        </li>
+
+                        <li>
+                            <a href="./faqs.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Help & Policy  -->
+                <div class="flex-1 lg:px-6">
+                    <h2 class="text-lg md:text-xl font-semibold leading-[22px] text-black mb-4 md:mb-6">Help & Policy
+                    </h2>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                        <li>
+                            <a href="/refund-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Refund Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/privacy-policy"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Privacy Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./help-privacy.html"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
+                                Terms & Conditions
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/disclaimer"
+                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disclaimer Section  -->
+        <div class="max-w-[1040px] w-full mx-auto py-5 hidden md:block px-3">
+            <p class="text-base font-medium leading-[20.5px] text-black text-center">
+                <b class="font-bold">Disclaimer</b> : SilentEye App is designed for legal use only. The software is
+                intended for the
+                ethical
+                supervision of employees and children with their consent. Using the software for intrusion and stalking
+                purposes is highly discouraged by us. We reserve the right to cancel your license if any illicit or
+                illegal activity is reported. The user will be solely responsible if any violation in the state law
+                occurs.
+            </p>
+        </div>
+
+        <!-- Copy Right Section  -->
+
+        <div class="md:border-t py-6 px-4 md:px-10 flex justify-between items-center flex-col md:flex-row gap-2">
+            <p class="text-center md:text-start text-base font-medium leading-[17.6px]">Copyright © 2024. SilentEye. All
+                rights reserved.</p>
+            <div>
+                <img src="../assets/banking-logos.svg" alt="banking-logos">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JS Link  -->
+    <script src="../script.js"></script>
+</body>
+
+</html>

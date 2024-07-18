@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | SilentEye</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <!-- Header Section -->
+    <section
+        class="sticky top-0 w-full left-0 bg-white z-40 py-[15px] flex items-center justify-between px-4 md:px-10 border-b border-[#DDDDDD]">
+        <div class="flex items-center gap-4">
+            <a href="../index.html"> <img src="../assets/back-arrow.svg" alt="back-arrow"></a>
+            <h2 class="text-xl font-bold tracking-[-0.17px] text-[#101828]">Checkout</h2>
+        </div>
+
+        <a href="../index.html"><img src="../assets/logo.svg" alt="logo" class="h-8"></a>
+
+        <div></div>
+    </section>
+
+
+    <div class="bg-[#FFEAB5] py-[10px] px-3 flex items-center justify-center gap-2 flex-wrap">
+        <img src="../assets/reserved-icon.svg" alt="reserved">
+        <span class="text-base md:text-xl font-medium">Your order's reserved for</span>
+        <div class="flex items-center gap-1 text-xl font-semibold text-[#F10404]">
+            <img src="../assets/timer.svg" alt="timer">
+            55:40
+        </div>
+        <div class="flex items-center text-base md:text-xl font-medium gap-1">
+            <span>with an Extra </span>
+            <span class="text-[#F10404] font-bold">10% OFF</span>
+        </div>
+    </div>
+
+
+    <div class="flex relative flex-col md:flex-row">
+        <div class="w-full md:w-[60%] px-4 lg:px-20 py-5">
+            <div>
+                <div class="rounded-[16px] border border-[#DDDDDD] boxshadow5 mb-6">
+                    <div class="py-4 px-6 border-b border-[#DDDDDD] text-xl font-bold text-[#101828]">
+                        Contact Information
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 p-4">
+
+                        <!-- Email Input  -->
+                        <div>
+                            <label for="email"
+                                class="block mb-3 text-[15px] md:text-base font-semibold text-[#222222] leading-[17.6px]">
+                                Email
+                            </label>
+                            <input type="email" placeholder="Enter Your Mail ID"
+                                class="inputsshadow w-full border border-[#DDDDDD] rounded-lg py-[10px] md:py-3 px-3 md:px-4 bg-[#DDDDDD] bg-opacity-25 text-sm md:text-base font-medium text-[#222222] text-opacity-50 outline-none">
+                        </div>
+
+                        <!-- Password Input  -->
+                        <div>
+                            <label for="password"
+                                class="block mb-3 text-[15px] md:text-base font-semibold text-[#222222] leading-[17.6px]">
+                                Password
+                            </label>
+                            <input type="password" placeholder="Enter Your Password"
+                                class="inputsshadow w-full border border-[#DDDDDD] rounded-lg py-[10px] md:py-3 px-3 md:px-4 bg-[#DDDDDD] bg-opacity-25 text-opacity-50 text-sm md:text-base font-medium text-[#222222] outline-none">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-[16px] border border-[#DDDDDD] boxshadow5">
+                    <div class="py-4 px-6 border-b border-[#DDDDDD] text-xl font-bold text-[#101828]">
+                        Your Order
+                    </div>
+
+                    <div class="py-3 px-3 md:px-6 border-b border-[#DDDDDD] flex flex-col gap-2">
+                        <div class="flex items-start md:items-center flex-col md:flex-row justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="../assets/plans-icon.svg" alt="plans-icon" class="">
+                                <span class="text-lg leading-[19.8px] font-semibold">Yearly Plan </span>
+                            </div>
+
+                            <div class="flex items-end gap-2">
+                                <div class="text-base font-semibold text-[#636E6E]">
+                                    $<span class="line-through text-lg">1599.99</span>
+                                </div>
+                                <div class="text-base font-semibold text-[#F10404]">
+                                    $ <span class="text-2xl ">79.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hidden md:flex items-center gap-4">
+                            <img src="../assets/family.png" alt="Family (5-Device License)" class="h-8 w-8">
+                            <span class="text-lg leading-[19.8px] font-semibold">Yearly Plan </span>
+                        </div>
+
+                        <p class="text-base font-medium leading-[17.6px] text-[#222222] opacity-60">
+                            Everything including Essential, Standard, and additional features: live viewing and remote
+                            control.
+                        </p>
+                    </div>
+
+                    <div class="py-4 px-6 text-xl font-bold text-[#101828]">
+                        Select Add-ons
+                    </div>
+
+                    <div class="py-2 px-3 md:px-6 border-b border-[#DDDDDD] flex flex-col gap-2">
+                        <div class="flex items-start md:items-center flex-col md:flex-row justify-between">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" id="support" name="support" class="w-[18px] h-[18px] opacity-60">
+                                <span class="text-lg leading-[19.8px] font-semibold">Priority Support</span>
+                            </div>
+
+                            <div class="flex items-end gap-2">
+                                <div class="text-base font-semibold text-[#636E6E]">
+                                    $<span class="line-through text-lg">199.99</span>
+                                </div>
+                                <div class="text-base font-semibold text-[#F10404]">
+                                    $ <span class="text-2xl ">10.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-base font-medium leading-[17.6px] text-[#222222] opacity-60">
+                            Choose our priority support service for priority assistance via live chat, email, or phone.
+                            We offer technical guidance and optimize your account to prevent major problems.
+                        </p>
+                    </div>
+
+                    <div class="py-3 px-3 md:px-6 flex flex-col gap-2">
+                        <div class="flex items-start md:items-center flex-col md:flex-row justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="../assets/_Checkbox base.svg" alt="_Checkbox base">
+                                <span class="text-lg leading-[19.8px] font-semibold">Technical Assistance - Free with
+                                    Love</span>
+                            </div>
+
+                            <div class="flex items-end gap-2">
+                                <div class="text-base font-semibold text-[#636E6E]">
+                                    $<span class="line-through text-lg">199.99</span>
+                                </div>
+                                <div class="text-base font-semibold text-[#F10404]">
+                                    <span class="text-2xl text-[#4C9A2A]">FREE</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-base font-medium leading-[17.6px] text-[#222222] opacity-60">
+                            Choose our priority support service for priority assistance via live chat, email, or phone.
+                            We offer technical guidance and optimize your account to prevent major problems.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full md:w-[40%] bg-white md:bg-[#DDDDDD29] grid grid-cols-1">
+
+            <!-- Order Summery  -->
+            <div class="order-2 md:order-1 my-6 md:my-0 md:rounded-0 rounded-[16px] md:border-0 border border-[#DDDDDD] boxshadow5 md:shadow-none mx-4 md:mx-0 h-fit">
+                <div class="border-b border-[#DDDDDD] py-3 px-6 text-xl md:text-base font-bold md:font-semibold text-[#101828] opacity-100 md:opacity-60">
+                    Order Summery
+                </div>
+
+                <div class="py-2">
+                    <div class="flex items-center justify-between py-2 px-4 gap-2">
+                        <div class="flex items-center gap-3 md:gap-4">
+                            <img src="../assets/plans-icon.svg" alt="plans-icon" class="w-6 h-6">
+                            <span class="text-base leading-[17.6px] font-semibold">Yearly Plan - Family (5-Device
+                                License)</span>
+                        </div>
+                        <span class="text-base opacity-50 font-semibold block">$ 79.99</span>
+                    </div>
+
+                    <div class="flex items-center justify-between py-2 px-4 border-b md:border-b-0 border-[#DDDDDD]">
+                        <span class="text-base leading-[17.6px] font-semibold">Technical Assistance - Free with
+                            Love</span>
+                        <span class="text-base font-semibold text-[#4C9A2A]">FREE</span>
+                    </div>
+
+                    <div class="flex items-center justify-between py-2 px-4 border-b md:border-b-0 border-[#DDDDDD]">
+                        <span class="text-base leading-[17.6px] font-semibold opacity-50">Sub Total</span>
+                        <span class="text-base opacity-50 font-semibold">$ 140.98</span>
+                    </div>
+
+                    <div class="flex items-center justify-between py-2 px-4 border-b md:border-b-0 border-[#DDDDDD]">
+                        <span class="text-base leading-[17.6px] font-semibold text-[#F10404]">Discount (10% OFF)</span>
+                        <span class="text-base font-semibold text-[#F10404]">$ 14.09</span>
+                    </div>
+
+                    <div class="flex items-center justify-between py-2 px-4">
+                        <span class="text-base leading-[17.6px] font-semibold">Total To Pay</span>
+                        <span class="text-base font-semibold">$ 126.88</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Payment Options  -->
+            <div
+                class="order-1 md:order-2 md:rounded-0 rounded-[16px] md:border-0 border border-[#DDDDDD] boxshadow5 md:shadow-none mx-4 md:mx-0 h-fit">
+                <div
+                    class="md:border-t border-[#DDDDDD] border-b py-3 px-6 text-xl md:text-base font-bold md:font-semibold text-[#101828] opacity-100 md:opacity-60">
+                    Payment Options
+                </div>
+
+                <div class="flex items-center gap-4 py-2 px-4">
+                    <input type="radio" id="stripe" name="stripe" value="stripe"
+                        class="w-5 h-5 border border-white opacity-50 order-2 md:order-1">
+                    <div class="flex items-center gap-4 flex-1 order-1 md:order-2">
+                        <img src="../assets/stripe-logo.svg" alt="stripe-logo">
+                        <span class="text-base leading-[17.6px] font-semibold">Stripe</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 py-2 px-4">
+                    <input type="radio" id="paypal" name="paypal" class="w-5 h-5 border border-white opacity-50  order-2 md:order-1">
+                    <div class="flex items-center gap-4 flex-1  order-1 md:order-2">
+                        <img src="../assets/paypal.svg" alt="paypal-logo" class="w-6 h-">
+                        <span class="text-base leading-[17.6px] font-semibold">Paypal</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 py-2 px-4">
+                    <input type="radio" id="crypto" name="crypto" class="w-5 h-5 border border-white opacity-50  order-2 md:order-1">
+                    <div class="flex items-center gap-4 flex-1 order-1 md:order-2">
+                        <img src="../assets/crypto.svg" alt="crypto-logo" class="w-6 h-">
+                        <span class="text-base leading-[17.6px] font-semibold">Crypto</span>
+
+                        <div
+                            class="py-2 px-2 rounded-[100px] border border-[#4C9A2A] bg-[#ACDF873D] text-base hidden md:block font-bold text-[#4C9A2A] tracking-[-0.17px] leading-[12px]">
+                            10% OFF</div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 py-2 px-4 bg-[#E9EBFF]">
+                    <img src="../assets/credit-circle.svg" alt="credit-circle" class=" order-2 md:order-1">
+                    <div class="flex items-center gap-4 flex-1 order-1 md:order-2">
+                        <img src="../assets/credit-card.svg" alt="stripe-logo">
+                        <span class="text-base leading-[17.6px] font-semibold">Credit Card</span>
+                    </div>
+                </div>
+
+                <div class="py-3 px-3 md:px-4 flex flex-col gap-3 md:border-b border-[#DDDDDD]">
+                    <!-- Card Number -->
+                    <div>
+                        <label for="card number" class="block mb-1 text-sm font-medium">
+                            Card Number
+                        </label>
+                        <input type="text" placeholder="1234  5678  9101  1121"
+                            class="inputsshadow w-full border border-[#DDDDDD] rounded-lg py-2 px-3 bg-[#DDDDDD] bg-opacity-50 text-sm font-medium text-opacity-50 outline-none">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+
+                        <!-- Expiration Date Input  -->
+                        <div>
+                            <div>
+                                <label for="expiration date" class="block mb-1 text-sm font-medium">
+                                    Expiration Date
+                                </label>
+                                <input type="text" placeholder="MM/YY"
+                                    class="inputsshadow w-full border border-[#DDDDDD] rounded-lg py-2 px-3 bg-[#DDDDDD] bg-opacity-50 text-sm font-medium text-opacity-50 outline-none">
+                            </div>
+                        </div>
+
+                        <!-- Password Input  -->
+                        <div>
+                            <div>
+                                <label for="cvv" class="block mb-1 text-sm font-medium">
+                                    CVV
+                                </label>
+                                <input type="text" placeholder="123"
+                                    class="inputsshadow w-full border border-[#DDDDDD] rounded-lg py-2 px-3 bg-[#DDDDDD] bg-opacity-50 text-sm font-medium text-opacity-50 outline-none">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <input type="checkbox" name="save" id="save" class="w-5 h-5 opacity-50">
+                        <span class="text-[#222222] opacity-50 text-sm font-medium">Save card details</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex p-4">
+                    <button
+                        class="py-3 px-4 rounded-[12px] bg-[#2C56FE] text-white text-xl font-bold flex items-center justify-center gap-3 w-full">
+                        Place Order
+                        <img src="../assets/white-right-arrow.svg" alt="right-arrow">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!-- JS Link  -->
+    <script src="../script.js"></script>
+</body>
+
+</html>

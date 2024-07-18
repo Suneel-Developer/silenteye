@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 faq.querySelector('.arrow-up').classList.add('hidden');
                 faq.querySelector('.arrow-down').classList.remove('hidden');
                 faq.querySelector('.arrow').classList.remove('bg-[#222222]');
-                faq.querySelector('.arrow').classList.add('bg-[#222222]');
+                faq.querySelector('.arrow').classList.add('bg-[#DDDDDD]');
             });
 
             // If the clicked FAQ item is not open, open it
@@ -81,20 +81,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 arrowUp.classList.remove('hidden');
                 arrowDown.classList.add('hidden');
                 item.querySelector('.arrow').classList.remove('bg-[#DDDDDD]');
-                item.querySelector('.arrow').classList.add('bg-[#DDDDDD]');
+                item.querySelector('.arrow').classList.add('bg-[#222222]');
             }
         });
     });
 });
 
 
-// Up Sell Popup 
 
+// Review / Submit Popup
 document.addEventListener('DOMContentLoaded', (event) => {
-    const popup = document.getElementById('upsellPopup');
-    const popupContent = document.getElementById('upSellpopupContent');
-    const getStartedBtn = document.getElementById('getStartedBtn');
-    const closeBtn = document.getElementById('upSellcloseBtn');
+    const popup = document.getElementById('reviewsubmitPopup');
+    const popupContent = document.getElementById('reviewsubmitpopupContent');
+    const getStartedBtn = document.getElementById('leaveReviewBtn');
+    const closeBtn = document.getElementById('reviewsubmitcloseBtn');
 
     function openPopup() {
         popup.classList.remove('hidden');
@@ -109,4 +109,225 @@ document.addEventListener('DOMContentLoaded', (event) => {
     getStartedBtn.addEventListener('click', openPopup);
     popup.addEventListener('click', closePopup);
     closeBtn.addEventListener('click', closePopup);
+});
+
+// Video Popup
+document.addEventListener('DOMContentLoaded', (event) => {
+    const popup = document.getElementById('videoPopup');
+    const popupContent = document.getElementById('videopopupContent');
+    const getStartedBtn = document.getElementById('videoBtn');
+    const closeBtn = document.getElementById('videocloseBtn');
+
+    function openPopup() {
+        popup.classList.remove('hidden');
+    }
+
+    function closePopup(event) {
+        if (event.target === popup || event.target === closeBtn) {
+            popup.classList.add('hidden');
+        }
+    }
+
+    getStartedBtn.addEventListener('click', openPopup);
+    popup.addEventListener('click', closePopup);
+    closeBtn.addEventListener('click', closePopup);
+});
+
+
+// Up Sell Popup 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const weaklyGetStartedBtn = document.getElementById('getStartedBtnWeakly');
+    const monthlyGetStartedBtn = document.getElementById('getStartedBtnMonthly');
+    const quarterlyGetStartedBtn = document.getElementById('getStartedBtnQuarterly');
+    const yearlyGetStartedBtn = document.getElementById('getStartedBtnYearly');
+
+    const upsellPopup = document.getElementById('upsellPopup');
+    const closeBtn = document.getElementById('upSellcloseBtn');
+
+    function openPopup() {
+        upsellPopup.classList.remove('hidden');
+    }
+
+    function closePopup(event) {
+        if (event.target === upsellPopup || event.target === closeBtn) {
+            upsellPopup.classList.add('hidden');
+        }
+    }
+
+    // Event listeners for each "Get started" button
+    weaklyGetStartedBtn.addEventListener('click', function () {
+        openPopup();
+        // Implement specific logic for weakly section if needed
+    });
+
+    monthlyGetStartedBtn.addEventListener('click', function () {
+        openPopup();
+        // Implement specific logic for monthly section if needed
+    });
+
+    quarterlyGetStartedBtn.addEventListener('click', function () {
+        openPopup();
+        // Implement specific logic for quarterly section if needed
+    });
+
+    yearlyGetStartedBtn.addEventListener('click', function () {
+        openPopup();
+        // Implement specific logic for yearly section if needed
+    });
+
+    // Close popup event listeners
+    upsellPopup.addEventListener('click', closePopup);
+    closeBtn.addEventListener('click', closePopup);
+});
+
+
+// Load More Reviews 
+document.addEventListener('DOMContentLoaded', function () {
+    const reviewsContainer = document.getElementById('reviews-container');
+    const reviews = Array.from(reviewsContainer.getElementsByClassName('review'));
+    const loadMoreBtn = document.getElementById('load-more-btn');
+
+    const initialReviewsCount = 5;
+    let showAll = false;
+
+    function updateReviewsDisplay() {
+        reviews.forEach((review, index) => {
+            if (showAll) {
+                review.classList.remove('hidden');
+            } else {
+                if (index < initialReviewsCount) {
+                    review.classList.remove('hidden');
+                } else {
+                    review.classList.add('hidden');
+                }
+            }
+        });
+
+        loadMoreBtn.textContent = showAll ? 'Show Less Reviews' : 'Load More Reviews';
+    }
+
+    loadMoreBtn.addEventListener('click', function () {
+        showAll = !showAll;
+        updateReviewsDisplay();
+    });
+
+    updateReviewsDisplay();
+});
+
+// Load More Features 
+document.addEventListener('DOMContentLoaded', function () {
+    const reviewsContainer = document.getElementById('features-container');
+    const reviews = Array.from(reviewsContainer.getElementsByClassName('feature'));
+    const loadMoreBtn = document.getElementById('show-more-btn');
+
+    const initialReviewsCount = 5;
+    let showAll = false;
+
+    function updateReviewsDisplay() {
+        reviews.forEach((review, index) => {
+            if (showAll) {
+                review.classList.remove('hidden');
+            } else {
+                if (index < initialReviewsCount) {
+                    review.classList.remove('hidden');
+                } else {
+                    review.classList.add('hidden');
+                }
+            }
+        });
+
+        loadMoreBtn.textContent = showAll ? 'View Less Features' : 'View More Features';
+    }
+
+    loadMoreBtn.addEventListener('click', function () {
+        showAll = !showAll;
+        updateReviewsDisplay();
+    });
+
+    updateReviewsDisplay();
+});
+
+
+
+// Slider 
+window.onload = function () {
+    const slider = document.querySelector('.slider');
+    const slide = document.querySelector('.slide');
+    const slideCount = slider.children.length;
+
+    for (let i = 0; i < slideCount; i++) {
+        let clone = slide.cloneNode(true);
+        slider.appendChild(clone);
+    }
+};
+
+
+
+// Access Popup
+
+document.addEventListener('DOMContentLoaded', function() {
+    const initialPopup = document.getElementById('initialPopup');
+    const progressPopup = document.getElementById('progressPopup');
+    const openPopupBtn = document.getElementById('openPopupBtn');
+    const startAccessBtn = document.getElementById('startAccessBtn');
+    const progressBarFill = document.getElementById('progressBarFill');
+    const progressImage = document.getElementById('progressImage');
+    const progressTitle = document.getElementById('progressTitle');
+    const progressTitle2 = document.getElementById('progressTitle2');
+    const loadingDots = document.getElementById('loadingDots');
+
+    openPopupBtn.addEventListener('click', function() {
+        initialPopup.classList.remove('hidden');
+    });
+
+    startAccessBtn.addEventListener('click', function() {
+        initialPopup.classList.add('hidden');
+        progressPopup.classList.remove('hidden');
+        startProgress();
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!initialPopup.contains(event.target) && !progressPopup.contains(event.target) && event.target !== openPopupBtn) {
+            initialPopup.classList.add('hidden');
+            progressPopup.classList.add('hidden');
+        }
+    });
+
+    initialPopup.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
+
+    progressPopup.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
+
+    function startProgress() {
+        const steps = [
+            { title: 'Finding', title2: "Targeted Device", image: './assets/access-1.svg' },
+            { title: 'Gaining', title2: "Device Access", image: './assets/access-2.svg' },
+            { title: 'Syncing', title2: "Device Data", image: './assets/access-3.svg' },
+            { title: 'Control Panel', title2: "is Ready to Start", image: './assets/access-4.svg' }
+        ];
+        let currentStepIndex = 0;
+
+        function updateProgress() {
+            if (currentStepIndex < steps.length) {
+                const { title, title2, image } = steps[currentStepIndex];
+                progressTitle.textContent = title;
+                progressTitle2.textContent = title2;
+                progressImage.src = image;
+                currentStepIndex++;
+                progressBarFill.style.width = (currentStepIndex / steps.length) * 100 + '%';
+                loadingDots.classList.add('hidden');
+                setTimeout(() => {
+                    loadingDots.classList.remove('hidden');
+                    setTimeout(updateProgress, 4000);
+                }, 400);
+            } else {
+                window.location.href = './pages/pricing.html'; 
+            }
+        }
+
+        updateProgress();
+    }
 });
