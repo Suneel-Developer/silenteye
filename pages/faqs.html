@@ -193,7 +193,7 @@
             </div>
         </div>
 
-        
+
         <!-- Video Popup  -->
         <div id="videoPopup"
             class="z-50 bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen px-3 hidden flex items-center justify-center">
@@ -246,32 +246,37 @@
     </section>
 
     <!-- Frequently Asked Questions Section -->
-    <section class="pb-5 md:pb-20 border-b w-full border-[#D0D5DD]">
+
+    <section class="py-5 md:py-20 border-b w-full border-[#D0D5DD]">
         <div class="max-w-[1040px] w-full mx-auto flex flex-col gap-5 md:gap-6">
 
             <div class="flex items-center justify-center bg-white">
                 <div class="flex overflow-x-auto gap-3 md:gap-6 bg-white no-scrollbar">
-                    <button
-                        class="ml-4 md:ml-0 py-[10px] md:py-3 min-w-[141px] w-[141px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-white bg-[#2C56FE] border border-[#2C56FE] rounded-xl">
-                        <img src="../assets/product.svg" alt="product icon">
+                    <button data-tab="product" data-active-img="../assets/product-white-icon.svg"
+                        data-inactive-img="../assets/product_black.svg"
+                        class="faqtab-btn faqsactive ml-4 md:ml-0 py-[10px] md:py-3 min-w-[141px] w-[141px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-[#101828] border border-[#DDDDDD] rounded-xl">
+                        <img src="../assets/product-white-icon.svg" alt="product icon" class="tab-icon">
                         Product
                     </button>
 
-                    <button
-                        class="py-[10px] md:py-3 min-w-[152px] w-[152px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-[#101828] border border-[#DDDDDD] rounded-xl">
-                        <img src="../assets/purchase.svg" alt="purchase icon">
+                    <button data-tab="purchase" data-active-img="../assets/purchase_white.svg"
+                        data-inactive-img="../assets/purchase-black-icon.svg"
+                        class="faqtab-btn py-[10px] md:py-3 min-w-[141px] w-[141px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-[#101828] border border-[#DDDDDD] rounded-xl">
+                        <img src="../assets/purchase-black-icon.svg" alt="purchase icon" class="tab-icon">
                         Purchase
                     </button>
 
-                    <button
-                        class="py-[10px] md:py-3 min-w-[136px] w-[136px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-[#101828] border border-[#DDDDDD] rounded-xl">
-                        <img src="../assets/refund.svg" alt="refund icon">
+                    <button data-tab="refund" data-active-img="../assets/refund_white.svg"
+                        data-inactive-img="../assets/refund-black-icon.svg"
+                        class="faqtab-btn py-[10px] md:py-3 min-w-[141px] w-[141px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-[#101828] border border-[#DDDDDD] rounded-xl">
+                        <img src="../assets/refund-black-icon.svg" alt="refund icon" class="tab-icon">
                         Refund
                     </button>
 
-                    <button
-                        class="mr-4 md:mr-0 py-[10px] md:py-3 min-w-[169px] w-[169px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-[#101828] border border-[#DDDDDD] rounded-xl">
-                        <img src="../assets/installation.svg" alt="installation icon">
+                    <button data-tab="installation" data-active-img="../assets/installation_white.svg"
+                        data-inactive-img="../assets/installation-black-icon.svg"
+                        class="faqtab-btn mr-4 md:mr-0 py-[10px] md:py-3 min-w-[141px] w-[141px] flex items-center justify-center gap-3 font-bold text-[19px] tracking-[-0.17px] text-[#101828] border border-[#DDDDDD] rounded-xl">
+                        <img src="../assets/installation-black-icon.svg" alt="installation icon" class="tab-icon">
                         Installation
                     </button>
                 </div>
@@ -280,25 +285,8 @@
 
             <!-- Faqs questions  -->
             <div class="lg:px-0 px-4">
-                <ul class="btnshadow1 border border-[#DDDDDD] w-full rounded-2xl">
-                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
-                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
-                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">
-                                How to spy on a phone remotely?
-                            </h2>
-
-                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
-                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
-                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
-                            </div>
-                        </div>
-                        <div
-                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
-                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
-                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
-                        </div>
-                    </li>
-
+                <ul id="product"
+                    class="faqtab-content faqsactive btnshadow1 border border-[#DDDDDD] w-full rounded-2xl">
                     <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
                         <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
                             <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
@@ -367,6 +355,7 @@
                         </div>
                     </li>
 
+
                     <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
                         <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
                             <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
@@ -384,7 +373,170 @@
                         </div>
                     </li>
 
-                    <li class="faq-item p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+
+                </ul>
+
+                <ul id="purchase" class="faqtab-content btnshadow1 border border-[#DDDDDD] w-full rounded-2xl">
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul id="refund" class="faqtab-content btnshadow1 border border-[#DDDDDD] w-full rounded-2xl">
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                </ul>
+
+                <ul id="installation" class="faqtab-content btnshadow1 border border-[#DDDDDD] w-full rounded-2xl">
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
+                        <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
+                            <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
+                                on a
+                                phone remotely?</h2>
+                            <div class="arrow w-8 h-8 flex items-center justify-center rounded-full bg-[#DDDDDD]">
+                                <img src="../assets/top-arrow.svg" alt="top-arrow" class="arrow-up hidden">
+                                <img src="../assets/down-arrow.svg" alt="down-arrow" class="arrow-down">
+                            </div>
+                        </div>
+                        <div
+                            class="faq-answer opacity-50 text-sm md:text-base font-medium leading-[16.8px] md:leading-[19.2px] text-black hidden">
+                            You can spy on a phone remotely through a phone tracker solution like SilentEye. Sign up and
+                            finish all set-ups in just 2 minutes, then you can spy on a phone anywhere, anytime.
+                        </div>
+                    </li>
+
+                    <li class="faq-item border-b border-[#DDDDDD] p-4 md:p-5 flex flex-col gap-3 md:gap-5">
                         <div class="faq-question flex items-center justify-between gap-3 cursor-pointer">
                             <h2 class="flex-1 text-base md:text-xl font-semibold md:font-medium text-black">How to spy
                                 on a
@@ -403,59 +555,58 @@
 
                 </ul>
             </div>
-
         </div>
     </section>
 
 
-        <!-- Try Now Section  -->
-        <section class="py-5 md:py-10 border-b border-[#DDDDDD] px-4">
-            <div class="max-w-[1040px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
-                <div class="flex items-center justify-center order-1 md:order-2">
-                    <img src="../assets/try-now-main-image.svg" alt="try-now-main">
-                </div>
-    
-                <div class="flex flex-col gap-6 md:gap-8 order-2 md:order-1">
-                    <h2
-                        class="text-[#101828] text-2xl md:text-[40px] leading-[26.4px] md:leading-[44px] tracking-[-0.2px] font-bold text-center md:text-start">
-                        One click and zero
-                        effort to access anyones phone across the globe
-                    </h2>
-    
-                    <ul class="flex flex-col gap-4 md:gap-5">
-                        <li class="flex items-center gap-4">
-                            <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
-                            <p
-                                class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
-                                SilentEye can gain anonymous access to any phone, no matter where it is.
-                            </p>
-                        </li>
-    
-                        <li class="flex items-center gap-4">
-                            <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
-                            <p
-                                class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
-                                Gain in-depth insights and remote control capabilities through our robust Live Control
-                                Panel.
-                            </p>
-                        </li>
-    
-                        <li class="flex items-center gap-4">
-                            <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
-                            <p
-                                class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
-                                There is no phone in the world that SilentEye cant access remotely with just a phone number.
-                            </p>
-                        </li>
-                    </ul>
-    
-                    <a href="./pricing.html"
-                        class="max-w-[197px] md:max-w-[236px] w-full btnshadow mx-auto md:mx-0 text-center py-[10px] md:py-3 bg-[#2C56FE] rounded-xl text-white text-lg md:text-xl font-bold">Try
-                        Now
-                    </a>
-                </div>
+    <!-- Try Now Section  -->
+    <section class="py-5 md:py-10 border-b border-[#DDDDDD] px-4">
+        <div class="max-w-[1040px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+            <div class="flex items-center justify-center order-1 md:order-2">
+                <img src="../assets/try-now-main-image.svg" alt="try-now-main">
             </div>
-        </section>
+
+            <div class="flex flex-col gap-6 md:gap-8 order-2 md:order-1">
+                <h2
+                    class="text-[#101828] text-2xl md:text-[40px] leading-[26.4px] md:leading-[44px] tracking-[-0.2px] font-bold text-center md:text-start">
+                    One click and zero
+                    effort to access anyones phone across the globe
+                </h2>
+
+                <ul class="flex flex-col gap-4 md:gap-5">
+                    <li class="flex items-center gap-4">
+                        <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                        <p
+                            class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
+                            SilentEye can gain anonymous access to any phone, no matter where it is.
+                        </p>
+                    </li>
+
+                    <li class="flex items-center gap-4">
+                        <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                        <p
+                            class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
+                            Gain in-depth insights and remote control capabilities through our robust Live Control
+                            Panel.
+                        </p>
+                    </li>
+
+                    <li class="flex items-center gap-4">
+                        <img src="../assets/circle-tikmark.svg" alt="circle-tikmark" class="w-6 md:w-8 h-6 md:h-8">
+                        <p
+                            class="flex-1 text-sm md:text-lg font-medium text-[#101828] leading-[18.2px] md:leading-[21.6px] opacity-60">
+                            There is no phone in the world that SilentEye cant access remotely with just a phone number.
+                        </p>
+                    </li>
+                </ul>
+
+                <a href="./pricing.html"
+                    class="max-w-[197px] md:max-w-[236px] w-full btnshadow mx-auto md:mx-0 text-center py-[10px] md:py-3 bg-[#2C56FE] rounded-xl text-white text-lg md:text-xl font-bold">Try
+                    Now
+                </a>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -545,14 +696,14 @@
 
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                         <li>
-                            <a href="/refund-policy"
+                            <a href="./refund-policy.html"
                                 class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
                                 Refund Policy
                             </a>
                         </li>
 
                         <li>
-                            <a href="/privacy-policy"
+                            <a href="./privacy-policy.html"
                                 class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
                                 Privacy Policy
                             </a>
@@ -563,11 +714,6 @@
                                 class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">
                                 Terms & Conditions
                             </a>
-                        </li>
-
-                        <li>
-                            <a href="/disclaimer"
-                                class="nav-link text-base font-medium leading-[17.6px] text-black opacity-60">Disclaimer</a>
                         </li>
                     </ul>
                 </div>

@@ -140,6 +140,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const monthlyGetStartedBtn = document.getElementById('getStartedBtnMonthly');
     const quarterlyGetStartedBtn = document.getElementById('getStartedBtnQuarterly');
     const yearlyGetStartedBtn = document.getElementById('getStartedBtnYearly');
+    const placeorderBtn = document.getElementById('placeorderbtn');
 
     const upsellPopup = document.getElementById('upsellPopup');
     const closeBtn = document.getElementById('upSellcloseBtn');
@@ -154,25 +155,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    // Event listeners for each "Get started" button
     weaklyGetStartedBtn.addEventListener('click', function () {
         openPopup();
-        // Implement specific logic for weakly section if needed
     });
 
     monthlyGetStartedBtn.addEventListener('click', function () {
         openPopup();
-        // Implement specific logic for monthly section if needed
     });
 
     quarterlyGetStartedBtn.addEventListener('click', function () {
         openPopup();
-        // Implement specific logic for quarterly section if needed
     });
 
     yearlyGetStartedBtn.addEventListener('click', function () {
         openPopup();
-        // Implement specific logic for yearly section if needed
+    });
+
+    placeorderBtn.addEventListener('click', function () {
+        openPopup();
     });
 
     // Close popup event listeners
@@ -265,39 +265,27 @@ window.onload = function () {
 
 // Access Popup
 
-document.addEventListener('DOMContentLoaded', function() {
-    const initialPopup = document.getElementById('initialPopup');
+document.addEventListener('DOMContentLoaded', function () {
     const progressPopup = document.getElementById('progressPopup');
     const openPopupBtn = document.getElementById('openPopupBtn');
-    const startAccessBtn = document.getElementById('startAccessBtn');
     const progressBarFill = document.getElementById('progressBarFill');
     const progressImage = document.getElementById('progressImage');
     const progressTitle = document.getElementById('progressTitle');
     const progressTitle2 = document.getElementById('progressTitle2');
     const loadingDots = document.getElementById('loadingDots');
 
-    openPopupBtn.addEventListener('click', function() {
-        initialPopup.classList.remove('hidden');
-    });
-
-    startAccessBtn.addEventListener('click', function() {
-        initialPopup.classList.add('hidden');
+    openPopupBtn.addEventListener('click', function () {
         progressPopup.classList.remove('hidden');
         startProgress();
     });
 
-    document.addEventListener('click', function(event) {
-        if (!initialPopup.contains(event.target) && !progressPopup.contains(event.target) && event.target !== openPopupBtn) {
-            initialPopup.classList.add('hidden');
+    document.addEventListener('click', function (event) {
+        if (!progressPopup.contains(event.target) && event.target !== openPopupBtn) {
             progressPopup.classList.add('hidden');
         }
     });
 
-    initialPopup.addEventListener('click', function(event) {
-        event.stopPropagation();
-    });
-
-    progressPopup.addEventListener('click', function(event) {
+    progressPopup.addEventListener('click', function (event) {
         event.stopPropagation();
     });
 
@@ -324,10 +312,77 @@ document.addEventListener('DOMContentLoaded', function() {
                     setTimeout(updateProgress, 4000);
                 }, 400);
             } else {
-                window.location.href = './pages/pricing.html'; 
+                window.location.href = './pages/pricing.html';
             }
         }
 
         updateProgress();
     }
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const textElement = document.getElementById('textElement');
+    setTimeout(() => {
+        textElement.classList.remove('text-visible');
+        textElement.classList.add('text-hidden');
+        setTimeout(() => {
+            textElement.textContent = '13896';
+            textElement.classList.remove('text-hidden');
+            textElement.classList.add('text-visible');
+        }, 500);
+    }, 2000);
+});
+
+
+// Without Us & With Us Tabs 
+document.addEventListener('DOMContentLoaded', function () {
+    const tabButtons = document.querySelectorAll('.withoutWithtab-btn');
+    const tabContents = document.querySelectorAll('.withoutWithtab-content');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            // Remove active class from all buttons
+            tabButtons.forEach(btn => btn.classList.remove('withoutWithtabactive'));
+            // Add active class to the clicked button
+            button.classList.add('withoutWithtabactive');
+
+            // Hide all tab contents
+            tabContents.forEach(content => content.classList.remove('withoutWithtabactive'));
+            // Show the content related to the clicked button
+            const tabId = button.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('withoutWithtabactive');
+        });
+    });
+});
+
+
+// faqs tabs 
+document.addEventListener('DOMContentLoaded', function () {
+    const tabButtons = document.querySelectorAll('.faqtab-btn');
+    const tabContents = document.querySelectorAll('.faqtab-content');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            // Remove active class from all buttons and reset images
+            tabButtons.forEach(btn => {
+                btn.classList.remove('faqsactive');
+                const img = btn.querySelector('.tab-icon');
+                img.src = btn.getAttribute('data-inactive-img');
+            });
+
+            // Add active class to the clicked button and change image
+            button.classList.add('faqsactive');
+            const activeImg = button.getAttribute('data-active-img');
+            button.querySelector('.tab-icon').src = activeImg;
+
+            // Hide all tab contents
+            tabContents.forEach(content => content.classList.remove('faqsactive'));
+
+            // Show the content related to the clicked button
+            const tabId = button.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('faqsactive');
+        });
+    });
 });
