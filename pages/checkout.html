@@ -162,7 +162,7 @@
             </div>
         </div>
 
-        <div class="w-full md:w-[40%] bg-white md:bg-[#DDDDDD29] grid grid-cols-1">
+        <div class="w-full md:w-[40%] bg-white mb-20 md:mb-0 md:bg-[#DDDDDD29] grid grid-cols-1">
 
             <!-- Order Summery  -->
             <div
@@ -179,7 +179,7 @@
                             <span class="text-base leading-[17.6px] font-semibold">Yearly Plan - Family (5-Device
                                 License)</span>
                         </div>
-                        <span class="text-base opacity-50 font-semibold block">$ 79.99</span>
+                        <span class="text-base opacity-50 font-semibold block whitespace-nowrap">$ 79.99</span>
                     </div>
 
                     <div class="flex items-center justify-between py-2 px-4 border-b md:border-b-0 border-[#DDDDDD]">
@@ -215,8 +215,8 @@
                 </div>
 
                 <div class="flex items-center gap-4 py-2 px-4">
-                    <input type="radio" id="stripe" name="stripe" value="stripe"
-                        class="w-5 h-5 border border-white opacity-50 order-2 md:order-1">
+                    <input type="radio" id="stripe" name="payment" value="stripe"
+                        class="w-5 h-5 border border-white opacity-80 cursor-pointer order-2 md:order-1">
                     <div class="flex items-center gap-4 flex-1 order-1 md:order-2">
                         <img src="../assets/stripe-logo.svg" alt="stripe-logo">
                         <span class="text-base leading-[17.6px] font-semibold">Stripe</span>
@@ -224,8 +224,8 @@
                 </div>
 
                 <div class="flex items-center gap-4 py-2 px-4">
-                    <input type="radio" id="paypal" name="paypal"
-                        class="w-5 h-5 border border-white opacity-50  order-2 md:order-1">
+                    <input type="radio" id="paypal" name="payment"
+                        class="w-5 h-5 border border-white opacity-80 cursor-pointer order-2 md:order-1">
                     <div class="flex items-center gap-4 flex-1  order-1 md:order-2">
                         <img src="../assets/paypal.svg" alt="paypal-logo" class="w-6 h-">
                         <span class="text-base leading-[17.6px] font-semibold">Paypal</span>
@@ -233,8 +233,8 @@
                 </div>
 
                 <div class="flex items-center gap-4 py-2 px-4">
-                    <input type="radio" id="crypto" name="crypto"
-                        class="w-5 h-5 border border-white opacity-50  order-2 md:order-1">
+                    <input type="radio" id="crypto" name="payment"
+                        class="w-5 h-5 border border-white opacity-80 cursor-pointer order-2 md:order-1">
                     <div class="flex items-center gap-4 flex-1 order-1 md:order-2">
                         <img src="../assets/crypto.svg" alt="crypto-logo" class="w-6 h-">
                         <span class="text-base leading-[17.6px] font-semibold">Crypto</span>
@@ -245,8 +245,9 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-4 py-2 px-4 bg-[#E9EBFF]">
-                    <img src="../assets/credit-circle.svg" alt="credit-circle" class=" order-2 md:order-1">
+                <div class="flex items-center gap-4 py-2 px-4">
+                    <input type="radio" id="credit-card" name="payment"
+                        class="w-5 h-5 border border-white opacity-80 cursor-pointer order-2 md:order-1">
                     <div class="flex items-center gap-4 flex-1 order-1 md:order-2">
                         <img src="../assets/credit-card.svg" alt="stripe-logo">
                         <span class="text-base leading-[17.6px] font-semibold">Credit Card</span>
@@ -294,11 +295,19 @@
                 </div>
 
                 <div class="hidden md:flex p-4">
-                    <button
+                    <a href="./thankyou.html"
                         class="py-3 px-4 rounded-[12px] bg-[#2C56FE] text-white text-xl font-bold flex items-center justify-center gap-3 w-full">
                         Place Order
                         <img src="../assets/white-right-arrow.svg" alt="right-arrow">
-                    </button>
+                    </a>
+                </div>
+
+                <div class="flex md:hidden p-4 fixed left-0 right-0 bottom-0 w-full bg-white z-30">
+                    <a href="./thankyou.html"
+                        class="py-3 px-4 rounded-[12px] bg-[#2C56FE] text-white text-xl font-bold flex items-center justify-center gap-3 w-full">
+                        Place Order
+                        <img src="../assets/white-right-arrow.svg" alt="right-arrow">
+                    </a>
                 </div>
             </div>
         </div>
