@@ -134,51 +134,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
-// Up Sell Popup 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const weaklyGetStartedBtn = document.getElementById('getStartedBtnWeakly');
-    const monthlyGetStartedBtn = document.getElementById('getStartedBtnMonthly');
-    const quarterlyGetStartedBtn = document.getElementById('getStartedBtnQuarterly');
-    const yearlyGetStartedBtn = document.getElementById('getStartedBtnYearly');
-    const placeorderBtn = document.getElementById('placeorderbtn');
-
-    const upsellPopup = document.getElementById('upsellPopup');
-    const closeBtn = document.getElementById('upSellcloseBtn');
-
-    function openPopup() {
-        upsellPopup.classList.remove('hidden');
-    }
-
-    function closePopup(event) {
-        if (event.target === upsellPopup || event.target === closeBtn) {
-            upsellPopup.classList.add('hidden');
-        }
-    }
-
-    weaklyGetStartedBtn.addEventListener('click', function () {
-        openPopup();
-    });
-
-    monthlyGetStartedBtn.addEventListener('click', function () {
-        openPopup();
-    });
-
-    quarterlyGetStartedBtn.addEventListener('click', function () {
-        openPopup();
-    });
-
-    yearlyGetStartedBtn.addEventListener('click', function () {
-        openPopup();
-    });
-
-    placeorderBtn.addEventListener('click', function () {
-        openPopup();
-    });
-
-    // Close popup event listeners
-    upsellPopup.addEventListener('click', closePopup);
-    closeBtn.addEventListener('click', closePopup);
-});
 
 
 // Load More Reviews 
@@ -386,3 +341,152 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
+function startTimer(duration, display) {
+    let timer = duration, hours, minutes, seconds;
+    setInterval(function () {
+        hours = parseInt(timer / 3600, 10);
+        minutes = parseInt((timer % 3600) / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = hours + ":" + minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration; // Reset timer
+        }
+    }, 1000);
+}
+
+function startDiscountTimer(duration, display) {
+    let timer = duration, hours, minutes, seconds;
+    setInterval(function () {
+        hours = parseInt(timer / 3600, 10);
+        minutes = parseInt((timer % 3600) / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = hours + ":" + minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration; // Reset timer
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    let oneHour = 3600; // Duration in seconds (1 hour)
+    let fourHours = 4 * 3600; // Duration in seconds (4 hours)
+    
+    let displayTime = document.querySelector('#time');
+    if (displayTime) {
+        startTimer(oneHour, displayTime);
+    }
+
+    let displayDesktop = document.querySelector('#discount-timer');
+    let displayMobile = document.querySelector('#discount-timer2');
+    
+    if (displayDesktop) {
+        startDiscountTimer(fourHours, displayDesktop);
+    }
+
+    if (displayMobile) {
+        startDiscountTimer(fourHours, displayMobile);
+    }
+};
+
+
+
+// Up Sell Popup 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const weeklyGetStartedBtn = document.getElementById('getStartedBtnWeekly');
+    const monthlyGetStartedBtn = document.getElementById('getStartedBtnMonthly');
+    const quarterlyGetStartedBtn = document.getElementById('getStartedBtnQuarterly');
+    const yearlyGetStartedBtn = document.getElementById('getStartedBtnYearly');
+    const placeorderBtn = document.getElementById('placeorderbtn');
+
+    const upsellPopup = document.getElementById('upsellPopup');
+    const closeBtn = document.getElementById('upSellcloseBtn');
+
+    function openPopup() {
+        upsellPopup.classList.remove('hidden');
+    }
+
+    function closePopup(event) {
+        if (event.target === upsellPopup || event.target === closeBtn) {
+            upsellPopup.classList.add('hidden');
+        }
+    }
+
+    weeklyGetStartedBtn.addEventListener('click', function () {
+        openPopup();
+    });
+
+    monthlyGetStartedBtn.addEventListener('click', function () {
+        openPopup();
+    });
+
+    quarterlyGetStartedBtn.addEventListener('click', function () {
+        openPopup();
+    });
+
+    yearlyGetStartedBtn.addEventListener('click', function () {
+        openPopup();
+    });
+
+    placeorderBtn.addEventListener('click', function () {
+        openPopup();
+    });
+
+    // Close popup event listeners
+    upsellPopup.addEventListener('click', closePopup);
+    closeBtn.addEventListener('click', closePopup);
+});
+
+
+
+// Set default selected plan to Yearly
+document.querySelector('#yearly').checked = true;
+document.querySelector('#yearlyPlan').classList.add('selected');
+
+document.querySelectorAll('input[name="plan"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+        document.querySelectorAll('.plan-container').forEach(container => {
+            container.classList.remove('selected');
+        });
+        document.querySelector(`#${radio.id}Plan`).classList.add('selected');
+    });
+});
+
+
+
+
+
+// Up Sell Plans 
+document.addEventListener('DOMContentLoaded', function () {
+    const plans = document.querySelectorAll('.plan-item');
+    const selectedClass = 'upsellselected';
+    const unselectedClass = 'upsellunselected';
+
+    plans.forEach(plan => {
+        plan.addEventListener('click', function () {
+            plans.forEach(p => {
+                p.classList.remove(selectedClass);
+                p.classList.add(unselectedClass);
+            });
+
+            this.classList.remove(unselectedClass);
+            this.classList.add(selectedClass);
+        });
+    });
+});
+
+

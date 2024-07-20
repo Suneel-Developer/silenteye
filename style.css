@@ -309,3 +309,29 @@ li{
     display: flex;
     flex-direction: column;
 }
+
+
+.plan-container.selected .plan {
+    border-color: #172A6E;
+    background-color: #E9EBFF;
+}
+.plan-container.selected .radio-button {
+    background-color: #172A6E;
+    border-color: #172A6E;
+}
+.plan-container.selected img.checkbox {
+    display: block;
+}
+.plan-container img.checkbox {
+    display: none;
+}
+
+.upsellselected {
+    background-color: #E9EBFF;
+    border-color: #172A6E;
+}
+
+.upsellunselected {
+    background-color: white;
+    border-color: #D0D5DD;
+}

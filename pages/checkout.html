@@ -21,22 +21,22 @@
             <h2 class="text-xl font-bold tracking-[-0.17px] text-[#101828]">Checkout</h2>
         </div>
 
-        <a href="../index.html"><img src="../assets/logo.svg" alt="logo" class="h-8"></a>
+        <a href="../index.html"><img src="../assets/logo.svg" alt="logo" class="h-8 hidden md:block"></a>
 
         <div></div>
     </section>
 
 
-    <div class="bg-[#FFEAB5] py-[10px] px-3 flex items-center justify-center gap-2 flex-wrap">
+    <div class="bg-[#FFEAB5] h-[59px] md:h-auto py-2 px-3 flex items-center justify-center md:gap-2 flex-wrap">
         <img src="../assets/reserved-icon.svg" alt="reserved">
-        <span class="text-base md:text-xl font-medium">Your order's reserved for</span>
-        <div class="flex items-center gap-1 text-xl font-semibold text-[#F10404]">
+        <span class="text-base md:text-xl font-medium leading-[17.6px]">Your order's reserved for</span>
+        <div class="flex items-center gap-1 text-xl font-semibold text-[#F10404]" id="timer">
             <img src="../assets/timer.svg" alt="timer">
-            55:40
+            <span id="time">01:00:00</span>
         </div>
-        <div class="flex items-center text-base md:text-xl font-medium gap-1">
+        <div class="flex items-center text-base md:text-xl leading-[17.6px] font-medium gap-1">
             <span>with an Extra </span>
-            <span class="text-[#F10404] font-bold">10% OFF</span>
+            <span class="text-[#F10404] font-bold leading-[17.6px]">10% OFF</span>
         </div>
     </div>
 
@@ -58,7 +58,7 @@
                                 Email
                             </label>
                             <input type="email" placeholder="Enter Your Mail ID"
-                                class="inputsshadow w-full border border-[#DDDDDD] rounded-lg py-[10px] md:py-3 px-3 md:px-4 bg-[#DDDDDD] bg-opacity-25 text-sm md:text-base font-medium text-[#222222] text-opacity-50 outline-none">
+                                class="inputsshadow w-full border border-[#DDDDDD] rounded-lg py-[10px] md:py-3 px-3 md:px-4 bg-[#DDDDDD] bg-opacity-25 text-sm md:text-base font-medium text-[#222222] placeholder:text-opacity-50 outline-none">
                         </div>
 
                         <!-- Password Input  -->
@@ -68,7 +68,7 @@
                                 Password
                             </label>
                             <input type="password" placeholder="Enter Your Password"
-                                class="inputsshadow w-full border border-[#DDDDDD] rounded-lg py-[10px] md:py-3 px-3 md:px-4 bg-[#DDDDDD] bg-opacity-25 text-opacity-50 text-sm md:text-base font-medium text-[#222222] outline-none">
+                                class="inputsshadow w-full border border-[#DDDDDD] rounded-lg py-[10px] md:py-3 px-3 md:px-4 bg-[#DDDDDD] bg-opacity-25 placeholder:text-opacity-50 text-sm md:text-base font-medium text-[#222222] outline-none">
                         </div>
                     </div>
                 </div>
@@ -165,8 +165,10 @@
         <div class="w-full md:w-[40%] bg-white md:bg-[#DDDDDD29] grid grid-cols-1">
 
             <!-- Order Summery  -->
-            <div class="order-2 md:order-1 my-6 md:my-0 md:rounded-0 rounded-[16px] md:border-0 border border-[#DDDDDD] boxshadow5 md:shadow-none mx-4 md:mx-0 h-fit">
-                <div class="border-b border-[#DDDDDD] py-3 px-6 text-xl md:text-base font-bold md:font-semibold text-[#101828] opacity-100 md:opacity-60">
+            <div
+                class="order-2 md:order-1 my-6 md:my-0 md:rounded-0 rounded-[16px] md:border-0 border border-[#DDDDDD] boxshadow5 md:shadow-none mx-4 md:mx-0 h-fit">
+                <div
+                    class="border-b border-[#DDDDDD] py-3 px-6 text-xl md:text-base font-bold md:font-semibold text-[#101828] opacity-100 md:opacity-60">
                     Order Summery
                 </div>
 
@@ -222,7 +224,8 @@
                 </div>
 
                 <div class="flex items-center gap-4 py-2 px-4">
-                    <input type="radio" id="paypal" name="paypal" class="w-5 h-5 border border-white opacity-50  order-2 md:order-1">
+                    <input type="radio" id="paypal" name="paypal"
+                        class="w-5 h-5 border border-white opacity-50  order-2 md:order-1">
                     <div class="flex items-center gap-4 flex-1  order-1 md:order-2">
                         <img src="../assets/paypal.svg" alt="paypal-logo" class="w-6 h-">
                         <span class="text-base leading-[17.6px] font-semibold">Paypal</span>
@@ -230,7 +233,8 @@
                 </div>
 
                 <div class="flex items-center gap-4 py-2 px-4">
-                    <input type="radio" id="crypto" name="crypto" class="w-5 h-5 border border-white opacity-50  order-2 md:order-1">
+                    <input type="radio" id="crypto" name="crypto"
+                        class="w-5 h-5 border border-white opacity-50  order-2 md:order-1">
                     <div class="flex items-center gap-4 flex-1 order-1 md:order-2">
                         <img src="../assets/crypto.svg" alt="crypto-logo" class="w-6 h-">
                         <span class="text-base leading-[17.6px] font-semibold">Crypto</span>
