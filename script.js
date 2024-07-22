@@ -457,25 +457,40 @@ document.addEventListener('DOMContentLoaded', (event) => {
 document.querySelector('#yearly').checked = true;
 document.querySelector('#yearlyPlan').classList.add('selected');
 
-document.querySelectorAll('input[name="plan"]').forEach(radio => {
-    radio.addEventListener('change', () => {
-        document.querySelectorAll('.plan-container').forEach(container => {
-            container.classList.remove('selected');
+document.querySelectorAll('.plan-container').forEach(container => {
+    container.addEventListener('click', () => {
+        const radio = container.querySelector('input[name="plan"]');
+        radio.checked = true;
+        
+        document.querySelectorAll('.plan-container').forEach(c => {
+            c.classList.remove('selected');
         });
-        document.querySelector(`#${radio.id}Plan`).classList.add('selected');
+        container.classList.add('selected');
     });
 });
 
 
 
 
-
-// Up Sell Plans 
 document.addEventListener('DOMContentLoaded', function () {
     const plans = document.querySelectorAll('.plan-item');
     const selectedClass = 'upsellselected';
     const unselectedClass = 'upsellunselected';
 
+    // Function to select the default plan
+    function setDefaultPlan() {
+        const defaultPlanId = 'familyPlan'; // ID of the default plan
+        const defaultPlan = document.getElementById(defaultPlanId);
+        if (defaultPlan) {
+            defaultPlan.classList.add(selectedClass);
+            defaultPlan.classList.remove(unselectedClass);
+        }
+    }
+
+    // Set the default plan
+    setDefaultPlan();
+
+    // Add click event listener to each plan
     plans.forEach(plan => {
         plan.addEventListener('click', function () {
             plans.forEach(p => {

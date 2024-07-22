@@ -449,7 +449,8 @@
                         </div>
                     </div>
 
-                    <div class="hidden md:flex items-center gap-1 py-[6px] px-[10px] bg-[#F10404] rounded-[6px] h-[43px]">
+                    <div
+                        class="hidden md:flex items-center gap-1 py-[6px] px-[10px] bg-[#F10404] rounded-[6px] h-[43px]">
                         <img src="../assets/danger-icon.svg" alt="danger-icon">
                         <span class="text-white text-base font-medium leading-[19.09px] tracking-[-0.17px]">
                             Don't wait! Discounts Ends in <b id="discount-timer">00:00:00</b>
@@ -464,11 +465,11 @@
                 <!-- Weekly Plan -->
                 <div id="weeklyPlan" class="plan-container flex items-end order-4 md:order-1">
                     <div
-                        class="plan bg-white border border-[#D0D5DD] max-w-full md:max-w-[282px] w-full w-full h-[72px] md:h-auto pt-2 md:pt-4 pb-2 md:pb-4 px-3 md:px-4 flex flex-col gap-1 md:gap-4 rounded-lg md:rounded-[16px]">
+                        class="plan bg-white cursor-pointer border border-[#D0D5DD] max-w-full md:max-w-[282px] w-full w-full h-[72px] md:h-auto pt-2 md:pt-4 pb-2 md:pb-4 px-3 md:px-4 flex flex-col gap-1 md:gap-4 rounded-lg md:rounded-[16px]">
                         <div class="flex justify-between flex-wrap items-center gap-1">
                             <img src="../assets/plans-icon.svg" alt="plans-icon" class="w-6 h-6 hidden md:block">
                             <img src="../assets/weakly.svg" alt="weekly" class="block md:hidden w-[21px] h-[21px]">
-                            <h4 class="flex-1 text-[#18181B] text-xl font-bold leading-[23px]">Weekly</h4>
+                            <h4 class="flex-1 text-[#18181B] text-xl font-semibold md:font-bold leading-[23px]">Weekly</h4>
                             <input type="radio" id="weekly" value="weekly" name="plan"
                                 class="radio-button outline-none w-[18px] h-[18px] rounded-full border border-[#D0D5DD] cursor-pointer">
                         </div>
@@ -491,11 +492,11 @@
                 <!-- Monthly Plan -->
                 <div id="monthlyPlan" class="plan-container flex items-end order-2 md:order-2">
                     <div
-                        class="plan bg-white border border-[#D0D5DD] max-w-full md:max-w-[282px] w-full h-[72px] md:h-auto pt-2 md:pt-4 pb-2 md:pb-4 px-3 md:px-4 flex flex-col gap-1 md:gap-4 rounded-lg md:rounded-[16px]">
+                        class="plan bg-white cursor-pointer border border-[#D0D5DD] max-w-full md:max-w-[282px] w-full h-[72px] md:h-auto pt-2 md:pt-4 pb-2 md:pb-4 px-3 md:px-4 flex flex-col gap-1 md:gap-4 rounded-lg md:rounded-[16px]">
                         <div class="flex justify-between items-center flex-wrap gap-1">
                             <img src="../assets/plans-icon.svg" alt="plans-icon" class="w-6 h-6 hidden md:block">
                             <img src="../assets/monthly.svg" alt="monthly" class="block md:hidden w-[21px] h-[21px]">
-                            <h4 class="text-[#18181B] text-xl font-bold leading-[23px]">Monthly</h4>
+                            <h4 class="text-[#18181B] text-xl font-semibold md:font-bold leading-[23px]">Monthly</h4>
                             <div class="flex-1">
                                 <div
                                     class="w-[61px] py-[2px] px-[6px] bg-[#ACDF873D] border border-[#4C9A2A] text-[#4C9A2A] rounded-[100px] text-center text-xs font-bold tracking-[-0.17px]">
@@ -528,7 +529,7 @@
                 <!-- Quarterly Plan -->
                 <div id="quarterlyPlan" class="plan-container hidden md:flex flex-col items-end order-3 md:order-3">
                     <div
-                        class="plan bg-white border border-[#D0D5DD] max-w-full md:max-w-[282px] w-full rounded-[16px] overflow-hidden">
+                        class="plan bg-white cursor-pointer border border-[#D0D5DD] max-w-full md:max-w-[282px] w-full rounded-[16px] overflow-hidden">
                         <div
                             class="flex items-center justify-center p-2 bg-[#172A6E] border border-[#172A6E] w-full text-white text-sm font-semibold gap-1">
                             Most Popular
@@ -560,11 +561,11 @@
                 <!-- Yearly Plan -->
                 <div id="yearlyPlan" class="plan-container flex items-end order-1 md:order-4">
                     <div
-                        class="plan bg-white border border-[#D0D5DD] max-w-full md:max-w-[282px] w-full h-[72px] md:h-auto pt-2 md:pt-4 pb-2 md:pb-4 px-3 md:px-4 flex flex-col gap-1 md:gap-4 rounded-lg md:rounded-[16px]">
+                        class="plan bg-white cursor-pointer border border-[#D0D5DD] max-w-full md:max-w-[282px] w-full h-[72px] md:h-auto pt-2 md:pt-4 pb-2 md:pb-4 px-3 md:px-4 flex flex-col gap-1 md:gap-4 rounded-lg md:rounded-[16px]">
                         <div class="flex justify-between items-center gap-1">
                             <img src="../assets/plans-icon.svg" alt="plans-icon" class="w-6 h-6 hidden md:block">
                             <img src="../assets/yearly.svg" alt="yearly" class="block md:hidden w-[21px] h-[21px]">
-                            <h4 class="text-[#18181B] text-xl font-bold leading-[23px]">Yearly</h4>
+                            <h4 class="text-[#18181B] text-xl font-semibold md:font-bold leading-[23px]">Yearly</h4>
                             <div class="flex-1">
                                 <div
                                     class="w-[61px] py-[2px] px-[6px] bg-[#ACDF873D] border border-[#4C9A2A] text-[#4C9A2A] rounded-[100px] text-center text-xs font-bold tracking-[-0.17px]">
@@ -605,7 +606,8 @@
 
 
 
-            <div class="flex md:hidden items-center gap-1 py-[6px] px-[10px] bg-[#F10404] rounded-[6px] justify-center mt-3">
+            <div
+                class="flex md:hidden items-center gap-1 py-[6px] px-[10px] bg-[#F10404] rounded-[6px] justify-center mt-3">
                 <img src="../assets/danger-icon.svg" alt="danger-icon">
                 <span class="text-white text-base font-medium leading-[19.09px] tracking-[-0.17px]">
                     Don't wait! Discounts Ends in <b id="discount-timer2">00:00:00</b>
@@ -617,7 +619,7 @@
         <!-- Up Sell Popup  -->
 
         <div id="upsellPopup"
-            class="hidden fixed top-0 left-0 p-2 w-full h-full flex items-center justify-center bg-black bg-opacity-40 z-50">
+            class="hidden fixed top-0 left-0 p-1 w-full h-full flex items-center justify-center bg-black bg-opacity-40 z-50">
             <div class="bg-white max-w-[600px] w-full my-auto mx-auto rounded-[16px] overflow-hidden transition duration-200 ease-in-out"
                 id="upSellpopupContent">
                 <div
@@ -626,112 +628,133 @@
                     multiple devices.
                 </div>
 
-                <div class="p-4 flex flex-col gap-3 md:gap-4">
+                <div class="p-3 md:p-4 flex flex-col gap-3 md:gap-4">
                     <div class="flex justify-between gap-2">
-                        <h1 class="flex-1 text-[25px] md:text-[40px] font-bold leading-[34.19px] md:leading-[44px]">Buy
+                        <h1 class="flex-1 text-[32px] md:text-[40px] font-bold leading-[34.19px] md:leading-[44px]">Buy
                             More License <br>
                             Get More <span class="text-[#4C9A2A]">Discount</span>
                         </h1>
 
                         <button
                             class="w-10 h-10 flex items-center justify-center md:border border-[#D0D5DD] rounded-lg">
-                            <img id="upSellcloseBtn" src="../assets/close-toggle.svg" alt="close" class="w-5 h-5">
+                            <img id="upSellcloseBtn" src="../assets/close-toggle.svg" alt="close"
+                                class="w-3 md:w-5 h-3 md:h-5">
                         </button>
                     </div>
 
-                    <div id="couplePlan" class="plan-item flex p-[6px] md:p-3 gap-2 md:gap-3 border items-center cursor-pointer rounded-xl">
-                        <img src="../assets/couple.png" alt="couple" class="w-9 h-9">
+                    <div class="flex flex-col gap-2 md:gap-3">
+                        <div id="couplePlan"
+                            class="plan-item flex p-2 md:p-3 gap-2 md:gap-3 border items-center cursor-pointer rounded-xl">
+                            <img src="../assets/couple.png" alt="couple" class="w-9 h-9">
 
-                        <div class="flex-1 flex flex-col gap-2">
-                            <div class="flex justify-between gap-1 items-center">
-                                <p class="flex gap-1 items-center text-base md:text-xl font-semibold text-[#101828]">
-                                    Couple
-                                    <span class="text-xs md:text-base font-medium opacity-60">(2-Device License)</span>
-                                </p>
+                            <div class="flex-1 flex flex-col gap-1">
+                                <div class="flex justify-between gap-1 items-center">
+                                    <p
+                                        class="flex gap-1 items-center text-base md:text-xl font-semibold text-[#101828]">
+                                        Couple
+                                        <span class="text-xs md:text-base font-medium opacity-60">(2-Device
+                                            License)</span>
+                                    </p>
 
-                                <div class="bg-[#F10404] rounded-[4px] p-[6px] leading-[12px] text-white text-xs font-medium text-center">
-                                    10% OFF
+                                    <div
+                                        class="bg-[#F10404] rounded-[4px] p-[6px] leading-[12px] text-white text-xs font-medium text-center">
+                                        10% OFF
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="flex justify-between gap-1 items-center">
-                                <p class="flex items-end text-[13px] md:text-base font-medium opacity-60 text-[#101828]">
-                                    <span class="text-[13px] md:text-sm leading-[15.4px]">$ </span>
-                                    <span class="leading-[15.6px] md:leading-[20px] mx-[2px]"> 18.99 </span>
-                                    <span class="text-[13px] md:text-sm leading-[15.4px]"> / license</span>
-                                </p>
+                                <div class="flex justify-between gap-1 items-center">
+                                    <p
+                                        class="flex items-end text-[13px] md:text-base font-medium opacity-60 text-[#101828]">
+                                        <span class="text-[13px] md:text-sm leading-[15.4px]">$ </span>
+                                        <span class="leading-[15.6px] md:leading-[20px] mx-[2px]"> 18.99 </span>
+                                        <span class="text-[13px] md:text-sm leading-[15.4px]"> / license</span>
+                                    </p>
 
-                                <p class="flex items-end">
-                                    <span class="text-xs text-[#636E6E] leading-[15.4px]">$ </span>
-                                    <span class="leading-[15.6px] text-sm text-[#636E6E] ml-[2px] mr-2"> 39.98 </span>
-                                    <span class="text-xs md:text-sm text-[#F10404] font-medium leading-[15.4px]">$ </span>
-                                    <span class="text-lg text-[#F10404] font-semibold leading-[17px]"> 35.96</span>
-                                </p>
+                                    <p class="flex items-end">
+                                        <span class="text-xs text-[#636E6E] leading-[15.4px]">$ </span>
+                                        <span class="leading-[15.6px] text-sm text-[#636E6E] ml-[2px] mr-2"> 39.98
+                                        </span>
+                                        <span class="text-xs md:text-sm text-[#F10404] font-medium leading-[15.4px]">$
+                                        </span>
+                                        <span class="text-lg text-[#F10404] font-semibold leading-[17px]"> 35.96</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="familyPlan"
-                        class="plan-item flex p-[6px] md:p-3 gap-2 md:gap-3 border items-center cursor-pointer rounded-xl">
-                        <img src="../assets/family.png" alt="family" class="w-9 h-9">
+                        <div id="familyPlan"
+                            class="plan-item flex p-2 md:p-3 gap-2 md:gap-3 border items-center cursor-pointer rounded-xl">
+                            <img src="../assets/family.png" alt="family" class="w-9 h-9">
 
-                        <div class="flex-1 flex flex-col gap-2">
-                            <div class="flex justify-between gap-1 items-center">
-                                <p class="flex gap-1 items-center text-base md:text-xl font-semibold text-[#101828]">
-                                    Family
-                                    <span class="text-xs md:text-base font-medium opacity-60">(5-Device License)</span>
-                                </p>
+                            <div class="flex-1 flex flex-col gap-1">
+                                <div class="flex justify-between gap-1 items-center">
+                                    <p
+                                        class="flex gap-1 items-center text-base md:text-xl font-semibold text-[#101828]">
+                                        Family
+                                        <span class="text-xs md:text-base font-medium opacity-60">(5-Device
+                                            License)</span>
+                                    </p>
 
-                                <div class="bg-[#F10404] rounded-[4px] p-[6px] text-white leading-[12px] text-xs font-medium text-center">
-                                    30% OFF
+                                    <div
+                                        class="bg-[#F10404] rounded-[4px] p-[6px] text-white leading-[12px] text-xs font-medium text-center">
+                                        30% OFF
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="flex justify-between gap-1 items-center">
-                                <p class="flex items-end text-[13px] md:text-base font-medium opacity-60 text-[#101828]">
-                                    <span class="text-[13px] md:text-sm leading-[15.4px]">$ </span>
-                                    <span class="leading-[15.6px] md:leading-[20px] mx-[2px]"> 18.99 </span>
-                                    <span class="text-[13px] md:text-sm leading-[15.4px]"> / license</span>
-                                </p>
+                                <div class="flex justify-between gap-1 items-center">
+                                    <p
+                                        class="flex items-end text-[13px] md:text-base font-medium opacity-60 text-[#101828]">
+                                        <span class="text-[13px] md:text-sm leading-[15.4px]">$ </span>
+                                        <span class="leading-[15.6px] md:leading-[20px] mx-[2px]"> 18.99 </span>
+                                        <span class="text-[13px] md:text-sm leading-[15.4px]"> / license</span>
+                                    </p>
 
-                                <p class="flex items-end">
-                                    <span class="text-xs text-[#636E6E] leading-[15.4px]">$ </span>
-                                    <span class="leading-[15.6px] text-sm text-[#636E6E] ml-[2px] mr-2"> 39.98 </span>
-                                    <span class="text-sm text-[#F10404] font-medium leading-[15.4px]">$ </span>
-                                    <span class="text-lg text-[#F10404] font-semibold leading-[17px]"> 60.99</span>
-                                </p>
+                                    <p class="flex items-end">
+                                        <span class="text-xs text-[#636E6E] leading-[15.4px]">$ </span>
+                                        <span class="leading-[15.6px] text-sm text-[#636E6E] ml-[2px] mr-2"> 39.98
+                                        </span>
+                                        <span class="text-sm text-[#F10404] font-medium leading-[15.4px]">$ </span>
+                                        <span class="text-lg text-[#F10404] font-semibold leading-[17px]"> 60.99</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div  id="businessPlan" class="plan-item flex p-[6px] md:p-3 gap-2 md:gap-3 border cursor-pointer items-center rounded-xl">
-                        <img src="../assets/business.png" alt="business" class="w-9 h-9">
+                        <div id="businessPlan"
+                            class="plan-item flex p-2 md:p-3 gap-2 md:gap-3 border cursor-pointer items-center rounded-xl">
+                            <img src="../assets/business.png" alt="business" class="w-9 h-9">
 
-                        <div class="flex-1 flex flex-col gap-2">
-                            <div class="flex justify-between gap-1 items-center">
-                                <p class="flex gap-1 items-center text-base md:text-xl font-semibold text-[#101828]">
-                                    Business
-                                    <span class="text-xs md:text-base font-medium opacity-60">(10-Device License)</span>
-                                </p>
+                            <div class="flex-1 flex flex-col gap-1">
+                                <div class="flex justify-between gap-1 items-center">
+                                    <p
+                                        class="flex gap-1 items-center text-base md:text-xl font-semibold text-[#101828]">
+                                        Business
+                                        <span class="text-xs md:text-base font-medium opacity-60">(10-Device
+                                            License)</span>
+                                    </p>
 
-                                <div class="bg-[#F10404] rounded-[4px] p-[6px] text-white text-xs leading-[12px] font-medium text-center">
-                                    40% OFF
+                                    <div
+                                        class="bg-[#F10404] rounded-[4px] p-[6px] text-white text-xs leading-[12px] font-medium text-center">
+                                        40% OFF
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="flex justify-between gap-1 items-center">
-                                <p class="flex items-end text-[13px] md:text-base font-medium opacity-60 text-[#101828]">
-                                    <span class="text-[13px] md:text-sm leading-[15.4px]">$ </span>
-                                    <span class="leading-[15.6px] md:leading-[20px] mx-[2px]"> 18.99 </span>
-                                    <span class="text-[13px] md:text-sm leading-[15.4px]"> / license</span>
-                                </p>
+                                <div class="flex justify-between gap-1 items-center">
+                                    <p
+                                        class="flex items-end text-[13px] md:text-base font-medium opacity-60 text-[#101828]">
+                                        <span class="text-[13px] md:text-sm leading-[15.4px]">$ </span>
+                                        <span class="leading-[15.6px] md:leading-[20px] mx-[2px]"> 18.99 </span>
+                                        <span class="text-[13px] md:text-sm leading-[15.4px]"> / license</span>
+                                    </p>
 
-                                <p class="flex items-end">
-                                    <span class="text-xs text-[#636E6E] leading-[15.4px]">$ </span>
-                                    <span class="leading-[15.6px] text-sm text-[#636E6E] ml-[2px] mr-2"> 39.98 </span>
-                                    <span class="text-sm text-[#F10404] font-medium leading-[15.4px]">$ </span>
-                                    <span class="text-lg text-[#F10404] font-semibold leading-[17px]"> 99.96</span>
-                                </p>
+                                    <p class="flex items-end">
+                                        <span class="text-xs text-[#636E6E] leading-[15.4px]">$ </span>
+                                        <span class="leading-[15.6px] text-sm text-[#636E6E] ml-[2px] mr-2"> 39.98
+                                        </span>
+                                        <span class="text-sm text-[#F10404] font-medium leading-[15.4px]">$ </span>
+                                        <span class="text-lg text-[#F10404] font-semibold leading-[17px]"> 99.96</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -772,10 +795,11 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Block Internet Connection
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">Prevents
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
+                            Prevents
                             internet access on the target device.
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -786,10 +810,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Block Mobile Network
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Disables mobile network connectivity.
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -800,10 +824,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Remotely Lock or Unlock Device
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Securely control device access.
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -814,10 +838,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Real-Time Screen Sharing
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Collaborate instantly with live screen sharing
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -828,10 +852,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Record Live Screen and Screenshot Anonymously
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Capture screen activity discreetly
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -842,10 +866,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Live Microphone Access for Listening to Surroundings
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Listen to the device's surroundings in real-time
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -856,10 +880,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             GPS-Free Real-Time Tracking
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Track device location without GPS
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -870,10 +894,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             GPS Position History
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Access historical GPS location data
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -884,10 +908,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Record All Calls, Including Unsupported Devices
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Prevents internet access on the target device.
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -898,10 +922,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Block Unwanted Contacts
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Prevent unwanted communications
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -912,10 +936,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Remote Call Control
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Dial or Disconnect: Manage calls remotely
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -926,10 +950,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             SMS Control
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Send, Receive, and Read Messages Secretly: Monitor text messages discreetly
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -940,10 +964,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Remotely Install or Uninstall Any Apps
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Manage apps remotely
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -954,10 +978,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Remotely Delete Anything Without Limitations
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Remove files and data remotely
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -969,10 +993,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Download Any Details as Files or Folders from the Target Device
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Retrieve data to your dashboard
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -983,10 +1007,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             View Photos and Videos on the Target Phone
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Access multimedia files remotely
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -998,10 +1022,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Unlock and Access Encrypted Folders Without Restrictions
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Gain access to encrypted data
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1012,10 +1036,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Unrestricted Access to Saved IDs, Passwords, Card Details, and Payment Methods
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Securely access sensitive information
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1027,10 +1051,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             View App Messages, Stories, or Content Anonymously
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Monitor app content without detection
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1041,10 +1065,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Real-Time Notification Sync
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Stay updated with real-time alerts
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1055,11 +1079,11 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Instant Alerts
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Low Battery, Offline Status, App Access, and Geofence Updates: Receive immediate
                             notifications
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1070,10 +1094,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Comprehensive Activity Tracking with Date, Time, and Screen Recordings
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Monitor device usage comprehensively
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1084,10 +1108,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Activity Reports
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Monitor Daily/Weekly Phone Usage for Informed Adjustments: Review usage reports.
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1098,10 +1122,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Remotely Activate and Record the Target's Rear/Front Camera Activity
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Access device cameras remotely
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1112,10 +1136,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Remote Power Control
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             On/Off Instantly: Manage device power remotely
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1126,10 +1150,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Remote Camera Access
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Gain control over the device's camera
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1140,10 +1164,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Social Media Content Filter
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Filter harmful content on social media
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1154,10 +1178,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Blocking Websites
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Restrict access to specific websites
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1168,10 +1192,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             App Time Limits: Enhance Focus by Setting App Usage Timeframes
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             App Time Limits: Enhance Focus by Setting App Usage Timeframes
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1183,10 +1207,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Silently Record All or Specific Video Calls
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Record video calls discreetly
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1197,10 +1221,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Record Every Keystroke
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Monitor all typed keystrokes
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1211,10 +1235,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Monitor and Retrieve Keystrokes, Including Incognito and Deleted Entries with Timestamps
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Access typed data with timestamps
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1225,10 +1249,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Monitor App and Web Activity
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Keep an eye on app and web usage
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1239,10 +1263,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Track App Usage and Website Visits
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Monitor time spent on apps and websites
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1253,10 +1277,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Monitor File Activity, Capture File Usage, Record Actions, and Timestamps
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Access typed data with timestamps
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1267,10 +1291,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Log Login and Logoff Activities with User IDs and Passwords
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Record login and logoff events
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1281,10 +1305,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Route History
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Discover Frequent Locations on a Timeline: Track frequent locations
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1295,10 +1319,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Geofencing: Receive Alerts for Entry and Exit from Defined Areas
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Get alerts for specific location entries and exits
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1309,10 +1333,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Statistics Summary
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             View summary statistics
-                        </span>
+                        </p>
                     </div>
                 </li>
 
@@ -1323,10 +1347,10 @@
                             class="text-base sm:text-xl font-bold leading-[19.56px] sm:leading-[24px] tracking-[-0.13px] sm:tracking-[-0.17px] text-[#101828]">
                             Generate Reports in PDF, Excel, or CSV Formats
                         </h3>
-                        <span
-                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[10.65px] sm:leading-[19.2px]">
+                        <p
+                            class="text-[13px] sm:text-base font-medium text-[#101828] opacity-60 leading-[15.65px] sm:leading-[19.2px]">
                             Create detailed reports
-                        </span>
+                        </p>
                     </div>
                 </li>
             </ul>

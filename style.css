@@ -315,16 +315,20 @@ li{
     border-color: #172A6E;
     background-color: #E9EBFF;
 }
+
 .plan-container.selected .radio-button {
     background-color: #172A6E;
     border-color: #172A6E;
 }
+
 .plan-container.selected img.checkbox {
     display: block;
 }
+
 .plan-container img.checkbox {
     display: none;
 }
+
 
 .upsellselected {
     background-color: #E9EBFF;
