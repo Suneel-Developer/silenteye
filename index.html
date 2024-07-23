@@ -327,8 +327,8 @@
         <!-- Features Slider -->
         <div class="py-4 md:py-8 bg-[#E9EBFF] w-full h-auto relative">
             <div class="slider-container overflow-hidden mx-auto w-full ">
-                <div class="slider flex gap-2 md:gap-3">
-                    <div class="slide">
+                <div class="flex gap-2 md:gap-3 overflow-x-auto no-scrollbar">
+                    <div class="slide ml-4 md:ml-20">
                         <img src="./assets/block-internet-connection.svg" alt="Block Internet Connection" class="h-8">
                         <div class="flex flex-col gap-1">
                             <h3
@@ -513,7 +513,7 @@
                         </div>
                     </div>
 
-                    <div class="slide">
+                    <div class="slide mr-4 md:mr-20">
                         <img src="./assets/download-files.svg"
                             alt="Download Any Details as Files or Folders from the Target Device" class="h-8">
                         <div class="flex flex-col gap-1">
@@ -540,7 +540,6 @@
 
 
     <!-- Features Section  -->
-
     <section>
 
         <!-- Title  -->
@@ -829,7 +828,6 @@
 
 
     <!-- Communication Monitoring for Various Apps Section -->
-
     <section class="py-5 md:py-10 px-4">
         <h2
             class="mb-2 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
@@ -872,108 +870,70 @@
 
 
 
-
-
     <!-- About Our Platform  -->
-    <section class="bg-[#E9EBFF] py-5 md:py-10">
+    <section class="bg-[#E9EBFF] py-5 md:py-10 px-3">
         <h2
-            class="mb-10 text-[#101828] text-2xl md:text-[32px] px-2 font-bold text-center leading-[26.4px] md:leading-[35.2px]">
+            class="mb-10 text-[#101828] text-2xl md:text-[32px] font-bold text-center leading-[26.4px] md:leading-[35.2px]">
             About Our Platform
         </h2>
-
-        <ul class="flex justify-between max-w-[1400px] mx-auto w-full gap-3  no-scrollbar overflow-x-auto">
-            <li
-                class="pl-4 w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+        <ul class="grid grid-cols-2 md:grid-cols-7 max-w-[1400px] mx-auto w-full gap-x-3 gap-y-5">
+            <li class="flex flex-col items-center justify-start gap-6">
                 <img src="./assets/star.svg" alt="star" class="w-10 h-10">
                 <div>
-                    <h5
-                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
-                        Rated 4.9 / 5</h5>
-                    <p
-                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
-                        80963+ Ratings</p>
+                    <h5 class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">Rated 4.9 / 5</h5>
+                    <p class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">80963+ Ratings</p>
                 </div>
             </li>
-
-            <li
-                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+        
+            <li class="flex flex-col items-center justify-start gap-6">
                 <img src="./assets/guarantee-logo.svg" alt="Hassle-Free Refund Guarantee" class="w-10 h-10">
                 <div>
-                    <h5
-                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
-                        30-Day</h5>
-                    <p
-                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
-                        Hassle-Free Refund Guarantee</p>
+                    <h5 class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">30-Day</h5>
+                    <p class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">Hassle-Free Refund Guarantee</p>
                 </div>
             </li>
-
-            <li
-                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+        
+            <li class="flex flex-col items-center justify-start gap-6">
                 <img src="./assets/solution-icon.svg" alt="Excellence in Surveillance Solutions" class="w-10 h-10">
                 <div>
-                    <h5
-                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
-                        12 Years</h5>
-                    <p
-                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
-                        of Excellence in Surveillance Solutions</p>
+                    <h5 class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">12 Years</h5>
+                    <p class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">of Excellence in Surveillance Solutions</p>
                 </div>
             </li>
-
-            <li
-                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+        
+            <li class="flex flex-col items-center justify-start gap-6">
                 <img src="./assets/satisfied-users.svg" alt="Number of Satisfied Users" class="w-10 h-10">
                 <div>
-                    <h5
-                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
-                        15 Million</h5>
-                    <p
-                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
-                        Number of
-                        Satisfied Users</p>
+                    <h5 class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">15 Million</h5>
+                    <p class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">Number of Satisfied Users</p>
                 </div>
             </li>
-
-            <li
-                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+        
+            <li class="flex flex-col items-center justify-start gap-6">
                 <img src="./assets/support.svg" alt="Premium Support" class="w-10 h-10">
                 <div>
-                    <h5
-                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
-                        24/7</h5>
-                    <p
-                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
-                        Premium Support</p>
+                    <h5 class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">24/7</h5>
+                    <p class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">Premium Support</p>
                 </div>
             </li>
-
-            <li
-                class="w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+        
+            <li class="flex flex-col items-center justify-start gap-6">
                 <img src="./assets/anonymous.svg" alt="Anonymous" class="w-10 h-10">
                 <div>
-                    <h5
-                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
-                        100% Anonymous</h5>
-                    <p
-                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
-                        Operate anonymously No identification required</p>
+                    <h5 class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">100% Anonymous</h5>
+                    <p class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">Operate anonymously No identification required</p>
                 </div>
             </li>
-
-            <li
-                class="mr-4 w-[161px] md:w-[189.71px] min-w-[161px] md:min-w-[189.71] flex flex-col items-center justify-start gap-6">
+        
+            <li class="flex flex-col items-center justify-start gap-6 md:col-span-1 col-span-full md:flex md:justify-center">
                 <img src="./assets/powerful.svg" alt="Powerful" class="w-10 h-10">
                 <div>
-                    <h5
-                        class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">
-                        Powerful</h5>
-                    <p
-                        class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">
-                        Live Control Panel</p>
+                    <h5 class="text-base md:text-[22px] font-bold leading-[19.2px] md:leading-[24px] text-[#222222] text-center mb-1">Powerful</h5>
+                    <p class="text-sm md:text-base font-medium leading-[15.6px] md:leading-[20.8px] text-[#222222] text-center opacity-60">Live Control Panel</p>
                 </div>
             </li>
         </ul>
+        
     </section>
 
 
@@ -1699,9 +1659,9 @@
 
         <!-- Reviews Slider -->
         <div class="py-8 bg-[#E9EBFF] w-full h-auto relative">
-            <div class="slider-container overflow-hidden mx-auto w-full ">
-                <div class="slider flex gap-2 md:gap-3">
-                    <div class="slide">
+            <div class="overflow-auto mx-auto w-full ">
+                <div class="flex gap-2 md:gap-3 overflow-x-auto no-scrollbar">
+                    <div class="slide ml-4 md:ml-20">
                         <div class="flex items-center gap-3">
                             <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
                             <div class="flex flex-col gap-[6px]">
@@ -1881,7 +1841,7 @@
                         </span>
                     </div>
 
-                    <div class="slide">
+                    <div class="slide mr-4 md:mr-20">
                         <div class="flex items-center gap-3">
                             <img src="./assets/reviews-user.jfif" alt="user" class="w-14 h-14 rounded-full">
                             <div class="flex flex-col gap-[6px]">

@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Mobile menu toggle
     document.getElementById('toggleMenu').addEventListener('click', function () {
         document.getElementById('mobileMenu').classList.remove('hidden');
     });
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('mobileMenu').classList.add('hidden');
     });
 
-    // Try Demo Popup
     const tryDemoBtnDesktop = document.getElementById('tryDemoBtnDesktop');
     const tryDemoBtnMobile = document.getElementById('tryDemoBtnMobile');
     const tryDemoPopup = document.getElementById('tryDemoPopup');
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Set active link color
     const links = document.querySelectorAll('.nav-link');
     links.forEach(link => {
         if (link.href === window.location.href) {
@@ -46,25 +43,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Select all FAQ items
     const faqItems = document.querySelectorAll('.faq-item');
 
-    // Iterate over each FAQ item
     faqItems.forEach(item => {
-        // Select the arrow elements within each FAQ item
         const arrowUp = item.querySelector('.arrow-up');
         const arrowDown = item.querySelector('.arrow-down');
 
-        // Add initial state for down arrow
         arrowUp.classList.add('hidden');
         arrowDown.classList.remove('hidden');
 
-        // Add a click event listener to each FAQ question
         item.querySelector('.faq-question').addEventListener('click', function () {
-            // Check if the current FAQ item is open
             const isOpen = item.classList.contains('open');
 
-            // Close all FAQ items and reset their states
             faqItems.forEach(faq => {
                 faq.classList.remove('open');
                 faq.querySelector('.faq-answer').classList.add('hidden');
@@ -74,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 faq.querySelector('.arrow').classList.add('bg-[#DDDDDD]');
             });
 
-            // If the clicked FAQ item is not open, open it
             if (!isOpen) {
                 item.classList.add('open');
                 item.querySelector('.faq-answer').classList.remove('hidden');
@@ -298,14 +287,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     tabButtons.forEach(button => {
         button.addEventListener('click', function () {
-            // Remove active class from all buttons
             tabButtons.forEach(btn => btn.classList.remove('withoutWithtabactive'));
-            // Add active class to the clicked button
             button.classList.add('withoutWithtabactive');
 
-            // Hide all tab contents
             tabContents.forEach(content => content.classList.remove('withoutWithtabactive'));
-            // Show the content related to the clicked button
             const tabId = button.getAttribute('data-tab');
             document.getElementById(tabId).classList.add('withoutWithtabactive');
         });
@@ -320,29 +305,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     tabButtons.forEach(button => {
         button.addEventListener('click', function () {
-            // Remove active class from all buttons and reset images
             tabButtons.forEach(btn => {
                 btn.classList.remove('faqsactive');
                 const img = btn.querySelector('.tab-icon');
                 img.src = btn.getAttribute('data-inactive-img');
             });
 
-            // Add active class to the clicked button and change image
             button.classList.add('faqsactive');
             const activeImg = button.getAttribute('data-active-img');
             button.querySelector('.tab-icon').src = activeImg;
 
-            // Hide all tab contents
             tabContents.forEach(content => content.classList.remove('faqsactive'));
 
-            // Show the content related to the clicked button
             const tabId = button.getAttribute('data-tab');
             document.getElementById(tabId).classList.add('faqsactive');
         });
     });
 });
-
-
 
 function startTimer(duration, display) {
     let timer = duration, hours, minutes, seconds;
@@ -358,7 +337,7 @@ function startTimer(duration, display) {
         display.textContent = hours + ":" + minutes + ":" + seconds;
 
         if (--timer < 0) {
-            timer = duration; // Reset timer
+            timer = duration; 
         }
     }, 1000);
 }
@@ -377,15 +356,15 @@ function startDiscountTimer(duration, display) {
         display.textContent = hours + ":" + minutes + ":" + seconds;
 
         if (--timer < 0) {
-            timer = duration; // Reset timer
+            timer = duration;
         }
     }, 1000);
 }
 
 window.onload = function () {
-    let oneHour = 3600; // Duration in seconds (1 hour)
-    let fourHours = 4 * 3600; // Duration in seconds (4 hours)
-    
+    let oneHour = 3600; 
+    let fourHours = 4 * 3600;
+
     let displayTime = document.querySelector('#time');
     if (displayTime) {
         startTimer(oneHour, displayTime);
@@ -393,7 +372,7 @@ window.onload = function () {
 
     let displayDesktop = document.querySelector('#discount-timer');
     let displayMobile = document.querySelector('#discount-timer2');
-    
+
     if (displayDesktop) {
         startDiscountTimer(fourHours, displayDesktop);
     }
@@ -402,7 +381,6 @@ window.onload = function () {
         startDiscountTimer(fourHours, displayMobile);
     }
 };
-
 
 
 // Up Sell Popup 
@@ -446,7 +424,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         openPopup();
     });
 
-    // Close popup event listeners
     upsellPopup.addEventListener('click', closePopup);
     closeBtn.addEventListener('click', closePopup);
 });
@@ -461,7 +438,7 @@ document.querySelectorAll('.plan-container').forEach(container => {
     container.addEventListener('click', () => {
         const radio = container.querySelector('input[name="plan"]');
         radio.checked = true;
-        
+
         document.querySelectorAll('.plan-container').forEach(c => {
             c.classList.remove('selected');
         });
@@ -477,9 +454,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const selectedClass = 'upsellselected';
     const unselectedClass = 'upsellunselected';
 
-    // Function to select the default plan
     function setDefaultPlan() {
-        const defaultPlanId = 'familyPlan'; // ID of the default plan
+        const defaultPlanId = 'familyPlan';
         const defaultPlan = document.getElementById(defaultPlanId);
         if (defaultPlan) {
             defaultPlan.classList.add(selectedClass);
@@ -487,10 +463,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Set the default plan
     setDefaultPlan();
 
-    // Add click event listener to each plan
     plans.forEach(plan => {
         plan.addEventListener('click', function () {
             plans.forEach(p => {
@@ -503,5 +477,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
 
 
